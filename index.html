@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1>Disciplinas 2020/1:</h1>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <a href="{{ site.baseurl }}{{ post.url }}"><b>{{ post.title }}</b></a>
+
+    </article>
+  {% endfor %}
+</div>
+
+<h1>Informações:</h1>
+
+<table width=100%>
+	<tr>
+		<td width=25% align=center>
+			<a href="horarios">Horários</a>
+		</td>
+		<td width=25% align=center>
+			<a href="horarios">Calendário de provas</a>
+		</td>
+		<td width=25% align=center>
+			<a href="horarios">Coordenação</a>
+		</td>
+		<td width=25% align=center>
+			<a href="acervo">Acervo TCC</a>
+		</td>		
+	</tr>		
+</table>
+
