@@ -1,14 +1,20 @@
 ---
 layout: page
-title: Horários
+title: Horário de Aulas
 ---
 
-### O que encontrar aqui?
+### CC1P43
 
-Notícias, informações, assuntos e conteúdos relevantes à 
-formação acadêmica e profissional dos alunos de Ciência da Computação da UNIP de 
-Limeira.
+Horário de aulas da turma do <a href="/horarios/1_sem_2020.pdf" target="_blank">primeiro ano</a>
 
-### Contact me
+### CC2P43, CC3P43 e CC3Q43
 
-[amaury.andre@gmail.com](mailto:amaury.andre@gmail.com)
+Horário de aulas da turma do <a href="/horarios/2_3_sem_2020.pdf" target="_blank">segundo ano</a>
+
+### CC4P43 e CC5P43
+
+Horário de aulas da turma do <a href="/horarios/4_5_sem_2020.pdf" target="_blank">terceiro ano</a>
+
+### CC6P43 e CC7P43
+
+Horário de aulas da turma do <a href="/horarios/6_7_sem_2020.pdf" target="_blank">quarto ano</a>

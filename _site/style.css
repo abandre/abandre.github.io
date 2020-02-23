@@ -188,6 +188,15 @@ img {
   clear: both;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  height: 50px;
+  vertical-align: middle;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
