@@ -1,0 +1,10 @@
+I"0<p><img src="/lfa/conversao.png" alt="" /></p>
+
+<p><img src="lfa/conversao.png" width="200" />
+&lt;!–
+| <img src="/images/ico-horario.png" alt="" /> | <img src="/images/ico-livros.png" alt="" /> |
+| Teste | teste |</p>
+
+<p>| <img src="images/ico-horario.png" alt="" />| b  |  c |  d |  e |
+–&gt;</p>
+:ET

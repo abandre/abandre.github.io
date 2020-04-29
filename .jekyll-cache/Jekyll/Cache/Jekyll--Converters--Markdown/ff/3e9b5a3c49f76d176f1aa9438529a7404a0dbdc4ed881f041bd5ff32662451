@@ -1,0 +1,10 @@
+I"6<p>&lt;table width=90%&gt;
+	&lt;tr&gt;
+		&lt;td width='20%' align=center&gt;<a href="horarios"><img src="images/ico-horario.png" height="30" /><br />Horário<br />de Aulas</a>&lt;/td&gt;
+		&lt;td width='20%' align=center&gt;<a href="provas"><img src="images/ico-calend.png" height="30" /><br />Calendário<br />de Provas</a>&lt;/td&gt;
+		&lt;td width='20%' align=center&gt;<a href="acervo"><img src="images/ico-tcc.png" height="30" /><br />Acervo<br />de TCC</a>&lt;/td&gt;
+		&lt;td width='20%' align=center&gt;<a href="https://www.youtube.com/user/aandre1985"><img src="images/ico-exercicios.png" height="30" /><br />Exercícios<br /> </a>&lt;/td&gt;
+		&lt;td width='20%' align=center&gt;<a href="livros"><img src="images/ico-livros.png" height="30" /><br />Livros<br /> </a>&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</p>
+:ET
