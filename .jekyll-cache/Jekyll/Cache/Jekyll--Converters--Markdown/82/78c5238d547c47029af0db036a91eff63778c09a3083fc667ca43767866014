@@ -1,0 +1,8 @@
+I"�<h2 id="processos-versus-threads">Processos versus Threads</h2>
+
+<p>Vimos em aula os conceitos de ULT (Threads de Usuário) e KLT (Threads de núcleo).</p>
+
+<p><img src="/soa/ultklt.png" /></p>
+
+<p>Na linguagem de programação Python, devido a uma característica chamada Python Global Interpreter Lock (GIL), a linguagem oferece o conceito de multithreading a nível de usuário.</p>
+:ET

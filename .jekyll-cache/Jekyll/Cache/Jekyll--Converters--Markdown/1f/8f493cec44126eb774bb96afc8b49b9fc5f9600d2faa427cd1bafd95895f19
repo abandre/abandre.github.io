@@ -1,0 +1,13 @@
+I"<h2 id="processos-versus-threads">Processos versus Threads</h2>
+
+<p>Vimos em aula os conceitos de ULT (Threads de Usuário) e KLT (Threads de núcleo).</p>
+
+<p><img src="/soa/ultklt.png" /></p>
+
+<p>Na linguagem de programação Python, devido a uma característica chamada Python Global Interpreter Lock (GIL), a linguagem oferece o conceito de multithreading somente a nível de usuário. O GIL, em poucas palavras, é um mutex que permite que apenas uma thread mantenha o controle do interpretador Python. Isso significa que apenas uma thread pode estar em um estado de execução a qualquer momento.</p>
+
+<p>Para mostrar isso, observe o seguint trecho de código:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+:ET

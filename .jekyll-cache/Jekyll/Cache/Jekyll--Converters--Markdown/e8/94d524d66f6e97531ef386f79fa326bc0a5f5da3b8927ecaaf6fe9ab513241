@@ -1,0 +1,46 @@
+I"F
+<h3 id="cronograma-de-aulas">Cronograma de Aulas</h3>
+
+<ul>
+  <li>[04/02/20] - Apresentação da disciplina</li>
+  <li>[11/02/20] - Autômatos Finitos - <a href="/atc/Aula1.pdf" target="_blank">Slide</a></li>
+  <li>[18/02/20] - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a></li>
+  <li>[25/02/20] - <font color="lightgray">Feriado</font></li>
+  <li>[06/03/20] - Maq de Turing - Progr. - <a href="/atc/Aula3.pdf" target="_blank">Slide</a></li>
+  <li>[xx/xx/xx] - Maq de Turing - Restr e Equiv. - <a href="/atc/Aula4.pdf" target="_blank">Slide</a></li>
+  <li>[xx/xx/xx] - Exercícios de Revisão - <a href="/atc/ex-mt-enunciado.pdf" target="_blank">Lista 1</a></li>
+  <li>[07/04/20] - Resumo - <a href="/atc/AulaX - Resumo - anotado.pdf" target="_blank">Slide</a></li>
+  <li>[07/04/20] - Problemas de Decisão - <a href="/atc/Aula5 - Decidiveis - anotado.pdf" target="_blank">Slide</a></li>
+  <li>[14/04/20] - Indecidibilidade - <a href="/atc/Aula6 - Indecidibilidade - anotado.pdf" target="_blank">Slide</a></li>
+  <li>[28/04/20] - Complexidade Assintótica - <a href="/atc/Aula7-anotado.pdf" target="_blank">Slide</a></li>
+  <li>[05/05/20] - Complexidade Computacional - <a href="/atc/Aula8-anotado.pdf" target="_blank">Slide</a></li>
+  <li>[12/05/20] - Redução e Completude NP - <a href="/atc/Aula9-anotado.pdf" target="_blank">Slide</a></li>
+  <li>[12/05/20] - Exercícios de Revisão - <a href="/atc/lista2.pdf" target="_blank">Lista 2</a></li>
+</ul>
+
+<h2 id="entrega-de-trabalhos">Entrega de Trabalhos</h2>
+
+<h3 id="link-para-upload-dos-arquivos-httpsbitly3ei4aep">Link para upload dos arquivos: <a href="https://bit.ly/3ei4AEp" target="_blank">https://bit.ly/3ei4AEp</a></h3>
+
+<h4 id="1-10-exercícios-dos-módulos-1-e-2">1) [1.0] Exercícios dos módulos 1 e 2:</h4>
+<ul>
+  <li>Renomear o arquivo para: <strong>XYZ123-modulos.pdf</strong>, onde XYZ123 é o seu RA.</li>
+</ul>
+
+<h4 id="2-10--lista-1-link">2) [1.0]  Lista 1 (<a href="/atc/ex-mt-enunciado.pdf" target="_blank">link</a>):</h4>
+<ul>
+  <li>Renomear o arquivo para: <strong>XYZ123-lista1.pdf</strong>, onde XYZ123 é o seu RA.</li>
+</ul>
+
+<h4 id="3-10--apresentação-sobre-a-linguagem-ld">3) [1.0]  Apresentação sobre a linguagem LD:</h4>
+<ul>
+  <li>Renomear o arquivo para: <strong>XYZ123-ld.pdf</strong>, onde XYZ123 é o seu RA.</li>
+</ul>
+
+<h4 id="4-10--lista-2-link">4) [1.0]  Lista 2 (<a href="/atc/lista2.pdf" target="_blank">link</a>):</h4>
+<ul>
+  <li>Renomear o arquivo para: <strong>XYZ123-lista2.pdf</strong>, onde XYZ123 é o seu RA.</li>
+</ul>
+
+<h3 id="prazo-de-entrega-2605-as-19h">Prazo de entrega: 26/05 as 19h</h3>
+:ET

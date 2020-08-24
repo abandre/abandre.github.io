@@ -5,6 +5,8 @@ title: Trabalhos de DP
 
 ## Entrega de Trabalhos
 
+A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. As demais disciplinas devem seguir o mesmo critério utilizado no primeiro semestre de 2020.
+
 ### Link para upload dos arquivos: <a href="https://bit.ly/3d1f4I3" target="_blank">https://bit.ly/3d1f4I3</a>
 
 #### 1) DP de APS:
@@ -23,4 +25,4 @@ title: Trabalhos de DP
  - Escolher um artigo científico em computação e fazer um resenha do artigo.
  - Renomear o arquivo para: **XYZ123-tap.pdf**, onde XYZ123 é o seu RA. 
 
-### Prazo de entrega: 30/05 as 21h
+### Prazo de entrega: Não definido ainda.
