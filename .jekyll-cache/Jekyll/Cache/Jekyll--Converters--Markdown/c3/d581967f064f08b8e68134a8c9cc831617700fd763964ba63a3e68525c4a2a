@@ -1,0 +1,104 @@
+I"H&<h2 id="módulos-do-kernel-no-linux">Módulos do Kernel no Linux</h2>
+
+<p>Vimos em aula que módulos são arquivos-objeto, parte do kernel, que são vinculados a ele em tempo de execução.</p>
+
+<p>Um módulo no linux é um código, geralmente drivers de dispositivos que podem ser carregados e descarregados sem a necessidade de reiniciar o sistema.</p>
+
+<p>Os módulos podem ser inseridos e removidos em um kernel em execução a qualquer tempo, exceto quando em uso.</p>
+
+<p>Os arquivos de drivers geralmente terminam com a extensão .ko (ou .o) e são armazenados em subdiretórios dentro de /lib/modules</p>
+
+<h3 id="comandos-para-gerenciamento-de-módulos">Comandos para Gerenciamento de Módulos</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">depmod</code> - Trabalha com dependências dos módulos</li>
+  <li><code class="highlighter-rouge">insmod</code> - Carrega módulos em um kernel em execução</li>
+  <li><code class="highlighter-rouge">lsmod</code>  - Lista informações sobre módulos carregados</li>
+  <li><code class="highlighter-rouge">modinfo</code> - Lista informações sobre um módulo</li>
+  <li><code class="highlighter-rouge">modprobe</code> - Carrega, descarrega e gera relatórios em módulos, e trata de suas dependências</li>
+  <li><code class="highlighter-rouge">rmmod</code> - Descarrega módulos de um kernel em execução</li>
+</ul>
+
+<h3 id="criando-um-módulo-no-linux">Criando um módulo no Linux</h3>
+
+<ul>
+  <li>são executados no espaço do kernel;</li>
+  <li>só podem executar funções definidas pelo kernel;</li>
+  <li>são orientados a eventos (executam uma determinada tarefa apenas quando recebem uma solicitação);</li>
+  <li>possuem uma função de inicialização que o prepara para receber as solicitações;</li>
+  <li>possuem uma função de finalização que libera os recursos alocados antes da desinstalação.</li>
+</ul>
+
+<p>Exemplo, Hello World!</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;linux/module.h&gt; 
+</span>
+<span class="n">MODULE_LICENSE</span><span class="p">(</span><span class="err">“</span><span class="n">Dual</span> <span class="n">BSD</span><span class="o">/</span><span class="n">GPL</span><span class="err">”</span><span class="p">);</span> 
+
+<span class="k">static</span> <span class="kt">int</span> <span class="nf">alo_inicio</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="n">printk</span><span class="p">(</span><span class="err">“</span><span class="n">Alo</span><span class="p">,</span> <span class="n">Mundo</span><span class="o">!</span><span class="err">\</span><span class="n">n</span><span class="err">”</span><span class="p">);</span> 
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">alo_fim</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="n">printk</span><span class="p">(</span><span class="err">“</span><span class="n">Adeus</span><span class="p">,</span> <span class="n">Mundo</span> <span class="n">Cruel</span><span class="o">!</span><span class="err">\</span><span class="n">n</span><span class="err">”</span><span class="p">);</span> 
+<span class="p">}</span> 
+
+<span class="n">module_init</span><span class="p">(</span><span class="n">alo_inicio</span><span class="p">);</span> 
+<span class="n">module_exit</span><span class="p">(</span><span class="n">alo_fim</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Agora, observe o código a seguir, que divide a contagem entre duas threads:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># multi_threaded.py
+</span><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
+
+<span class="n">COUNT</span> <span class="o">=</span> <span class="mi">50000000</span>
+
+<span class="k">def</span> <span class="nf">countdown</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+
+<span class="n">t1</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">countdown</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">COUNT</span><span class="o">//</span><span class="mi">2</span><span class="p">,))</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">countdown</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">COUNT</span><span class="o">//</span><span class="mi">2</span><span class="p">,))</span>
+
+<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">t1</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">t2</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">t1</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+<span class="n">t2</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'Time taken in seconds -'</span><span class="p">,</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="1-qual-a-configuração-da-sua-máquina">1. Qual a configuração da sua máquina?</h3>
+
+<h3 id="2-qual-deveria-ser-a-diferença-de-tempo-entre-as-duas-rotinas-apresentadas-single-e-multithreaded">2. Qual deveria ser a diferença de tempo entre as duas rotinas apresentadas (single e multithreaded)?</h3>
+
+<h3 id="3-qual-foi-a-diferença-no-tempo-de-execução-em-sua-máquina">3. Qual foi a diferença no tempo de execução em sua máquina?</h3>
+
+<h3 id="4-qual-o-tempo-de-execução-para-a-seguinte-rotina">4. Qual o tempo de execução para a seguinte rotina?</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">COUNT</span> <span class="o">=</span> <span class="mi">50000000</span>
+<span class="k">def</span> <span class="nf">countdown</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">pool</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">r1</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">countdown</span><span class="p">,</span> <span class="p">[</span><span class="n">COUNT</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">countdown</span><span class="p">,</span> <span class="p">[</span><span class="n">COUNT</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
+    <span class="n">pool</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">pool</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Time taken in seconds -'</span><span class="p">,</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="5-o-que-difere-da-rotina-anterior-para-a-rotina-multithreaded-apresentada-que-faz-com-que-essa-diferença-no-tempo-de-execução-aconteça">5. O que difere da rotina anterior para a rotina multithreaded apresentada, que faz com que essa diferença no tempo de execução aconteça?</h3>
+
+:ET

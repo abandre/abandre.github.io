@@ -1,0 +1,111 @@
+I"?
+<h2 id="informações-do-sistema-em-linux">Informações do Sistema em Linux</h2>
+
+<h3 id="nome-do-sistema">Nome do sistema</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">hostname</code></li>
+</ul>
+
+<h3 id="número-de-série-fabricante-e-modelo">Número de série, fabricante e modelo</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">sudo dmidecode -s system-serial-number</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">sudo dmidecode -s system-manufacturer</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">sudo dmidecode -s system-product-name</code></p>
+  </li>
+</ul>
+
+<h3 id="mais-informações-de-hardware">Mais informações de hardware</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">sudo dmidecode | more</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lshw | more</code></p>
+  </li>
+</ul>
+
+<h3 id="informações-específicas-sobre-a-cpu">Informações específicas sobre a CPU</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">cat /proc/cpuinfo</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lscpu</code></p>
+  </li>
+</ul>
+
+<h3 id="informações-sobre-memória">Informações sobre memória</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">free -h</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">swapon -s</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">vmstat</code></p>
+  </li>
+</ul>
+
+<h3 id="versão-do-sistema-operacional">Versão do Sistema Operacional</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">lsb_release -a</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">uname -a</code></p>
+  </li>
+</ul>
+
+<h3 id="informações-sobre-o-discos">Informações sobre o Discos</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">sudo fdisk -l</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lsblk</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">df -h</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">du -h</code></p>
+  </li>
+</ul>
+
+<h3 id="informações-sobre-outros-dispositivos">Informações sobre outros dispositivos</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">lspci</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lsusb</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">iwconfig</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lspci | grep -i vga</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lspci | grep -i audio</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">nvidia-smi</code></p>
+  </li>
+</ul>
+
+:ET

@@ -1,0 +1,93 @@
+I".<h2 id="informações-do-sistema-em-linux">Informações do Sistema em Linux</h2>
+
+<h3 id="nome-do-sistema">Nome do sistema</h3>
+
+<p>hostname</p>
+
+<h3 id="número-de-série-fabricante-e-modelo">Número de série, fabricante e modelo</h3>
+
+<p>sudo dmidecode -s system-serial-number</p>
+
+<p>sudo dmidecode -s system-manufacturer</p>
+
+<p>sudo dmidecode -s system-product-name</p>
+
+<h3 id="mais-informações-de-hardware">Mais informações de hardware</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>sudo dmidecode</td>
+      <td>more</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>lshw</td>
+      <td>more</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="informações-específicas-sobre-a-cpu">Informações específicas sobre a CPU</h3>
+
+<p>cat /proc/cpuinfo</p>
+
+<p>lscpu</p>
+
+<h3 id="informações-sobre-memória">Informações sobre memória</h3>
+
+<p>free -h</p>
+
+<p>swapon -s</p>
+
+<p>vmstat</p>
+
+<h3 id="versão-do-sistema-operacional">Versão do Sistema Operacional</h3>
+
+<p>lsb_release -a</p>
+
+<p>uname -a</p>
+
+<h3 id="informações-sobre-o-discos">Informações sobre o Discos</h3>
+
+<p>sudo fdisk -l</p>
+
+<p>lsblk</p>
+
+<p>df -h</p>
+
+<p>du -h</p>
+
+<h3 id="informações-sobre-outros-dispositivos">Informações sobre outros dispositivos</h3>
+
+<p><code class="highlighter-rouge">lspci</code></p>
+
+<p>lsusb</p>
+
+<p>iwconfig</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>lspci</td>
+      <td>grep -i vga</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>lspci</td>
+      <td>grep -i audio</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>nvidia-smi</p>
+
+:ET
