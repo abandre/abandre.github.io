@@ -1,9 +1,12 @@
 #include <linux/module.h> 
 
 MODULE_LICENSE("Dual BSD/GPL"); 
+MODULE_AUTHOR("Amaury André"); 
+MODULE_DESCRIPTION("Um modulo simples!"); 
+MODULE_VERSION("0.2"); 
 
-static int alo_inicio(void) { 
-    printk("Alo, Mundo!\n"); 
+static int alo_inicio(void) {
+    printk("Alo, Mundo 2!\n"); 
     return 0; 
 } 
 

@@ -1,4 +1,4 @@
-I"� <h2 id="módulos-do-kernel-no-linux">Módulos do Kernel no Linux</h2>
+I"@<h2 id="módulos-do-kernel-no-linux">Módulos do Kernel no Linux</h2>
 
 <p>Vimos em aula que módulos são arquivos-objeto, parte do kernel, que são vinculados a ele em tempo de execução.</p>
 
@@ -34,14 +34,17 @@
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;linux/module.h&gt; 
 </span>
 <span class="n">MODULE_LICENSE</span><span class="p">(</span><span class="s">"Dual BSD/GPL"</span><span class="p">);</span> 
+<span class="n">MODULE_AUTHOR</span><span class="p">(</span><span class="s">"Amaury André"</span><span class="p">);</span> 
+<span class="n">MODULE_DESCRIPTION</span><span class="p">(</span><span class="s">"Um modulo simples!"</span><span class="p">);</span> 
+<span class="n">MODULE_VERSION</span><span class="p">(</span><span class="s">"0.1"</span><span class="p">);</span> 
 
-<span class="k">static</span> <span class="kt">int</span> <span class="nf">alo_inicio</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span> 
-    <span class="n">printk</span><span class="p">(</span><span class="s">"Hello World!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> 
+<span class="k">static</span> <span class="kt">int</span> <span class="nf">alo_inicio</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printk</span><span class="p">(</span><span class="s">"Alo, Mundo!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
 <span class="p">}</span> 
 
 <span class="k">static</span> <span class="kt">void</span> <span class="nf">alo_fim</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span> 
-    <span class="n">printk</span><span class="p">(</span><span class="s">"Bye Bye!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> 
+    <span class="n">printk</span><span class="p">(</span><span class="s">"Adeus, Mundo Cruel!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> 
 <span class="p">}</span> 
 
 <span class="n">module_init</span><span class="p">(</span><span class="n">alo_inicio</span><span class="p">);</span> 
@@ -64,36 +67,81 @@ all:
 
 clean: 
        make <span class="nt">-C</span> /lib/modules/<span class="si">$(</span>shell <span class="nb">uname</span> <span class="nt">-r</span><span class="si">)</span>/build <span class="nv">M</span><span class="o">=</span><span class="si">$(</span>PWD<span class="si">)</span> clean
-
-
 </code></pre></div></div>
-<h3 id="1-qual-a-configuração-da-sua-máquina">1. Qual a configuração da sua máquina?</h3>
+<ul>
+  <li>obj-m – especifica os arquivos-objeto que serão usados para gerar os módulos carregáveis do kernel. Neste exemplo, será usado o arquivo alomundo.o para gerar o arquivo alomundo.ko.</li>
+  <li>-C diretório – esta opção muda para o diretório especificado antes de ler o Makefile (vai usar esse ambiente na geração dos módulos).</li>
+  <li>M diretório modules – vai para o diretório especificado antes de gerar os módulos (os arquivos serão armazenados nesse diretório).</li>
+</ul>
 
-<h3 id="2-qual-deveria-ser-a-diferença-de-tempo-entre-as-duas-rotinas-apresentadas-single-e-multithreaded">2. Qual deveria ser a diferença de tempo entre as duas rotinas apresentadas (single e multithreaded)?</h3>
+<h3 id="carregando-o-módulo">Carregando o módulo</h3>
 
-<h3 id="3-qual-foi-a-diferença-no-tempo-de-execução-em-sua-máquina">3. Qual foi a diferença no tempo de execução em sua máquina?</h3>
+<ul>
+  <li><code class="highlighter-rouge">sudo insmod alomundo.ko</code></li>
+</ul>
 
-<h3 id="4-qual-o-tempo-de-execução-para-a-seguinte-rotina">4. Qual o tempo de execução para a seguinte rotina?</h3>
+<h3 id="verificando-o-módulo">Verificando o módulo</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">lsmod</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">less /proc/modules</code></p>
+  </li>
+</ul>
 
-<span class="n">COUNT</span> <span class="o">=</span> <span class="mi">50000000</span>
-<span class="k">def</span> <span class="nf">countdown</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">while</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-        <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+<h3 id="informações-do-módulo">Informações do módulo</h3>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-    <span class="n">pool</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">r1</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">countdown</span><span class="p">,</span> <span class="p">[</span><span class="n">COUNT</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
-    <span class="n">r2</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">countdown</span><span class="p">,</span> <span class="p">[</span><span class="n">COUNT</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
-    <span class="n">pool</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="n">pool</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Time taken in seconds -'</span><span class="p">,</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+<ul>
+  <li><code class="highlighter-rouge">modinfo alomundo.ko</code></li>
+</ul>
+
+<h3 id="removendo-o-módulo">Removendo o módulo</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">sudo rmmod alomundo</code></li>
+</ul>
+
+<h3 id="log-do-sistema">Log do sistema</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">dmesg</code></li>
+</ul>
+
+<h3 id="parâmetros">Parâmetros</h3>
+
+<p>Passados em user-space para o insmod/modprobe.</p>
+
+<p>Exemplo:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">insmod meu_modulo.ko numero=3</code></li>
+</ul>
+
+<p>Tipos de dados padrão:</p>
+
+<ul>
+  <li>Byte</li>
+  <li>(u)short</li>
+  <li>(u)int</li>
+  <li>(u)long</li>
+  <li>charp</li>
+  <li>Bool</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">int</span><span class="err"> </span><span class="n">numero</span><span class="p">;</span>
+<span class="n">module_param</span> <span class="p">(</span><span class="n">numero</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 </code></pre></div></div>
 
-<h3 id="5-o-que-difere-da-rotina-anterior-para-a-rotina-multithreaded-apresentada-que-faz-com-que-essa-diferença-no-tempo-de-execução-aconteça">5. O que difere da rotina anterior para a rotina multithreaded apresentada, que faz com que essa diferença no tempo de execução aconteça?</h3>
+<h3 id="exercício-extra">Exercício Extra:</h3>
+
+<p>Criar 1 módulo que recebe um número inteiro e uma string como parâmetro e imprime a string o número desejado de vezes.</p>
+
+<h3 id="conclusão">Conclusão</h3>
+
+<p>Vimos neste artigo alguns comandos relacionados a módulos do Linux. Este assunto é parte do tópico 101 da certificação Linux LPIC-1.</p>
 
 :ET
