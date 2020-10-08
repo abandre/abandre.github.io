@@ -1,0 +1,62 @@
+I"I<h2 id="autenticação-de-usuário">Autenticação de Usuário</h2>
+
+<p><strong>Objetivo:</strong> Desenvolver um programa de Machine Learning para autenticação de usuário através da biometria por dinâmica de digitação.</p>
+
+<h2 id="introdução">Introdução</h2>
+
+<p>A dinâmica de digitação de senhas é um estudo para identificar se as pessoas podem ser distinguidas por seus ritmos de digitação, da mesma forma que a caligrafia é usada para identificar o autor de um texto escrito. As aplicações possíveis incluem atuar como uma impressão digital eletrônica ou em um mecanismo de controle de acesso. Uma impressão digital conectaria uma pessoa a um crime baseado em computador da mesma maneira que uma impressão digital física conecta uma pessoa à cena de um crime físico. O controle de acesso pode incorporar a dinâmica de pressionamento de tecla, exigindo que um usuário legítimo digite uma senha com o ritmo correto e autenticando continuamente esse usuário enquanto ele digita no teclado.</p>
+
+<h2 id="como-os-dados-foram-coletados">Como os dados foram coletados</h2>
+
+<p>Foi construído um aparelho de coleta de dados de pressionamento de tecla que consiste em: (1) um laptop executando o Windows XP; (2) um aplicativo de software para apresentar estímulos aos sujeitos e para registrar suas teclas; e (3) um temporizador de referência externa para registrar a hora dessas teclas. O software apresenta ao usuário a senha a ser digitada. Conforme o usuário digita a senha, ela é verificada quanto à exatidão. Se o usuário cometer um erro tipográfico, o aplicativo solicitará que o usuário redigite a senha. Dessa forma, são gravados os timestamps de data/hora para 50 senhas digitadas corretamente em cada sessão.</p>
+
+<p>Sempre que o usuário pressiona ou libera uma tecla, o aplicativo de software registra o evento (ou seja, keydown ou keyup), o nome da tecla envolvida e o timestamp de data/hora para o momento em que o evento de pressionamento de tecla ocorreu. Um relógio de referência externa foi usado para gerar os timestamps de data/hora altamente precisos. O relógio de referência demonstrou ser preciso em ± 200 microssegundos (usando um gerador de função para simular pressionamentos de tecla em intervalos fixos).</p>
+
+<p>Foram recrutados 51 sujeitos (digitadores) de dentro de uma comunidade universitária; todos os sujeitos completaram totalmente o estudo - não descartamos nenhum sujeito. Todos os sujeitos digitaram a mesma senha e cada sujeito digitou a senha 400 vezes em 8 sessões (50 repetições por sessão). Eles esperaram pelo menos um dia entre as sessões, para capturar algumas das variações do dia-a-dia da digitação de cada sujeito. A senha <strong>(.tie5Roanl)</strong> foi escolhida para representar uma senha forte de 10 caracteres.</p>
+
+<p>Os registros brutos de todos os pressionamentos de tecla e os timestamps de data/hora dos sujeitos foram analisados ​​para criar uma tabela de tempo de senha. A tabela de tempo de senha codifica os recursos de tempo para cada uma das 400 senhas que cada assunto digitou.</p>
+
+<h2 id="arquivo-de-dados">Arquivo de Dados</h2>
+
+<p>Arquivo contendo as informações de digitação: <a href="/soa/KSPasswordData.csv" target="_blank">KSPasswordData.csv</a></p>
+
+<h3 id="bibliotecas">Bibliotecas</h3>
+
+<p>Para a implementação do laboratório você muito provavelmente irá precisar instala as seguintes bibliotecas em python:</p>
+
+<ul>
+  <li>joblib</li>
+  <li>numpy</li>
+  <li>sklearn</li>
+  <li>pandas</li>
+</ul>
+
+<h3 id="exemplo">Exemplo</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">joblib</span> <span class="kn">import</span> <span class="n">dump</span><span class="p">,</span> <span class="n">load</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"KSPasswordData.csv"</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'subject'</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+<span class="n">clf</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+
+<span class="n">dump</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="s">'exemplo.jlb'</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h3 id="página-para-validação-de-resultados">Página para validação de resultados</h3>
+
+<p><a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a></p>
+
+<h3 id="conteúdo-original">Conteúdo original</h3>
+
+<p>http://www.cs.cmu.edu/~keystroke/</p>
+:ET
