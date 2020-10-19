@@ -67,12 +67,12 @@
 <h3 id="comandos-para-gerenciamento-de-módulos">Comandos para Gerenciamento de Módulos</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">depmod</code> - Trabalha com dependências dos módulos</li>
-  <li><code class="highlighter-rouge">insmod</code> - Carrega módulos em um kernel em execução</li>
-  <li><code class="highlighter-rouge">lsmod</code>  - Lista informações sobre módulos carregados</li>
-  <li><code class="highlighter-rouge">modinfo</code> - Lista informações sobre um módulo</li>
-  <li><code class="highlighter-rouge">modprobe</code> - Carrega, descarrega e gera relatórios em módulos, e trata de suas dependências</li>
-  <li><code class="highlighter-rouge">rmmod</code> - Descarrega módulos de um kernel em execução</li>
+  <li><code class="language-plaintext highlighter-rouge">depmod</code> - Trabalha com dependências dos módulos</li>
+  <li><code class="language-plaintext highlighter-rouge">insmod</code> - Carrega módulos em um kernel em execução</li>
+  <li><code class="language-plaintext highlighter-rouge">lsmod</code>  - Lista informações sobre módulos carregados</li>
+  <li><code class="language-plaintext highlighter-rouge">modinfo</code> - Lista informações sobre um módulo</li>
+  <li><code class="language-plaintext highlighter-rouge">modprobe</code> - Carrega, descarrega e gera relatórios em módulos, e trata de suas dependências</li>
+  <li><code class="language-plaintext highlighter-rouge">rmmod</code> - Descarrega módulos de um kernel em execução</li>
 </ul>
 
 <h3 id="criando-um-módulo-no-linux">Criando um módulo no Linux</h3>
@@ -108,10 +108,10 @@
 </code></pre></div></div>
 
 <ul>
-  <li><code class="highlighter-rouge">MODULE_LICENSE()</code> – esta macro informa a licença do módulo (no exemplo, o código é disponibilizado sob as licenças BSD e GPL).</li>
-  <li><code class="highlighter-rouge">module_init()</code> – macro que define quais funções são chamadas quando o módulo é carregado. Neste exemplo, apenas a função alo_inicio() é chamada.</li>
-  <li><code class="highlighter-rouge">module_exit()</code> – macro que define quais funções são chamadas antes do módulo ser removido. Neste exemplo, apenas a função alo_fim() é chamada.</li>
-  <li><code class="highlighter-rouge">printk()</code> – função que escreve mensagens do kernel em /var/log/syslog.</li>
+  <li><code class="language-plaintext highlighter-rouge">MODULE_LICENSE()</code> – esta macro informa a licença do módulo (no exemplo, o código é disponibilizado sob as licenças BSD e GPL).</li>
+  <li><code class="language-plaintext highlighter-rouge">module_init()</code> – macro que define quais funções são chamadas quando o módulo é carregado. Neste exemplo, apenas a função alo_inicio() é chamada.</li>
+  <li><code class="language-plaintext highlighter-rouge">module_exit()</code> – macro que define quais funções são chamadas antes do módulo ser removido. Neste exemplo, apenas a função alo_fim() é chamada.</li>
+  <li><code class="language-plaintext highlighter-rouge">printk()</code> – função que escreve mensagens do kernel em /var/log/syslog.</li>
 </ul>
 
 <p>Para compilar e gerar o arquivo .ko do módulo, crie o arquivo Makefile.</p>
@@ -133,36 +133,36 @@ clean:
 <h3 id="carregando-o-módulo">Carregando o módulo</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">sudo insmod alomundo.ko</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sudo insmod alomundo.ko</code></li>
 </ul>
 
 <h3 id="verificando-o-módulo">Verificando o módulo</h3>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">lsmod</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lsmod</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">less /proc/modules</code></p>
+    <p><code class="language-plaintext highlighter-rouge">less /proc/modules</code></p>
   </li>
 </ul>
 
 <h3 id="informações-do-módulo">Informações do módulo</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">modinfo alomundo.ko</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modinfo alomundo.ko</code></li>
 </ul>
 
 <h3 id="removendo-o-módulo">Removendo o módulo</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">sudo rmmod alomundo</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sudo rmmod alomundo</code></li>
 </ul>
 
 <h3 id="log-do-sistema">Log do sistema</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">dmesg</code></li>
+  <li><code class="language-plaintext highlighter-rouge">dmesg</code></li>
 </ul>
 
 <h3 id="parâmetros">Parâmetros</h3>
@@ -172,7 +172,7 @@ clean:
 <p>Exemplo:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">insmod meu_modulo.ko numero=3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">insmod meu_modulo.ko numero=3</code></li>
 </ul>
 
 <p>Tipos de dados padrão:</p>

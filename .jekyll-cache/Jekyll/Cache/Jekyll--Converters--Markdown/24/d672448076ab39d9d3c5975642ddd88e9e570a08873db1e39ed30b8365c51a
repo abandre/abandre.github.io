@@ -1,4 +1,4 @@
-I">$<h2 id="alocação-de-memória-principal">Alocação de memória principal</h2>
+I"w$<h2 id="alocação-de-memória-principal">Alocação de memória principal</h2>
 
 <p><strong>Objetivo:</strong> Simular e avaliar diferentes técnicas de alocação/liberação de memória: first fit, best fit, worst fit.  Usando lista encadeada para gerenciamento de memória.</p>
 
@@ -7,13 +7,13 @@
 <p>A <strong>componente de memória</strong> exporta as seguintes funções:</p>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">int alocate_mem(int process_id, int num_units)</code>: aloca <em>num_units</em> unidades de memória para um processo cujo id é <em>process_id</em>. Se for bem sucedido, retorna 1. Caso contrário, retorna -1.</p>
+    <p><code class="language-plaintext highlighter-rouge">int alocate_mem(int process_id, int num_units)</code>: aloca <em>num_units</em> unidades de memória para um processo cujo id é <em>process_id</em>. Se for bem sucedido, retorna 1. Caso contrário, retorna -1.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">int deallocate_mem(int process_id)</code>: desaloca a memória alocada para o processo cujo id é <em>process_id</em>. Ele retorna 1, se for bem-sucedido, caso contrário, -1.</p>
+    <p><code class="language-plaintext highlighter-rouge">int deallocate_mem(int process_id)</code>: desaloca a memória alocada para o processo cujo id é <em>process_id</em>. Ele retorna 1, se for bem-sucedido, caso contrário, -1.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">int fragment_count()</code>: retorna o número de buracos (fragmentos de tamanhos 1 ou 2 unidades).</p>
+    <p><code class="language-plaintext highlighter-rouge">int fragment_count()</code>: retorna o número de buracos (fragmentos de tamanhos 1 ou 2 unidades).</p>
   </li>
 </ul>
 

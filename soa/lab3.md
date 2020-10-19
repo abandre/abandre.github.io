@@ -63,6 +63,31 @@ dump(clf, 'exemplo.jlb')
 
 <a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a>
 
+### Relatório
+
+Entregar um relatório descrevendo o algoritmo de classificação usado, exceto o algoritmo de KNN ou K-Vizinhos. Descrever no relatório também quais parâmetros foram ajustados no treinamento do modelo. Apresentar os resultados para o conjunto de teste e para o conjunto de validação, calculados na página <a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a>.
+
 ### Conteúdo original
 
 <a href="http://www.cs.cmu.edu/~keystroke/" target="_blank">http://www.cs.cmu.edu/~keystroke/</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,22 +1,22 @@
-I"<h2 id="informações-do-sistema-em-linux">Informações do Sistema em Linux</h2>
+I"�<h2 id="informações-do-sistema-em-linux">Informações do Sistema em Linux</h2>
 
 <h3 id="nome-do-sistema">Nome do sistema</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">hostname</code></li>
+  <li><code class="language-plaintext highlighter-rouge">hostname</code></li>
 </ul>
 
 <h3 id="número-de-série-fabricante-e-modelo">Número de série, fabricante e modelo</h3>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">sudo dmidecode -s system-serial-number</code></p>
+    <p><code class="language-plaintext highlighter-rouge">sudo dmidecode -s system-serial-number</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">sudo dmidecode -s system-manufacturer</code></p>
+    <p><code class="language-plaintext highlighter-rouge">sudo dmidecode -s system-manufacturer</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">sudo dmidecode -s system-product-name</code></p>
+    <p><code class="language-plaintext highlighter-rouge">sudo dmidecode -s system-product-name</code></p>
   </li>
 </ul>
 
@@ -24,10 +24,10 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">sudo dmidecode | more</code></p>
+    <p><code class="language-plaintext highlighter-rouge">sudo dmidecode | more</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">lshw | more</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lshw | more</code></p>
   </li>
 </ul>
 
@@ -35,10 +35,10 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">cat /proc/cpuinfo</code></p>
+    <p><code class="language-plaintext highlighter-rouge">cat /proc/cpuinfo</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">lscpu</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lscpu</code></p>
   </li>
 </ul>
 
@@ -46,13 +46,13 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">free -h</code></p>
+    <p><code class="language-plaintext highlighter-rouge">free -h</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">swapon -s</code></p>
+    <p><code class="language-plaintext highlighter-rouge">swapon -s</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">vmstat</code></p>
+    <p><code class="language-plaintext highlighter-rouge">vmstat</code></p>
   </li>
 </ul>
 
@@ -60,10 +60,10 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">lsb_release -a</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lsb_release -a</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">uname -a</code></p>
+    <p><code class="language-plaintext highlighter-rouge">uname -a</code></p>
   </li>
 </ul>
 
@@ -71,16 +71,16 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">sudo fdisk -l</code></p>
+    <p><code class="language-plaintext highlighter-rouge">sudo fdisk -l</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">lsblk</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lsblk</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">df -h</code></p>
+    <p><code class="language-plaintext highlighter-rouge">df -h</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">du -h</code></p>
+    <p><code class="language-plaintext highlighter-rouge">du -h</code></p>
   </li>
 </ul>
 
@@ -88,22 +88,22 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">lspci</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lspci</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">lsusb</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lsusb</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">iwconfig</code></p>
+    <p><code class="language-plaintext highlighter-rouge">iwconfig</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">lspci | grep -i vga</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lspci | grep -i vga</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">lspci | grep -i audio</code></p>
+    <p><code class="language-plaintext highlighter-rouge">lspci | grep -i audio</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">nvidia-smi</code></p>
+    <p><code class="language-plaintext highlighter-rouge">nvidia-smi</code></p>
   </li>
 </ul>
 
@@ -111,10 +111,10 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">sudo apt-get install inxi</code></p>
+    <p><code class="language-plaintext highlighter-rouge">sudo apt-get install inxi</code></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">inxi -F</code></p>
+    <p><code class="language-plaintext highlighter-rouge">inxi -F</code></p>
   </li>
 </ul>
 
