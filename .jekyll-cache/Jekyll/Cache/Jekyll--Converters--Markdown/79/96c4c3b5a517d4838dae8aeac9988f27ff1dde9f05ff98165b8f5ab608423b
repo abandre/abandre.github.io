@@ -1,0 +1,85 @@
+I"�<h2 id="cronograma-de-aulas">Cronograma de Aulas</h2>
+
+<ul>
+  <li>[18/08/20] - Introdução - <a href="/soa/Aula1-Introducao.pdf" target="_blank">Slide</a></li>
+  <li>[25/08/20] - Boot e Kernel - <a href="/soa/Aula2-Boot-Kernel.pdf" target="_blank">Slide</a></li>
+  <li>[27/08/20] - Aula Prática 1 - <a href="pratica1" target="_blank">Tutorial</a></li>
+  <li>[27/08/20] - Aula Prática 2 - <a href="pratica2" target="_blank">Tutorial</a></li>
+  <li>[01/09/20] - Processos e Threads - <a href="/soa/Aula3-Processo-Thread.pdf" target="_blank">Slide</a></li>
+  <li>[15/09/20] - Gerenciamento de Memória - <a href="/soa/Aula4-Gerenc-Memoria.pdf" target="_blank">Slide</a></li>
+  <li>[22/09/20] - Memória Virtual - <a href="/soa/Aula5-Memoria-Virtual.pdf" target="_blank">Slide</a></li>
+  <li>[29/09/20] - Segentação - <a href="/soa/Aula6-Segmentação.pdf" target="_blank">Slide</a></li>
+  <li>[06/10/20] - Segurança - <a href="/soa/Aula7-Seguranca.pdf" target="_blank">Slide</a></li>
+  <li>[13/10/20] - Entrada e Saída - Hardware - <a href="/soa/Aula8-ESHardware.pdf" target="_blank">Slide</a></li>
+  <li>[20/10/20] - Entrada e Saída - Software - <a href="/soa/Aula9-ESSoftware.pdf" target="_blank">Slide</a></li>
+  <li>[27/10/20] - Sistema de Arquivos - <a href="/soa/Aula10-SistemaArquivos.pdf" target="_blank">Slide</a></li>
+</ul>
+
+<h2 id="entrega-de-trabalhos">Entrega de Trabalhos</h2>
+
+<h3 id="link-para-upload-dos-arquivos">Link para upload dos arquivos:</h3>
+<ul>
+  <li><a href="https://bit.ly/2FgSfV6" target="_blank">https://bit.ly/2FgSfV6</a></li>
+</ul>
+
+<h4 id="1-exercícios">1) Exercícios:</h4>
+<ul>
+  <li>Link para os exercícios de revisão: <a href="https://bit.ly/31pSntS" target="_blank">https://bit.ly/31pSntS</a></li>
+  <li><strong>Prazo de entrega:</strong> 18/08/2020.</li>
+  <li>Valor: 0,5pt</li>
+</ul>
+
+<h4 id="2-laboratório-1">2) Laboratório 1:</h4>
+<ul>
+  <li>Enunciado do laboratório: <a href="lab1" target="_blank">Lab01</a></li>
+  <li>Renomear o arquivo para: <strong>XYZ123-lab1.pdf</strong>, onde XYZ123 é o seu RA.</li>
+  <li><strong>Prazo de entrega:</strong> 10/09/2020.</li>
+  <li>Valor: 1,0pt</li>
+</ul>
+
+<h4 id="3-laboratório-2">3) Laboratório 2:</h4>
+<ul>
+  <li>Enunciado do laboratório: <a href="lab2" target="_blank">Lab02</a></li>
+  <li>Renomear o arquivo para: <strong>XYZ123-lab2.pdf</strong>, onde XYZ123 é o seu RA.</li>
+  <li><strong>Prazo de entrega:</strong> 01/10/2020.</li>
+  <li>Valor: 1,0pt</li>
+</ul>
+
+<h4 id="4-exercícios">4) Exercícios:</h4>
+<ul>
+  <li>Link para os exercícios de revisão: <a href="https://bit.ly/2RZ9PQj" target="_blank">https://bit.ly/2RZ9PQj</a></li>
+  <li><strong>Prazo de entrega:</strong> 29/09/2020.</li>
+  <li>Valor: 0,5pt</li>
+</ul>
+
+<h4 id="5-laboratório-3">5) Laboratório 3:</h4>
+<ul>
+  <li>Enunciado do laboratório: <a href="lab3" target="_blank">Lab03</a></li>
+  <li>Renomear o arquivo para: <strong>XYZ123-lab3.zip</strong>, onde XYZ123 é o seu RA.</li>
+  <li>O arquivo zip ou rar deve conter: Relatório e o modelo treinado (.jlb)</li>
+  <li><strong>Prazo de entrega:</strong> 05/11/2020.</li>
+  <li>Valor: 1,0pt + adicional de 0,5pt proporcional a taxa de acerto do modelo.</li>
+</ul>
+
+<h4 id="6-exercício">6) Exercício:</h4>
+<ul>
+  <li>Link para o exercício de Entrada e Saída: <a href="https://bit.ly/3drtv97" target="_blank">https://bit.ly/3drtv97</a></li>
+  <li><strong>Prazo de entrega:</strong> 20/10/2020.</li>
+  <li>Valor: 0,5pt</li>
+</ul>
+
+<h4 id="7-exercício">7) Exercício:</h4>
+<ul>
+  <li>Exercício de Discos RAID: Acessar a tarefa no Teams, na disciplina de SOA.</li>
+  <li><strong>Prazo de entrega:</strong> 27/10/2020.</li>
+  <li>Renomear o arquivo para: <strong>XYZ123-raid.pdf</strong>, onde XYZ123 é o seu RA.</li>
+  <li>Anexar o relatório no Teams <strong>E</strong> enviar no link de submissão acima.</li>
+  <li>Valor: 0,5pt</li>
+</ul>
+
+<h4 id="8-revisão">8) Revisão</h4>
+<ul>
+  <li>Criar um diagrama de aranha com até 3 níveis para cada tópico visto em aula.</li>
+  <li><strong>Prazo para realização:</strong> 10/11/2020.</li>
+</ul>
+:ET

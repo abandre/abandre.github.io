@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Horário de Aulas – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
+    <title>ATC - Aspectos Teóricos da Computação – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -15,8 +15,8 @@
     <meta name="author" content="Prof. Amaury André" />
 
     
-    <meta property="og:title" content="Horário de Aulas" />
-    <meta property="twitter:title" content="Horário de Aulas" />
+    <meta property="og:title" content="ATC - Aspectos Teóricos da Computação" />
+    <meta property="twitter:title" content="ATC - Aspectos Teóricos da Computação" />
     
 
     <!--[if lt IE 9]>
@@ -49,28 +49,48 @@
     </div>
 
     <div id="main" role="main" class="container">
-      <article class="page">
-
-  <h1>Horário de Aulas</h1>
+      <article class="post">
+  <h1>ATC - Aspectos Teóricos da Computação</h1>
 
   <div class="entry">
-    <h3 id="cc1p43">CC1P43</h3>
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+           type="password"
+           name="password"
+           placeholder=""
+           autofocus />
 
-<p>Turma ainda não confirmada.</p>
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
-<h3 id="cc2p43-cc3p43">CC2P43, CC3P43</h3>
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
 
-<p>Horário de aulas da turma do <a href="/horarios/2_3_sem_2021_1.pdf" target="_blank">segundo ano</a></p>
-
-<h3 id="cc4p43-e-cc5p43">CC4P43 e CC5P43</h3>
-
-<p>Horário de aulas da turma do <a href="/horarios/4_5_sem_2021_1.pdf" target="_blank">terceiro ano</a></p>
-
-<h3 id="cc6p43-e-cc7p43">CC6P43 e CC7P43</h3>
-
-<p>Horário de aulas da turma do <a href="/horarios/6_7_sem_2021_1.pdf" target="_blank">quarto ano</a></p>
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
+</div>
 
   </div>
+
+  <div class="date">
+    Written on 
+  </div>
+
+  
 </article>
 
     </div>
@@ -105,8 +125,8 @@
 
 		ga('create', 'UA-158977996-1', 'auto');
 		ga('send', 'pageview', {
-		  'page': '/horarios/',
-		  'title': 'Horário de Aulas'
+		  'page': '/1s20_protected/2020-02-23-atc/',
+		  'title': 'ATC - Aspectos Teóricos da Computação'
 		});
 	</script>
 	<!-- End Google Analytics -->

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4/5sem: SO - Sistema Operacionais (1s2021) – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
+    
+    <meta name="author" content="Prof. Amaury André" />
+
+    
+    <meta property="og:title" content="4/5sem: SO - Sistema Operacionais (1s2021)" />
+    <meta property="twitter:title" content="4/5sem: SO - Sistema Operacionais (1s2021)" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Prof. Amaury André - Ciência da Computação - UNIP Limeira" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/perfil.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Prof. Amaury André</a></h1>
+            <p class="site-description">Ciência da Computação - UNIP Limeira</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>4/5sem: SO - Sistema Operacionais (1s2021)</h1>
+
+  <div class="entry">
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+           type="password"
+           name="password"
+           placeholder=""
+           autofocus />
+
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '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',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
+
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
+</div>
+
+  </div>
+
+  <div class="date">
+    Written on February 23, 2020
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:amaury.andre@gmail.com"><i class="svg-icon email"></i></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/amaury-andré-38960424"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+<a href="https://youtube.com/user/aandre1985"><i class="svg-icon youtube"></i></a>
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-158977996-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/so/',
+		  'title': '4/5sem: SO - Sistema Operacionais (1s2021)'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>
