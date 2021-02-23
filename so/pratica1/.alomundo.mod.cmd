@@ -1,0 +1,1 @@
+cmd_/home/amaury/site/abandre.github.io/so/pratica1/alomundo.mod := { echo  /home/amaury/site/abandre.github.io/so/pratica1/alomundo.o; echo; } > /home/amaury/site/abandre.github.io/so/pratica1/alomundo.mod

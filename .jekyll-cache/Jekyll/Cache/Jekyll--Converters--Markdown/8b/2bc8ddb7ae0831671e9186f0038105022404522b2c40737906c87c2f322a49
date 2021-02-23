@@ -1,0 +1,147 @@
+I"�<h2 id="módulos-do-kernel-no-linux">Módulos do Kernel no Linux</h2>
+
+<p>Vimos em aula que módulos são arquivos-objeto, parte do kernel, que são vinculados a ele em tempo de execução.</p>
+
+<p>Um módulo no linux é um código, geralmente drivers de dispositivos que podem ser carregados e descarregados sem a necessidade de reiniciar o sistema.</p>
+
+<p>Os módulos podem ser inseridos e removidos em um kernel em execução a qualquer tempo, exceto quando em uso.</p>
+
+<p>Os arquivos de drivers geralmente terminam com a extensão .ko (ou .o) e são armazenados em subdiretórios dentro de /lib/modules</p>
+
+<h3 id="comandos-para-gerenciamento-de-módulos">Comandos para Gerenciamento de Módulos</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">depmod</code> - Trabalha com dependências dos módulos</li>
+  <li><code class="language-plaintext highlighter-rouge">insmod</code> - Carrega módulos em um kernel em execução</li>
+  <li><code class="language-plaintext highlighter-rouge">lsmod</code>  - Lista informações sobre módulos carregados</li>
+  <li><code class="language-plaintext highlighter-rouge">modinfo</code> - Lista informações sobre um módulo</li>
+  <li><code class="language-plaintext highlighter-rouge">modprobe</code> - Carrega, descarrega e gera relatórios em módulos, e trata de suas dependências</li>
+  <li><code class="language-plaintext highlighter-rouge">rmmod</code> - Descarrega módulos de um kernel em execução</li>
+</ul>
+
+<h3 id="criando-um-módulo-no-linux">Criando um módulo no Linux</h3>
+
+<ul>
+  <li>são executados no espaço do kernel;</li>
+  <li>só podem executar funções definidas pelo kernel;</li>
+  <li>são orientados a eventos (executam uma determinada tarefa apenas quando recebem uma solicitação);</li>
+  <li>possuem uma função de inicialização que o prepara para receber as solicitações;</li>
+  <li>possuem uma função de finalização que libera os recursos alocados antes da desinstalação.</li>
+</ul>
+
+<p>Exemplo, Hello World!</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;linux/module.h&gt; 
+</span>
+<span class="n">MODULE_LICENSE</span><span class="p">(</span><span class="s">"Dual BSD/GPL"</span><span class="p">);</span> 
+<span class="n">MODULE_AUTHOR</span><span class="p">(</span><span class="s">"Amaury André"</span><span class="p">);</span> 
+<span class="n">MODULE_DESCRIPTION</span><span class="p">(</span><span class="s">"Um modulo simples!"</span><span class="p">);</span> 
+<span class="n">MODULE_VERSION</span><span class="p">(</span><span class="s">"0.1"</span><span class="p">);</span> 
+
+<span class="k">static</span> <span class="kt">int</span> <span class="nf">alo_inicio</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printk</span><span class="p">(</span><span class="s">"Alo, Mundo!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> 
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">alo_fim</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="n">printk</span><span class="p">(</span><span class="s">"Adeus, Mundo Cruel!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> 
+<span class="p">}</span> 
+
+<span class="n">module_init</span><span class="p">(</span><span class="n">alo_inicio</span><span class="p">);</span> 
+<span class="n">module_exit</span><span class="p">(</span><span class="n">alo_fim</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MODULE_LICENSE()</code> – esta macro informa a licença do módulo (no exemplo, o código é disponibilizado sob as licenças BSD e GPL).</li>
+  <li><code class="language-plaintext highlighter-rouge">module_init()</code> – macro que define quais funções são chamadas quando o módulo é carregado. Neste exemplo, apenas a função alo_inicio() é chamada.</li>
+  <li><code class="language-plaintext highlighter-rouge">module_exit()</code> – macro que define quais funções são chamadas antes do módulo ser removido. Neste exemplo, apenas a função alo_fim() é chamada.</li>
+  <li><code class="language-plaintext highlighter-rouge">printk()</code> – função que escreve mensagens do kernel em /var/log/syslog.</li>
+</ul>
+
+<p>Para compilar e gerar o arquivo .ko do módulo, crie o arquivo Makefile.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>obj-m :<span class="o">=</span> alomundo.o 
+
+all: 
+       make <span class="nt">-C</span> /lib/modules/<span class="si">$(</span>shell <span class="nb">uname</span> <span class="nt">-r</span><span class="si">)</span>/build <span class="nv">M</span><span class="o">=</span><span class="si">$(</span>PWD<span class="si">)</span> modules 
+
+clean: 
+       make <span class="nt">-C</span> /lib/modules/<span class="si">$(</span>shell <span class="nb">uname</span> <span class="nt">-r</span><span class="si">)</span>/build <span class="nv">M</span><span class="o">=</span><span class="si">$(</span>PWD<span class="si">)</span> clean
+</code></pre></div></div>
+<ul>
+  <li>obj-m – especifica os arquivos-objeto que serão usados para gerar os módulos carregáveis do kernel. Neste exemplo, será usado o arquivo alomundo.o para gerar o arquivo alomundo.ko.</li>
+  <li>-C diretório – esta opção muda para o diretório especificado antes de ler o Makefile (vai usar esse ambiente na geração dos módulos).</li>
+  <li>M diretório modules – vai para o diretório especificado antes de gerar os módulos (os arquivos serão armazenados nesse diretório).</li>
+</ul>
+
+<h3 id="carregando-o-módulo">Carregando o módulo</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sudo insmod alomundo.ko</code></li>
+</ul>
+
+<h3 id="verificando-o-módulo">Verificando o módulo</h3>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">lsmod</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">less /proc/modules</code></p>
+  </li>
+</ul>
+
+<h3 id="informações-do-módulo">Informações do módulo</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">modinfo alomundo.ko</code></li>
+</ul>
+
+<h3 id="removendo-o-módulo">Removendo o módulo</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sudo rmmod alomundo</code></li>
+</ul>
+
+<h3 id="log-do-sistema">Log do sistema</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">dmesg</code></li>
+</ul>
+
+<h3 id="parâmetros">Parâmetros</h3>
+
+<p>Passados em user-space para o insmod/modprobe.</p>
+
+<p>Exemplo:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">insmod meu_modulo.ko numero=3</code></li>
+</ul>
+
+<p>Tipos de dados padrão:</p>
+
+<ul>
+  <li>Byte</li>
+  <li>(u)short</li>
+  <li>(u)int</li>
+  <li>(u)long</li>
+  <li>charp</li>
+  <li>Bool</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">int</span><span class="err"> </span><span class="n">numero</span><span class="p">;</span>
+<span class="n">module_param</span> <span class="p">(</span><span class="n">numero</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="exercício-extra">Exercício extra:</h3>
+
+<p>Criar 1 módulo que recebe um número inteiro e uma string como parâmetro e imprime a string o número desejado de vezes.</p>
+
+<h3 id="conclusão">Conclusão</h3>
+
+<p>Vimos neste artigo alguns comandos relacionados a módulos do Linux. Este assunto é parte do tópico 101 da certificação Linux LPIC-1.</p>
+
+:ET
