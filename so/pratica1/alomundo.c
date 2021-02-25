@@ -6,12 +6,12 @@ MODULE_DESCRIPTION("Um modulo simples!");
 MODULE_VERSION("0.1"); 
 
 static int alo_inicio(void) {
-    printk("Alo, Mundo!\n"); 
+    printk("Alo, como vai?\n"); 
     return 0; 
 } 
 
 static void alo_fim(void) { 
-    printk("Adeus, Mundo Cruel!\n"); 
+    printk("Adeus, fui!\n"); 
 } 
 
 module_init(alo_inicio); 
