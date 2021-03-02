@@ -1,0 +1,63 @@
+I"G<h2 id="processos">Processos</h2>
+
+<p>O pacote <code class="language-plaintext highlighter-rouge">multiprocessing</code> suporta processos de spawning, oferecendo simultaneidade local e remota, evitando efetivamente o <em>Global Interpreter Lock</em> usando subprocessos em vez de threads. Devido a isso, o módulo de multiprocessamento permite que o programador aproveite totalmente vários processadores em uma determinada máquina. Ele roda em Unix e Windows.</p>
+
+<p>Exemplo de aplicação:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">ola</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"ola "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">pool</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">r1</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">ola</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">ola</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="n">pool</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">pool</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Time taken in seconds -'</span><span class="p">,</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Exercício:</p>
+
+<p>Calcular uma aproximação do valor de 𝜋 a partir da seguinte série:</p>
+
+<p><img src="formula.png" /></p>
+
+<p>De acordo com a série anterior, a precisão do valor de 𝜋 aumenta quanto maior for o parâmetro <code class="language-plaintext highlighter-rouge">N</code> utilizado.</p>
+
+<p>Como referência, podesmos assumir o valor exato de 𝜋 como sendo o fornecido pela biblioteca <code class="language-plaintext highlighter-rouge">numpy</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+</code></pre></div></div>
+<p>O objetivo de exercício é computar uma aprocimação de 𝜋 usando a fórmula anterior para diferentes valores de <code class="language-plaintext highlighter-rouge">N</code>.</p>
+
+<p>Usando a biblioteca <code class="language-plaintext highlighter-rouge">multiprocessing</code>, escreva um programa em python que:</p>
+
+<ul>
+  <li>
+    <p>Cria um pool de processos para rodar tarefas em paralelo</p>
+  </li>
+  <li>
+    <p>O tamanho do pool deve ser o número de cores da sua CPU menos 1 (8 cores -&gt; pool de 7 processos)</p>
+  </li>
+  <li>
+    <p>Escreva uma função que rode em paralelo, chamada py_pi. A função deve receber como parâmetro o valor <code class="language-plaintext highlighter-rouge">N</code> que especifica o número de termos paa calcular a aproximação de 𝜋.</p>
+  </li>
+  <li>
+    <p>A função deve imprimir o valor calculado, o valor real e a diferença do caluclado para o real.</p>
+  </li>
+  <li>
+    <p>Rode as tarefas em paralelo, começando com N=10 aumentando 5 vezes para cada processo subsequente (por exemplo: 10, 50, 250, 1250…)</p>
+  </li>
+</ul>
+
+<p>Por fim, espere todos os processos terminarem e imprima o tempo total decorrido.</p>
+
+<!-- https://events.prace-ri.eu/event/549/sessions/1685/attachments/462/667/Exercise_1_-_multiprocessing.pdf -->
+:ET
