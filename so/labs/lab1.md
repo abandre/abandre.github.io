@@ -59,5 +59,11 @@ Usando a biblioteca `multiprocessing`, escreva um programa em python que:
 
 Por fim, espere todos os processos terminarem e imprima o tempo total decorrido.
 
+Para entregar, façam um relatório descrevendo:
+
+- A configuração da sua máquina (principalmente o número de núcleos)
+- O tempo total de execução
+- Um print do gerenciador de tarefas ou da saída do comando `top` no linux
+
 
 <!-- https://events.prace-ri.eu/event/549/sessions/1685/attachments/462/667/Exercise_1_-_multiprocessing.pdf -->
