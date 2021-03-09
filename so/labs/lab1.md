@@ -42,7 +42,7 @@ Como referência, podesmos assumir o valor exato de 𝜋 como sendo o fornecido 
 import numpy as np
 print(np.pi)
 ```
-O objetivo de exercício é computar uma aprocimação de 𝜋 usando a fórmula anterior para diferentes valores de `N`.
+O objetivo de exercício é computar uma aproximação de 𝜋 usando a fórmula anterior para diferentes valores de `N`.
 
 Usando a biblioteca `multiprocessing`, escreva um programa em python que:
 
@@ -52,7 +52,7 @@ Usando a biblioteca `multiprocessing`, escreva um programa em python que:
 
 - Escreva uma função que rode em paralelo, chamada py_pi. A função deve receber como parâmetro o valor `N` que especifica o número de termos paa calcular a aproximação de 𝜋.
 
-- A função deve imprimir o valor calculado, o valor real e a diferença do caluclado para o real.
+- A função deve imprimir o valor calculado, o valor real e a diferença do calculado para o real.
 
 - Rode as tarefas em paralelo, começando com N=10 aumentando 5 vezes para cada processo subsequente (por exemplo: 10, 50, 250, 1250...)
 
@@ -63,7 +63,7 @@ Para entregar, façam um relatório descrevendo:
 
 - A configuração da sua máquina (principalmente o número de núcleos)
 - O tempo total de execução
-- Um print do gerenciador de tarefas ou da saída do comando `top` no linux
+- Um print do gerenciador de tarefas ou da saída do comando `top` no linux (para gerar o print, aumente o valor de N, para que dê tempo do print pegar os processos em execução)
 
 
 <!-- https://events.prace-ri.eu/event/549/sessions/1685/attachments/462/667/Exercise_1_-_multiprocessing.pdf -->

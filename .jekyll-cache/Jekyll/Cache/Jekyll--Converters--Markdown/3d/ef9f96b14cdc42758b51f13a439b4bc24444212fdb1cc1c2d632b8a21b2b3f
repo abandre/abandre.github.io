@@ -1,0 +1,84 @@
+I"w<h2 id="threads">Threads</h2>
+
+<p>Este laboratório cobre os fundamentos de multithreading na linguagem de programação Python. Assim como o multiprocessamento, o multithreading é uma forma de realizar multitarefa. Em multithreading, usaremos o conceito de threads visto em aula.</p>
+
+<p>Em Python, o módulo de <code class="language-plaintext highlighter-rouge">threading</code> fornece uma API muito simples e intuitiva para gerar vários threads em um programa.</p>
+
+<p>Vamos considerar um exemplo simples usando o módulo de <code class="language-plaintext highlighter-rouge">threading</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">threading</span> 
+  
+<span class="k">def</span> <span class="nf">print_cube</span><span class="p">(</span><span class="n">num</span><span class="p">):</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">"Cube: {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span><span class="p">))</span> 
+  
+<span class="k">def</span> <span class="nf">print_square</span><span class="p">(</span><span class="n">num</span><span class="p">):</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">"Square: {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="n">num</span><span class="p">))</span> 
+  
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="c1"># creating threads 
+</span>    <span class="n">t1</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">print_square</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,))</span> 
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">print_cube</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,))</span> 
+  
+    <span class="c1"># starting thread 1 
+</span>    <span class="n">t1</span><span class="o">.</span><span class="n">start</span><span class="p">()</span> 
+    <span class="c1"># starting thread 2 
+</span>    <span class="n">t2</span><span class="o">.</span><span class="n">start</span><span class="p">()</span> 
+  
+    <span class="c1"># wait until thread 1 is completely executed 
+</span>    <span class="n">t1</span><span class="o">.</span><span class="n">join</span><span class="p">()</span> 
+    <span class="c1"># wait until thread 2 is completely executed 
+</span>    <span class="n">t2</span><span class="o">.</span><span class="n">join</span><span class="p">()</span> 
+  
+    <span class="k">print</span><span class="p">(</span><span class="s">"Done!"</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>Exercício:</p>
+
+<p>Calcular uma aproximação do valor da função exponencial a partir da seguinte série:</p>
+
+<p><img src="formula.png" /></p>
+
+<p>De acordo com a série anterior, a precisão do valor da exponencial aumenta quanto maior for o parâmetro <code class="language-plaintext highlighter-rouge">N</code> utilizado.</p>
+
+<p>Como referência, podesmos assumir o valor exato da função exponencial como sendo o fornecido pela biblioteca <code class="language-plaintext highlighter-rouge">numpy</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Em que <code class="language-plaintext highlighter-rouge">y</code> é o valor do expoente e N o número de termos de aproximação da série.</p>
+
+<p>O objetivo de exercício é computar uma aproximação da função exponencial de <code class="language-plaintext highlighter-rouge">y</code> usando a fórmula anterior para diferentes valores de <code class="language-plaintext highlighter-rouge">N</code>.</p>
+
+<p>Usando a biblioteca <code class="language-plaintext highlighter-rouge">threading</code>, escreva um programa em python que:</p>
+
+<ul>
+  <li>
+    <p>Cria diferentes threads para rodar tarefas em paralelo</p>
+  </li>
+  <li>
+    <p>A quantidade de threads é o número de cores da sua CPU menos 1 (8 cores -&gt; pool de 7 processos)</p>
+  </li>
+  <li>
+    <p>Escreva uma função que rode em paralelo, chamada py_exp. A função deve receber como parâmetro o valor <code class="language-plaintext highlighter-rouge">N</code> que especifica o número de termos paa calcular a aproximação da exponenciale o parâmetro <code class="language-plaintext highlighter-rouge">y</code> para calcular o expoente.</p>
+  </li>
+  <li>
+    <p>A função deve imprimir o valor calculado, o valor real e a diferença do calculado para o real.</p>
+  </li>
+  <li>
+    <p>Rode as tarefas em paralelo, começando com N=100 e y=10 aumentando em dois o valor de y para cada processo subsequente (por exemplo: 10, 12, 14, 16…)</p>
+  </li>
+</ul>
+
+<p>Por fim, espere todas os threads terminarem e imprima o tempo total decorrido.</p>
+
+<p>Para entregar, façam um relatório descrevendo:</p>
+
+<ul>
+  <li>A configuração da sua máquina (principalmente o número de núcleos)</li>
+  <li>O tempo total de execução</li>
+  <li>Um print do gerenciador de tarefas ou da saída do comando <code class="language-plaintext highlighter-rouge">top</code> no linux (para gerar o print, aumente o valor de N, para que dê tempo do print pegar as threads em execução)</li>
+</ul>
+
+<!-- https://events.prace-ri.eu/event/549/sessions/1685/attachments/462/667/Exercise_1_-_multiprocessing.pdf -->
+:ET
