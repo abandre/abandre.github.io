@@ -10,7 +10,7 @@ module_param(texto, charp, 0);
 
 static int alo_inicio(void) {
 	int i;
-	for (i=0;i<numero;i++) {
+	for (i=0;i<numero+1;i++) {
 		printk(texto);
 	}  
     return 0; 

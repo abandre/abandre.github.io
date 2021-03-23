@@ -1,0 +1,57 @@
+I"a<h2 id="sincronização---locks">Sincronização - Locks</h2>
+
+<p>Nessa atividade iremos exercitar os conceitos de concorrência e os problemas detectados de “condição de disputa” citados em aula.</p>
+
+<p>Primeiramente, vamos codificar e entender na prática o problema de Heisenbug, ilustrado na figura a seguir (apresentada em aula).</p>
+
+<p><img src="heisenbug.png" /></p>
+
+<p>Iremos implementar esse exemplo através da seguinte função em python.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">incrementa</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">g</span>
+
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">g</span>     <span class="c1"># le valor
+</span>    <span class="n">tmp</span> <span class="o">+=</span> <span class="mi">1</span>    <span class="c1"># incrementa
+</span>    <span class="n">g</span> <span class="o">=</span> <span class="n">tmp</span>     <span class="c1"># escreve
+</span>
+<span class="k">if</span> <span class="n">__name__</span><span class="o">==</span><span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="n">thread1</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">incrementa</span><span class="p">)</span>
+    <span class="n">thread1</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="n">thread2</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">incrementa</span><span class="p">)</span>
+    <span class="n">thread2</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="n">thread1</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+    <span class="n">thread2</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Para resolver o problema de <em>Heisenbug</em> visto, uma forma seria a de transformar a função de incrementar em uma região crítica. Para isso, podemos usar Locks. Para isso precisamos importar a biblioteca, e declarar uma variável de trava, juntamente com a variável global compartilhada:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Lock</span>
+
+<span class="n">g</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">lock</span> <span class="o">=</span> <span class="n">Lock</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Com isso, protegemos uma região crítica pegando a trava antes de iniciar e liberando a trava após terminar, através dos seguintes comandos:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lock</span><span class="o">.</span><span class="n">acquire</span><span class="p">()</span>
+<span class="c1"># codigo da regiao critica
+</span><span class="n">lock</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="exercício">Exercício:</h3>
+
+<p>Acesse o seguinte <a href="https://forms.office.com/r/Pr09s3zJdh" target="_blank">link</a>, siga as instruções e responda às perguntas lá. O formulário estará disponível durante o horário de aula somente.</p>
+
+<!-- https://betterprogramming.pub/synchronization-primitives-in-python-564f89fee732 -->
+:ET

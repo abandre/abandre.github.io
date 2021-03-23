@@ -13,9 +13,11 @@ def io_bound(sec):
     threadName = current_thread().name 
     processName = current_process().name 
   
-    print(f"{pid} * {processName} * {threadName} ---> Start sleeping...") 
+    #print(f"{pid} * {processName} * {threadName} ---> Start sleeping...") 
+    print(pid," * ",processName," * ",threadName," ---> Start sleeping...") 
     time.sleep(sec) 
-    print(f"{pid} * {processName} * {threadName} ---> Finished sleeping...") 
+    print(pid," * ",processName," * ",threadName," ---> Finish sleeping...") 
+    #print(f"{pid} * {processName} * {threadName} ---> Finished sleeping...") 
   
 def cpu_bound(n): 
   

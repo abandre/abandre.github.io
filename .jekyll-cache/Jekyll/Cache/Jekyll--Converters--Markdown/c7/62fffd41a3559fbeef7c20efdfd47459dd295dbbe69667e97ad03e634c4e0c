@@ -1,0 +1,57 @@
+I"�<h2 id="sincronização---semáforos">Sincronização - Semáforos</h2>
+
+<p>Os semáforos são como contadores avançados. Uma chamada <code class="language-plaintext highlighter-rouge">acquire()</code> a um semáforo irá bloquear somente depois que um número máximo de threads já tiver chamado <code class="language-plaintext highlighter-rouge">acquire()</code>.</p>
+
+<p>Um contador associado diminui por cada chamada de <code class="language-plaintext highlighter-rouge">acquire()</code> feita e aumenta por cada chamada de <code class="language-plaintext highlighter-rouge">release()</code>. Um <code class="language-plaintext highlighter-rouge">ValueError</code> ocorrerá se as chamadas de <code class="language-plaintext highlighter-rouge">release()</code> tentarem incrementar o contador além de seu valor máximo atribuído (que é o número de threads que podem fazer o <code class="language-plaintext highlighter-rouge">acquire()</code> do semáforo antes de ocorrer o bloqueio).</p>
+
+<p>Os semáforos são normalmente usados ​​para limitar um recurso, como limitar um servidor para lidar com apenas 10 clientes por vez. Nesse caso, várias conexões de thread competem por um recurso limitado (em nosso exemplo, é o servidor).</p>
+
+<p>O código a seguir demonstra o problema de produtor-consumidor:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">incrementa</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">g</span>
+
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">g</span>     <span class="c1"># le valor
+</span>    <span class="n">tmp</span> <span class="o">+=</span> <span class="mi">1</span>    <span class="c1"># incrementa
+</span>    <span class="n">g</span> <span class="o">=</span> <span class="n">tmp</span>     <span class="c1"># escreve
+</span>
+<span class="k">if</span> <span class="n">__name__</span><span class="o">==</span><span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="n">thread1</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">incrementa</span><span class="p">)</span>
+    <span class="n">thread1</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="n">thread2</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">incrementa</span><span class="p">)</span>
+    <span class="n">thread2</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="n">thread1</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+    <span class="n">thread2</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Para resolver o problema de <em>Heisenbug</em> visto, uma forma seria a de transformar a função de incrementar em uma região crítica. Para isso, podemos usar Locks. Para isso precisamos importar a biblioteca, e declarar uma variável de trava, juntamente com a variável global compartilhada:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Lock</span>
+
+<span class="n">g</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">lock</span> <span class="o">=</span> <span class="n">Lock</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Com isso, protegemos uma região crítica pegando a trava antes de iniciar e liberando a trava após terminar, através dos seguintes comandos:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lock</span><span class="o">.</span><span class="n">acquire</span><span class="p">()</span>
+<span class="c1"># codigo da regiao critica
+</span><span class="n">lock</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="exercício">Exercício:</h3>
+
+<p>Acesse o seguinte <a href="https://forms.office.com/r/Pr09s3zJdh" target="_blank">link</a>, siga as instruções e responda às perguntas lá. O formulário estará disponível durante o horário de aula somente.</p>
+
+<!-- https://betterprogramming.pub/synchronization-primitives-in-python-564f89fee732 -->
+:ET
