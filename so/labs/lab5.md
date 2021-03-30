@@ -5,63 +5,101 @@ title: Laboratório 05 - Sistemas Operacionais
 
 ## Sincronização - Semáforos
 
-Os semáforos são como contadores avançados. Uma chamada `acquire()` a um semáforo irá bloquear somente depois que um número máximo de threads já tiver chamado `acquire()`. 
+Conforme visto no laboratório anterior, os Locks são bastante simples de entender e implementar. Também é bastante fácil decidir quando você deve precisar deles. No entanto, se a situação for mais complexa, você pode precisar de uma primitiva de sincronização mais poderosa. Para aplicativos com recursos finitos, usar semáforos pode ser uma aposta melhor.
 
-Um contador associado diminui por cada chamada de `acquire()` feita e aumenta por cada chamada de `release()`. Um `ValueError` ocorrerá se as chamadas de `release()` tentarem incrementar o contador além de seu valor máximo atribuído (que é o número de threads que podem fazer o `acquire()` do semáforo antes de ocorrer o bloqueio). 
+Os semáforos são basicamente contadores que diminuem quando um recurso está sendo consumido (e aumentam novamente quando o recurso é liberado). Você pode pensar em semáforos que representam seus recursos como disponíveis ou indisponíveis. Python simplifica toda a nomenclatura e usa os mesmos nomes de função/método como nos Locks: acquire e release. Os semáforos são mais flexíveis do que os Locks porque você pode ter várias threads, cada uma usando uma das instâncias do recurso finito.
 
-Os semáforos são normalmente usados ​​para limitar um recurso, como limitar um servidor para lidar com apenas 10 clientes por vez. Nesse caso, várias conexões de thread competem por um recurso limitado (em nosso exemplo, é o servidor).
+Para exercitar o uso de semáforos, vamos ver o exemplo de uma aplicação cliente-servidor, simulando uma aplicação multithreading de um web-server, como o visto em aula e apresentado na imagem a seguir.
 
-O código a seguir demonstra o problema de produtor-consumidor:
+<img src="exemplo.png">
+
+Note que a aplicação funciona como um dispatcher, ou seja, um lançador de threads para cada nova conexão recebida. A thread lançada então executa um trecho de código comum entre elas. No exemplo, o nosso servidor web simplificado, pode ser implementado a partir do código a seguir:
+
 
 ```python
-from threading import Thread
+#lab5-server.py
+import socket
+import threading
 import time
-import random
 
-g = 0
-
-def incrementa():
-    global g
-
-    tmp = g     # le valor
-    tmp += 1    # incrementa
-    g = tmp     # escreve
+def trataCliente(conn, addr):  
+    while True:
+        data = conn.recv(100)
+        print(time.ctime(),addr,'enviou',data)
+        if not data:
+            conn.close()
+            break 
 
 if __name__=="__main__": 
-    thread1 = Thread(target=incrementa)
-    thread1.start()
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        s.bind(('', 9999))
+    except:
+       print('ERRO no bind')
+       sys.exit()
 
-    thread2 = Thread(target=incrementa)
-    thread2.start()
+    s.listen()
+    print('Aguardando conexoes na porta ', 9999)
 
-    thread1.join()
-    thread2.join()
+    while True:
+        conn, addr = s.accept()
+        print('Recebi uma conexao do cliente ', addr)
 
-    print(g)
+        t = threading.Thread( target=trataCliente, args=(conn,addr,))
+        t.start()
 ```
 
-Para resolver o problema de *Heisenbug* visto, uma forma seria a de transformar a função de incrementar em uma região crítica. Para isso, podemos usar Locks. Para isso precisamos importar a biblioteca, e declarar uma variável de trava, juntamente com a variável global compartilhada:
+Você deve rodar esse código em um terminal e simular as conexões dos usuários através do código a seguir, executando cada cliente em um outro terminal.
 
 ```python
-from threading import Lock
+#lab5-client.py
+import socket
+import time
 
-g=0
-lock = Lock()
+HOST = '127.0.0.1' 
+PORT = 9999  
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+    while True:
+        s.sendall(b'Hello, world')
+        time.sleep(1)
+
 ```
 
-Com isso, protegemos uma região crítica pegando a trava antes de iniciar e liberando a trava após terminar, através dos seguintes comandos:
-
-```python
-lock.acquire()
-# codigo da regiao critica
-lock.release()
-```
+Note que para cada nova conexão, o servidor irá instanciar uma thread que irá imprimir as mensagens enviadas pelos clientes, que por sua vez, enviam uma mensagem de "Hello, world" a cada segundo.
 
 ### Exercício:
 
-Acesse o seguinte <a href="https://forms.office.com/r/Pr09s3zJdh" target="_blank">link</a>, siga as instruções e responda às perguntas lá. O formulário estará disponível durante o horário de aula somente.
+O Semáforo, como visto anteriormente, é um objeto criado para controlar o número de threads para um recurso, de forma que somente um número limitado de threads possa acessar um recurso simultaneamente.
+
+Python implementa semáforos através da importação e declaração a seguir (declaração que deve ser feita no programa principal, antes da chamada das threads).
+
+```python
+from threading import BoundedSemaphore
+
+semaphore = threading.BoundedSemaphore(2)
+```
+
+Quando uma thread for usar uma variável compartilhada, ou acessar um região crítica, deve-se incrementar o contador interno do semáforo:
+
+```python
+# incrementa o contador se bem sucedido
+semaphore.acquire()
+```
+
+Após usar a variável compartilhada ou deixar a região crítica deve-se decrementar o contador interno do semáforo:
+
+```python
+# decrementa o contador
+semaphore.release()
+```
+
+Posto isso, o objetivo do exercício é fazer com que o servidor aceite no máximo **duas conexões simultâneas** usando Semáforo. 
+
+Na versão do servidor limitado a no máximo duas conexões simultâneas, caso uma terceira tentativa de conexão seja realizada, o servidor deve imprimir a mensagem: **"Conexões excedidas, tente depois..."**.
+
+Acesse o seguinte <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>, siga as instruções e responda às perguntas lá. O formulário estará disponível durante o horário de aula somente.
 
 
-
-
-<!-- https://betterprogramming.pub/synchronization-primitives-in-python-564f89fee732 -->
+<!-- https://www.ppgia.pucpr.br/~jamhour/Pessoal/Graduacao/Ciencia/Python/SincProcessos.html -->

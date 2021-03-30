@@ -2,20 +2,27 @@ import random, time
 from threading import BoundedSemaphore, Thread
 
 max_itens = 5
+count=0
+itens=[]
 
 #container = 0 
-container = BoundedSemaphore(max_itens)
+#container = BoundedSemaphore(max_itens)
 
 def producer(qtd):
-    global container
+    global count
+    global itens
 
-    for i in range(qtd):
-        time.sleep(0)        
-        #container+=1
-        container.release()
+    for i in range(qtd):        
+        item = random.randrange(1, 10)
 
-        print("[Producer]",time.ctime(),container)
-        
+        if count<max_itens:
+            itens.append(item)
+            time.sleep(1)        
+            count+=1
+            print("[Producer]",time.ctime(),item,itens,count)
+        else:
+            print("[Producer] - FULL")
+
         # try:
         #     container.release()
         #     print("Produced an item.")
@@ -23,14 +30,19 @@ def producer(qtd):
         #     print("Full, skipping.")
 
 def consumer(qtd):
-    global container
+    global count
+    global itens
 
-    for i in range(qtd):
-        time.sleep(0)        
-        #container-=1
-        container.acquire()
+    for i in range(qtd):        
+        if count>0:
+            item = itens.pop(count-1)
+            time.sleep(1)        
+            count-=1            
+            print("[Consumer]",time.ctime(),item,itens,count)
+        else:
+            print("[Consumer] - EMPTY")
 
-        print("[Consumer]",time.ctime(),container)
+        # print("[Consumer]",time.ctime(),container)
 
         # if container.acquire(False):
         #     print("Consumed an item.")
@@ -53,7 +65,8 @@ if __name__=="__main__":
     thread1.join()
     thread2.join()
 
-    print(container)
+    print(itens)
+    print(count)
 
     end = time.time() 
     print('Time taken in seconds -', end - start)    
