@@ -85,7 +85,7 @@ Quando uma thread for usar uma variável compartilhada, ou acessar um região cr
 
 ```python
 # incrementa o contador se bem sucedido
-semaphore.acquire()
+semaphore.acquire(False)
 ```
 
 Após usar a variável compartilhada ou deixar a região crítica deve-se decrementar o contador interno do semáforo:

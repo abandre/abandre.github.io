@@ -1,10 +1,10 @@
 from threading import Thread
-from threading import Lock
+from threading import RLock
 import time
 import random
 
 g = 0
-lock = Lock()
+lock = RLock()
 
 def incrementa():
 	global g
@@ -12,7 +12,9 @@ def incrementa():
 	lock.acquire()
 	tmp = g     # le valor
 	tmp += 1    # incrementa
-	time.sleep(random.randrange(0, 2))
+	lock.acquire()
+	time.sleep(random.randrange(0, 2)) 
+	lock.release()
 	g = tmp     # escreve
 	lock.release()
 
