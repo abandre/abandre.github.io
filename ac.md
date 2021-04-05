@@ -8,7 +8,7 @@ title: "Atividades Complementares (2s2021)"
 - Orientações Gerais - <a href="/ac/AC.doc" target="_blank">AC</a>
 - Ficha de Atividades - <a href="/ac/Ficha.xls" target="_blank">Ficha</a>
 
-## Entrega da Ficha Preenchida
+## Entrega da Ficha Preenchida: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>
 
 ### Link para upload dos arquivos
 

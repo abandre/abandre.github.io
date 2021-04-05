@@ -45,13 +45,11 @@ Deve ser entregue também um documento contendo os seguintes campos:
 
 ## Entrega do Relatório
 
-### Link para upload dos arquivos: 
+### Link para upload dos arquivos: <a href="https://bit.ly/3kd9Igx" target="_blank">https://bit.ly/3kd9Igx</a>
 
 - **Prazo de entrega:** A entrega do relatório de estágio é feita apenas no segundo semestre.
 
 <!--
-<a href="https://bit.ly/3kd9Igx" target="_blank">https://bit.ly/3kd9Igx</a>
-
  - Renomear o arquivo para: **XYZ123-estagio.pdf**, onde XYZ123 é o seu RA. 
  - **Prazo de entrega:** 23/11/2020.
  -->
