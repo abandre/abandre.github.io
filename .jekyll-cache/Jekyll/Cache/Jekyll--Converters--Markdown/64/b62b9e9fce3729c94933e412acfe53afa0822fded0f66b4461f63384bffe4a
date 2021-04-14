@@ -1,0 +1,45 @@
+I"	<h2 id="problemas-clássicos-de-ipc">Problemas clássicos de IPC</h2>
+
+<p>A literatura sobre sistemas operacionais está repleta de problemas interessantes que têm sido amplamente discutidos e analisados a partir de vários métodos de sincronização. Dentre eles, três se destacam e são comumente usados para a elucidação dos principais conceitos e técnicas relacionados a Comunicação Inter Processos (Inter Process Comunication - IPC).</p>
+
+<ul>
+  <li>
+    <p>O primeiro problema é o do <strong>Jantar dos Filósofos</strong>, proposto inicialmente por Dijkstra em 1965.</p>
+  </li>
+  <li>
+    <p>O segundo é o problema dos <strong>Leitores e Escritores</strong>, proposto por Courtois et al. em 1971.</p>
+  </li>
+  <li>
+    <p>O terceiro problema clássico de IPC remete ao <strong>Barbeiro Sonolento</strong>.</p>
+  </li>
+</ul>
+
+<p>Para cada um dos problemas clássicos listados anteriormente, deve ser feito:</p>
+
+<ol>
+  <li>
+    <p>Uma apresentação (de no máximo 5 slides), que descreva e explique o problema em mais detalhes;</p>
+  </li>
+  <li>
+    <p>Um código em Python, que implemente e tente resolver o problema, via alguma(s) primitiva(s) de sincronização;</p>
+  </li>
+</ol>
+
+<p>O trabalho deverá ser realizado em <strong>grupos de no máximo 6 pessoas</strong> e deve ser entregue, em um único arquivo zip, contendo as 3 apresentações e os 3 códigos fonte e uma planilha, com nome completo e RA de cada integrante do grupo. Esse arquivo zip deve ser submetido por um dos integrantes no seguinte <a href="https://bit.ly/3aJuZfb" target="_blank">link</a>, <strong>até o dia 10/05</strong> (segunda-feira).</p>
+
+<p>No dia 11/05, terça-feira, durante a aula, seguiremos o roteiro proposto a seguir:</p>
+
+<ol>
+  <li>[15min] Apresentação dos slides sobre o problema do <strong>Jantar dos Filósofos</strong></li>
+  <li>[25min] Demonstração do código do <strong>Jantar dos Filósofos</strong>.</li>
+  <li>[15min] Apresentação dos slides sobre o problema do <strong>Leitores e Escritores</strong></li>
+  <li>[25min] Demonstração do código do <strong>Leitores e Escritores</strong>.</li>
+  <li>[15min] Apresentação dos slides sobre o problema do <strong>Barbeiro Sonolento</strong></li>
+  <li>[25min] Demonstração do código do <strong>Barbeiro Sonolento</strong>.</li>
+</ol>
+
+<p>Para cada etapa do roteiro anterior, será sorteado aleatoriamente um grupo e dentro do grupo, sorteado aleatoriamente um integrante para realizar a atividade.</p>
+
+<p>Caso o integrante do grupo sorteado opte por não fazer a apresentação, outro integrante do mesmo grupo será sorteado para substituí-lo, porém haverá um desconto da nota final do grupo no trabalho. Caso nenhum integrante do grupo realize a atividade, a nota do grupo todo será zerada e outro grupo será sorteado no lugar.</p>
+
+:ET

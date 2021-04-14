@@ -11,10 +11,10 @@ def Consumidor():
     global fila, resultado
 
     while True:
-        try:
+        try:            
             if len(fila)<2:
                 condition.acquire()
-                condition.notify()
+                condition.notifyAll()
                 condition.release()
 
             x = fila.pop(0)
@@ -22,6 +22,7 @@ def Consumidor():
             time.sleep(2)
             resultado.append(x)
         except:
+            print("aqui")
             time.sleep(2)
             if len(fila) == 0:
                 break
