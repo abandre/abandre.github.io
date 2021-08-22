@@ -1,6 +1,6 @@
 ---
+layout: page
 title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
-password: unip2021
 ---
 
 ### Cronograma de Aulas Teóricas

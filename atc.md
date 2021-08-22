@@ -1,9 +1,12 @@
-I"w<h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
+---
+layout: page
+title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
+---
 
-<ul>
-  <li>[16/08/21] - Introdução - <a href="/atc/Aula1-Introducao.pdf" target="_blank">Slide</a></li>
-  <li>[16/08/21] - Revisão: Processos e Threads - <a href="/atc/Aula2-Processo-Thread.pdf" target="_blank">Slide</a></li>
-</ul>
+### Cronograma de Aulas
+
+- [13/08/21] - Apresentação da disciplina - <a href="https://www.youtube.com/watch?v=x2AXca1kPQk&feature=youtu.be" target="_blank">Documentário: Turing</a>
+- [20/08/21] - Autômatos Finitos - <a href="/atc/Aula1.pdf" target="_blank">Slide</a>
 
 <!-- - [27/08/21] - Máquinas de Turing I - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
 - [03/09/21] - Máquinas de Turing II - <a href="/atc/Aula3.pdf" target="_blank">Slide</a>
@@ -24,9 +27,10 @@
 - Demonstração do teorema que toda MTND possui uma MTD equivalente.
 <p align="center"><a href="http://eaulas.usp.br/portal/video?idItem=21433" target="_blank"><img src="capa2.png" width=250></img></a>  -->
 
-<h2 id="entrega-de-trabalhos">Entrega de Trabalhos</h2>
+## Entrega de Trabalhos
 
-<h3 id="link-para-upload-dos-arquivos-httpsbitly3djszpp">Link para upload dos arquivos: <a href="https://bit.ly/3dJszPP" target="_blank">https://bit.ly/3dJszPP</a></h3>
+### Link para upload dos arquivos: <a href="https://bit.ly/3dJszPP" target="_blank">https://bit.ly/3dJszPP</a>
+
 
 <!-- #### 1) [2.0pt] Exercícios da Aula 1 - [Para nota]:
  - Renomear o arquivo para: **XYZ123-aula1.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
@@ -57,4 +61,3 @@
 
 ### Prazo de entrega: 26/05 as 19h
 -->
-:ET
