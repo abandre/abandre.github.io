@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laboratório 05 - Sistemas Operacionais – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Ciência da Computação - UNIP Limeira">
+    <meta property="og:description" content="Ciência da Computação - UNIP Limeira" />
+    
+    <meta name="author" content="Prof. Amaury André" />
+
+    
+    <meta property="og:title" content="Laboratório 05 - Sistemas Operacionais" />
+    <meta property="twitter:title" content="Laboratório 05 - Sistemas Operacionais" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Prof. Amaury André - Ciência da Computação - UNIP Limeira" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/perfilt2.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Prof. Amaury André</a></h1>
+            <p class="site-description">Ciência da Computação - UNIP Limeira</p>
+          </div>
+
+          <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="page">
+
+  <h1>Laboratório 05 - Sistemas Operacionais</h1>
+
+  <div class="entry">
+    <h2 id="sincronização---semáforos">Sincronização - Semáforos</h2>
+
+<p>Conforme visto no laboratório anterior, os Locks são bastante simples de entender e implementar. Também é bastante fácil decidir quando você deve precisar deles. No entanto, se a situação for mais complexa, você pode precisar de uma primitiva de sincronização mais poderosa. Para aplicativos com recursos finitos, usar semáforos pode ser uma aposta melhor.</p>
+
+<p>Os semáforos são basicamente contadores que diminuem quando um recurso está sendo consumido (e aumentam novamente quando o recurso é liberado). Você pode pensar em semáforos que representam seus recursos como disponíveis ou indisponíveis. Python simplifica toda a nomenclatura e usa os mesmos nomes de função/método como nos Locks: acquire e release. Os semáforos são mais flexíveis do que os Locks porque você pode ter várias threads, cada uma usando uma das instâncias do recurso finito.</p>
+
+<p>Para exercitar o uso de semáforos, vamos ver o exemplo de uma aplicação cliente-servidor, simulando uma aplicação multithreading de um web-server, como o visto em aula e apresentado na imagem a seguir.</p>
+
+<p><img src="exemplo.png" /></p>
+
+<p>Note que a aplicação funciona como um dispatcher, ou seja, um lançador de threads para cada nova conexão recebida. A thread lançada então executa um trecho de código comum entre elas. No exemplo, o nosso servidor web simplificado, pode ser implementado a partir do código a seguir:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#lab5-server.py
+</span><span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">threading</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">trataCliente</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">addr</span><span class="p">):</span>  
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">(),</span><span class="n">addr</span><span class="p">,</span><span class="s">'enviou'</span><span class="p">,</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">break</span> 
+
+<span class="k">if</span> <span class="n">__name__</span><span class="o">==</span><span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="s">''</span><span class="p">,</span> <span class="mi">9999</span><span class="p">))</span>
+    <span class="k">except</span><span class="p">:</span>
+       <span class="k">print</span><span class="p">(</span><span class="s">'ERRO no bind'</span><span class="p">)</span>
+       <span class="n">sys</span><span class="o">.</span><span class="nb">exit</span><span class="p">()</span>
+
+    <span class="n">s</span><span class="o">.</span><span class="n">listen</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Aguardando conexoes na porta '</span><span class="p">,</span> <span class="mi">9999</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">conn</span><span class="p">,</span> <span class="n">addr</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Recebi uma conexao do cliente '</span><span class="p">,</span> <span class="n">addr</span><span class="p">)</span>
+
+        <span class="n">t</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span> <span class="n">target</span><span class="o">=</span><span class="n">trataCliente</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span><span class="n">addr</span><span class="p">,))</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Você deve rodar esse código em um terminal e simular as conexões dos usuários através do código a seguir, executando cada cliente em um outro terminal.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#lab5-client.py
+</span><span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">HOST</span> <span class="o">=</span> <span class="s">'127.0.0.1'</span> 
+<span class="n">PORT</span> <span class="o">=</span> <span class="mi">9999</span>  
+
+<span class="k">with</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span> <span class="k">as</span> <span class="n">s</span><span class="p">:</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">HOST</span><span class="p">,</span> <span class="n">PORT</span><span class="p">))</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="n">b</span><span class="s">'Hello, world'</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>Note que para cada nova conexão, o servidor irá instanciar uma thread que irá imprimir as mensagens enviadas pelos clientes, que por sua vez, enviam uma mensagem de “Hello, world” a cada segundo.</p>
+
+<h3 id="exercício">Exercício:</h3>
+
+<p>O Semáforo, como visto anteriormente, é um objeto criado para controlar o número de threads para um recurso, de forma que somente um número limitado de threads possa acessar um recurso simultaneamente.</p>
+
+<p>Python implementa semáforos através da importação e declaração a seguir (declaração que deve ser feita no programa principal, antes da chamada das threads).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">BoundedSemaphore</span>
+
+<span class="n">semaphore</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">BoundedSemaphore</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Quando uma thread for usar uma variável compartilhada, ou acessar um região crítica, deve-se incrementar o contador interno do semáforo:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># incrementa o contador se bem sucedido
+</span><span class="n">semaphore</span><span class="o">.</span><span class="n">acquire</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Após usar a variável compartilhada ou deixar a região crítica deve-se decrementar o contador interno do semáforo:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># decrementa o contador
+</span><span class="n">semaphore</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Posto isso, o objetivo do exercício é fazer com que o servidor aceite no máximo <strong>duas conexões simultâneas</strong> usando Semáforo.</p>
+
+<p>Na versão do servidor limitado a no máximo duas conexões simultâneas, caso uma terceira tentativa de conexão seja realizada, o servidor deve imprimir a mensagem: <strong>“Conexões excedidas, tente depois…“</strong>.</p>
+
+<p>Acesse o seguinte <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>, siga as instruções e responda às perguntas lá. O formulário estará disponível durante o horário de aula somente.</p>
+
+<!-- https://www.ppgia.pucpr.br/~jamhour/Pessoal/Graduacao/Ciencia/Python/SincProcessos.html -->
+
+  </div>
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:amaury.andre@gmail.com"><i class="svg-icon email"></i></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/amaury-andré-38960424"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+<a href="https://youtube.com/user/aandre1985"><i class="svg-icon youtube"></i></a>
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-158977996-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/so/labs/lab5/',
+		  'title': 'Laboratório 05 - Sistemas Operacionais'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

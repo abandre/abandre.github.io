@@ -3,19 +3,15 @@ layout: page
 title: Horário de Aulas
 ---
 
-### CC1P43
 
-Turma ainda não confirmada.
+### CC3P43, CC4P43
 
+Horário de aulas da turma do <a href="/horarios/3_4_sem_2021_2.pdf" target="_blank">segundo ano</a>
 
-### CC2P43, CC3P43
+### CC5P43 e CC6P43
 
-Horário de aulas da turma do <a href="/horarios/2_3_sem_2021_1.pdf" target="_blank">segundo ano</a>
+Horário de aulas da turma do <a href="/horarios/5_6_sem_2021_2.pdf" target="_blank">terceiro ano</a>
 
-### CC4P43 e CC5P43
+### CC7P43 e CC8P43
 
-Horário de aulas da turma do <a href="/horarios/4_5_sem_2021_1.pdf" target="_blank">terceiro ano</a>
-
-### CC6P43 e CC7P43
-
-Horário de aulas da turma do <a href="/horarios/6_7_sem_2021_1.pdf" target="_blank">quarto ano</a>
+Horário de aulas da turma do <a href="/horarios/7_8_sem_2021_2.pdf" target="_blank">quarto ano</a>

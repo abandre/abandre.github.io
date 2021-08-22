@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5/6sem: ATC - Aspectos Teóricos da Computação (2s2021) – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Ciência da Computação - UNIP Limeira">
+    <meta property="og:description" content="Ciência da Computação - UNIP Limeira" />
+    
+    <meta name="author" content="Prof. Amaury André" />
+
+    
+    <meta property="og:title" content="5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)" />
+    <meta property="twitter:title" content="5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Prof. Amaury André - Ciência da Computação - UNIP Limeira" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/perfilt2.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Prof. Amaury André</a></h1>
+            <p class="site-description">Ciência da Computação - UNIP Limeira</p>
+          </div>
+
+          <nav>
+            <a href="/">Home</a>
+            <a href="/about">Sobre</a>
+            <!-- <a href="/pd"><i class="material-icons">computer</i></a>
+            <a href="/fb"><i class="material-icons">location_city</i></a>
+            <a href="/at"><i class="material-icons">build</i></a> -->
+<!--             <a href="/sp"><i class="material-icons">headset_mic</i></a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <div id="content">
+  Password:
+  <input id="password" type="password">
+  <button onclick="decrypt()">OK</button>
+  <p id="errmsg" style="color: red;"></p>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw=" crossorigin="anonymous"></script>
+<script>
+  function decrypt() {
+    var protectedContent = "6ZjTQqToTXAwj0vIl6pwaQ==|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";
+    var password = document.getElementById('password').value;
+
+    var payload = protectedContent.split("|");
+    var iv = payload[0];
+    var hmac = payload[1];
+    var cipherText = payload[2];
+
+    var passphraseDgst = CryptoJS.SHA256(password).toString();
+    var decryptedhmac = CryptoJS.HmacSHA256(cipherText, CryptoJS.enc.Hex.parse(passphraseDgst)).toString().trim();
+    if(CryptoJS.enc.Base64.parse(hmac).toString() === decryptedhmac){
+      var decrypted = CryptoJS.AES.decrypt(
+        {ciphertext:CryptoJS.enc.Base64.parse(cipherText)},
+        CryptoJS.enc.Hex.parse(passphraseDgst),
+        {iv:CryptoJS.enc.Base64.parse(iv)}
+      );
+      var content = CryptoJS.enc.Utf8.stringify(decrypted);
+      document.getElementById('content').innerHTML = content;
+    } else {
+      document.getElementById('errmsg').innerHTML = "Wrong password";
+    }
+  }
+
+  var passwordInput = document.getElementById('password');
+  passwordInput.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      decrypt();
+    }
+  })
+</script>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:amaury.andre@gmail.com"><i class="svg-icon email"></i></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/amaury-andré-38960424"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+<a href="https://youtube.com/user/aandre1985"><i class="svg-icon youtube"></i></a>
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-158977996-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/protected/fe/',
+		  'title': '5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

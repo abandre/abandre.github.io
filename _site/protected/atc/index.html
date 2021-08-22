@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5/6sem: ATC - Aspectos Teóricos da Computação (2s2021) – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Ciência da Computação - UNIP Limeira">
+    <meta property="og:description" content="Ciência da Computação - UNIP Limeira" />
+    
+    <meta name="author" content="Prof. Amaury André" />
+
+    
+    <meta property="og:title" content="5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)" />
+    <meta property="twitter:title" content="5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Prof. Amaury André - Ciência da Computação - UNIP Limeira" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/perfilt2.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Prof. Amaury André</a></h1>
+            <p class="site-description">Ciência da Computação - UNIP Limeira</p>
+          </div>
+
+          <nav>
+            <a href="/">Home</a>
+            <a href="/about">Sobre</a>
+            <!-- <a href="/pd"><i class="material-icons">computer</i></a>
+            <a href="/fb"><i class="material-icons">location_city</i></a>
+            <a href="/at"><i class="material-icons">build</i></a> -->
+<!--             <a href="/sp"><i class="material-icons">headset_mic</i></a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <div id="content">
+  Password:
+  <input id="password" type="password">
+  <button onclick="decrypt()">OK</button>
+  <p id="errmsg" style="color: red;"></p>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw=" crossorigin="anonymous"></script>
+<script>
+  function decrypt() {
+    var protectedContent = "IQo5xqBL+NoUP40FkHZjUw==|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";
+    var password = document.getElementById('password').value;
+
+    var payload = protectedContent.split("|");
+    var iv = payload[0];
+    var hmac = payload[1];
+    var cipherText = payload[2];
+
+    var passphraseDgst = CryptoJS.SHA256(password).toString();
+    var decryptedhmac = CryptoJS.HmacSHA256(cipherText, CryptoJS.enc.Hex.parse(passphraseDgst)).toString().trim();
+    if(CryptoJS.enc.Base64.parse(hmac).toString() === decryptedhmac){
+      var decrypted = CryptoJS.AES.decrypt(
+        {ciphertext:CryptoJS.enc.Base64.parse(cipherText)},
+        CryptoJS.enc.Hex.parse(passphraseDgst),
+        {iv:CryptoJS.enc.Base64.parse(iv)}
+      );
+      var content = CryptoJS.enc.Utf8.stringify(decrypted);
+      document.getElementById('content').innerHTML = content;
+    } else {
+      document.getElementById('errmsg').innerHTML = "Wrong password";
+    }
+  }
+
+  var passwordInput = document.getElementById('password');
+  passwordInput.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      decrypt();
+    }
+  })
+</script>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:amaury.andre@gmail.com"><i class="svg-icon email"></i></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/amaury-andré-38960424"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+<a href="https://youtube.com/user/aandre1985"><i class="svg-icon youtube"></i></a>
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-158977996-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/protected/atc/',
+		  'title': '5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

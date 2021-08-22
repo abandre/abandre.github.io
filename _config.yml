@@ -14,7 +14,9 @@ avatar: /images/perfilt2.png
 #
 # Flags below are optional
 #
-
+collections:
+  protected:
+    
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:

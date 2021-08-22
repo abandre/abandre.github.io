@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LFA - Linguagens Formais e Autômatos – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Ciência da Computação - UNIP Limeira">
+    <meta property="og:description" content="Ciência da Computação - UNIP Limeira" />
+    
+    <meta name="author" content="Prof. Amaury André" />
+
+    
+    <meta property="og:title" content="LFA - Linguagens Formais e Autômatos" />
+    <meta property="twitter:title" content="LFA - Linguagens Formais e Autômatos" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Prof. Amaury André - Ciência da Computação - UNIP Limeira" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/perfilt2.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Prof. Amaury André</a></h1>
+            <p class="site-description">Ciência da Computação - UNIP Limeira</p>
+          </div>
+
+          <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>LFA - Linguagens Formais e Autômatos</h1>
+
+  <div class="entry">
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+           type="password"
+           name="password"
+           placeholder=""
+           autofocus />
+
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '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',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
+
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
+</div>
+
+  </div>
+
+  <div class="date">
+    Written on 
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:amaury.andre@gmail.com"><i class="svg-icon email"></i></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/amaury-andré-38960424"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+<a href="https://youtube.com/user/aandre1985"><i class="svg-icon youtube"></i></a>
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-158977996-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/old_posts/2020-02-23-lfa/',
+		  'title': 'LFA - Linguagens Formais e Autômatos'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

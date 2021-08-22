@@ -3,7 +3,9 @@ layout: page
 title: Calendário de Provas
 ---
 
-Datas e Horários das provas desse semestre: <a href="/horarios/provas2.pdf" target="_blank">Provas</a>
+Datas e Horários das provas desse semestre: Ainda não definido
+
+<!-- <a href="/horarios/provas2.pdf" target="_blank">Provas</a> -->
 
 <!--### CC1P43
 
