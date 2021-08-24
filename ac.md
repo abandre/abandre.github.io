@@ -8,11 +8,18 @@ title: "Atividades Complementares (2s2021)"
 - Orientações Gerais - <a href="/ac/AC.doc" target="_blank">AC</a>
 - Ficha de Atividades - <a href="/ac/Ficha.xls" target="_blank">Ficha</a>
 
-## Entrega da Ficha Preenchida: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>
+Lembrando que o total deve ser maior que 180 horas.
 
-### Link para upload dos arquivos
+## Upload dos arquivos
 
-- **Prazo de entrega:** A entrega das atividades complementares é feita apenas no segundo semestre.
+### Entrega da ficha preenchida, certificados e/ou resumos: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>
+
+Criar um zip com todos os documentos, nomeando da seguinte maneira: XYZ1234-ac.zip, onde XYZ1234 é o seu RA.
+
+- **Prazo de entrega:** A definir (novembro/2021)
+
+A entrega das atividades complementares é feita no segundo semestre.
+
 
 <!--: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>
 
