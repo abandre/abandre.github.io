@@ -1,13 +1,10 @@
----
-layout: page
-title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
----
+I"<h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
 
-### Cronograma de Aulas Teóricas
-
-- [16/08/21] - Introdução - <a href="/soa/Aula1-Introducao.pdf" target="_blank">Slide</a>
-- [16/08/21] - Revisão: Processos e Threads - <a href="/soa/Aula2-Processo-Thread.pdf" target="_blank">Slide</a>
-- [16/08/21] - Gerenciamento de Memória - parte 1 - <a href="/soa/Aula3-Gerenc-Memoria-pt1.pdf" target="_blank">Slide</a>
+<ul>
+  <li>[16/08/21] - Introdução - <a href="/soa/Aula1-Introducao.pdf" target="_blank">Slide</a></li>
+  <li>[16/08/21] - Revisão: Processos e Threads - <a href="/soa/Aula2-Processo-Thread.pdf" target="_blank">Slide</a></li>
+  <li>[16/08/21] - Gerenciamento de Memória - parte 1 - <a href="/soa/Aula3-Gerenc-Memoria-pt1.pdf" target="_blank">Slide</a></li>
+</ul>
 
 <!-- ### Conteúdo Complementar
 
@@ -17,19 +14,21 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
 - Demonstração do teorema que toda MTND possui uma MTD equivalente.
 <p align="center"><a href="http://eaulas.usp.br/portal/video?idItem=21433" target="_blank"><img src="capa2.png" width=250></img></a>  -->
 
-## Entrega de Trabalhos
+<h2 id="entrega-de-trabalhos">Entrega de Trabalhos</h2>
 
-### Link para upload dos arquivos: <a href="https://bit.ly/3j1er6V" target="_blank">https://bit.ly/3j1er6V</a>
+<h3 id="link-para-upload-dos-arquivos-httpsbitly3j1er6v">Link para upload dos arquivos: <a href="https://bit.ly/3j1er6V" target="_blank">https://bit.ly/3j1er6V</a></h3>
 
+<h4 id="1-10pt-aula-prática-1---para-nota">1) [1.0pt] Aula Prática 1 - [Para nota]:</h4>
+<ul>
+  <li>Shell script e processos do windows - <a href="/soa/pratica1.pdf" target="_blank">Slide</a></li>
+  <li>Renomear o arquivo para: <strong>XYZ123-pratica1.pdf</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
+</ul>
 
-#### 1) [1.0pt] Aula Prática 1 - [Para nota]:
- - Shell script e processos do windows - <a href="/soa/pratica1.pdf" target="_blank">Slide</a>
- - Renomear o arquivo para: **XYZ123-pratica1.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
-
-#### 2) [1.0pt] Aula Prática 2 - [Para nota]:
- - Comando ps e Process Explorer - <a href="/soa/pratica2.pdf" target="_blank">Slide</a>
- - Renomear o arquivo para: **XYZ123-pratica2.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
-
+<h4 id="2-10pt-aula-prática-2---para-nota">2) [1.0pt] Aula Prática 2 - [Para nota]:</h4>
+<ul>
+  <li>Comando ps e Process Explorer - <a href="/soa/pratica2.pdf" target="_blank">Slide</a></li>
+  <li>Renomear o arquivo para: <strong>XYZ123-pratica2.pdf</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
+</ul>
 
 <!--
 #### 2) [2.0pt] Exercícios da Aula 2 - [Para nota]:
@@ -58,3 +57,4 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
 
 ### Prazo de entrega: 26/05 as 19h
 -->
+:ET
