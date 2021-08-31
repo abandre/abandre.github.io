@@ -1,14 +1,11 @@
----
-layout: page
-title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
----
+I"e<h3 id="cronograma-de-aulas">Cronograma de Aulas</h3>
 
-### Cronograma de Aulas
-
-- [13/08/21] - Apresentação da disciplina - <a href="https://www.youtube.com/watch?v=x2AXca1kPQk&feature=youtu.be" target="_blank">Documentário: Turing</a>
-- [20/08/21] - Aula 1 - Autômatos Finitos - <a href="/atc/Aula1.pdf" target="_blank">Slide</a>
-- [27/08/21] - Aula 2 - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
-- [03/09/21] - Aula 3 - Reconhecedoras e Transdutoras - <a href="/atc/Aula3.pdf" target="_blank">Slide</a>
+<ul>
+  <li>[13/08/21] - Apresentação da disciplina - <a href="https://www.youtube.com/watch?v=x2AXca1kPQk&amp;feature=youtu.be" target="_blank">Documentário: Turing</a></li>
+  <li>[20/08/21] - Autômatos Finitos - <a href="/atc/Aula1.pdf" target="_blank">Slide</a></li>
+  <li>[27/08/21] - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a></li>
+  <li>[03/09/21] - Máquinas Reconhecedoras e Transdutoras - <a href="/atc/Aula3.pdf" target="_blank">Slide</a></li>
+</ul>
 
 <!-- - [27/08/21] - Máquinas de Turing I - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
 - [03/09/21] - Máquinas de Turing II - <a href="/atc/Aula3.pdf" target="_blank">Slide</a>
@@ -29,21 +26,19 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 - Demonstração do teorema que toda MTND possui uma MTD equivalente.
 <p align="center"><a href="http://eaulas.usp.br/portal/video?idItem=21433" target="_blank"><img src="capa2.png" width=250></img></a>  -->
 
-## Entrega de Trabalhos
+<h2 id="entrega-de-trabalhos">Entrega de Trabalhos</h2>
 
-### Link para upload dos arquivos: <a href="https://bit.ly/3dJszPP" target="_blank">https://bit.ly/3dJszPP</a>
+<h3 id="link-para-upload-dos-arquivos-httpsbitly3djszpp">Link para upload dos arquivos: <a href="https://bit.ly/3dJszPP" target="_blank">https://bit.ly/3dJszPP</a></h3>
 
-
-#### 1) [1.0pt] Exercícios da Aula 1 - [Para nota]:
+<!-- #### 1) [2.0pt] Exercícios da Aula 1 - [Para nota]:
  - Renomear o arquivo para: **XYZ123-aula1.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
-#### 2) [1.0pt] Exercícios da Aula 2 - [Para nota]:
+#### 2) [2.0pt] Exercícios da Aula 2 - [Para nota]:
  - Renomear o arquivo para: **XYZ123-aula2.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
-#### 3) [1.0pt] Exercícios da Aula 3 - [Para nota]:
+#### 3) [2.0pt] Exercícios da Aula 3 - [Para nota]:
  - Renomear o arquivo para: **XYZ123-aula3.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
-<!--
 #### 4) [2.0pt] Exercícios da Aula 4 - [Para nota]:
  - Renomear o arquivo para: **XYZ123-aula4.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
@@ -64,3 +59,4 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 
 ### Prazo de entrega: 26/05 as 19h
 -->
+:ET

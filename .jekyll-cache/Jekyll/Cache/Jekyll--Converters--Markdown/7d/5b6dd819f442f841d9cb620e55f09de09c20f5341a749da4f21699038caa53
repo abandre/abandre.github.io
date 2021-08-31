@@ -1,0 +1,80 @@
+I"�$<h2 id="alocação-de-memória-principal">Alocação de memória principal</h2>
+
+<p><strong>Objetivo:</strong> Simular e avaliar diferentes técnicas de alocação/liberação de memória: first fit, best fit, worst fit.  Usando lista encadeada para gerenciamento de memória.</p>
+
+<p>Suponha que a memória seja de 256 KB e esteja dividida em unidades de 2 KB cada. Um processo pode solicitar entre 3 e 10 unidades de memória. Sua simulação consiste em três componentes: <strong>componente de memória</strong> que implementa uma alocação/liberação específica por técnica; <strong>componente de geração de solicitação</strong> que gera solicitações de alocação/liberação; e <strong>componente de relatório</strong> de estatísticas que imprime as estatísticas relevantes.</p>
+
+<p>A <strong>componente de memória</strong> exporta as seguintes funções:</p>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">alocate_mem(process_id, num_units)</code>: aloca <em>num_units</em> unidades de memória para um processo cujo id é <em>process_id</em>. Se for bem sucedido, retorna 1. Caso contrário, retorna -1.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">deallocate_mem(process_id)</code>: desaloca a memória alocada para o processo cujo id é <em>process_id</em>. Ele retorna 1, se for bem-sucedido, caso contrário, -1.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">fragment_count()</code>: retorna o número de buracos (fragmentos de tamanhos 1 ou 2 unidades).</p>
+  </li>
+</ul>
+
+<p>Você implementará um componente de memória separado para cada técnica de alocação/liberação. Para solicitações de alocação, o componente especifica o id do processo do processo para o qual a memória é solicitada, bem como o número de unidades de memória sendo solicitada. Para esta simulação, suponha que a memória seja solicitada para cada processo apenas uma vez. Para solicitações de desalocação, o componente especifica o id do processo do processo cuja memória deve ser desalocada. Para esta simulação, suponha que toda a memória alocada para um processo é desalocada em um request de desalocação. Você pode gerar essas solicitações aleatoriamente.</p>
+
+<p>Existem três parâmetros de desempenho que sua simulação deve calcular para cada
+técnica: número médio de fragmentos externos, tempo médio de alocação em termos de número médio de nós percorridos na alocação, e a porcentagem de vezes que um pedido de alocação negado.</p>
+
+<p>Gere 10.000 solicitações usando o <strong>componente de geração de solicitação</strong> e, para cada solicitação, invocar a função apropriada do componente de memória para cada uma das técnica de alocação/liberação. Após cada solicitação, atualize as três performances parâmetros para cada uma das técnicas.</p>
+
+<p>O <strong>componente de relatório de estatísticas</strong> imprime o valor dos três parâmetros para todos os quatro técnicas no final.</p>
+
+<p>Entregar o relatório final de comparação entre as técnicas utilizadas, juntamente com uma avaliação crítica desse resultado.</p>
+
+<p>A seguir, uma estrutura básica de sugestão para a representação da memória, de inicialização aleatória, para percorrer a lista e encontrar um processo (seu antecessor e sucessor).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="n">rnd</span>
+
+<span class="k">def</span> <span class="nf">inicializa</span><span class="p">(</span><span class="n">tamanho</span><span class="p">):</span>
+	<span class="n">memoria</span><span class="o">=</span><span class="p">[]</span>
+	<span class="n">node</span> <span class="o">=</span> <span class="p">{</span><span class="s">'tipo'</span><span class="p">:</span><span class="s">'H'</span><span class="p">,</span><span class="s">'inicio'</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s">'tamanho'</span><span class="p">:</span><span class="n">tamanho</span><span class="p">,</span><span class="s">'pid'</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span>
+	<span class="n">memoria</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+
+	<span class="k">return</span> <span class="n">memoria</span>
+
+<span class="k">def</span> <span class="nf">inicializaAleatorio</span><span class="p">(</span><span class="n">tamanho</span><span class="p">):</span>
+	<span class="n">posicao</span><span class="o">=</span><span class="mi">0</span>
+	<span class="n">memoria</span><span class="o">=</span><span class="p">[]</span>
+	<span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+	<span class="n">p</span><span class="o">=</span><span class="mi">1</span>
+	<span class="k">while</span> <span class="n">posicao</span><span class="o">&lt;</span><span class="n">tamanho</span><span class="p">:</span>
+		<span class="n">tam</span><span class="o">=</span><span class="n">rnd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+		<span class="k">if</span> <span class="n">posicao</span><span class="o">+</span><span class="n">tam</span><span class="o">&gt;</span><span class="n">tamanho</span><span class="p">:</span>
+			<span class="n">tam</span><span class="o">=</span><span class="n">tamanho</span><span class="o">-</span><span class="n">posicao</span>
+
+		<span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+			<span class="n">tipo</span><span class="o">=</span><span class="s">'P'</span>
+			<span class="n">pid</span><span class="o">=</span><span class="n">p</span>
+			<span class="n">p</span><span class="o">+=</span><span class="mi">1</span>
+		<span class="k">else</span><span class="p">:</span>
+			<span class="n">tipo</span><span class="o">=</span><span class="s">'H'</span>
+			<span class="n">pid</span><span class="o">=-</span><span class="mi">1</span>
+
+		<span class="n">node</span> <span class="o">=</span> <span class="p">{</span><span class="s">'tipo'</span><span class="p">:</span><span class="n">tipo</span><span class="p">,</span><span class="s">'inicio'</span><span class="p">:</span><span class="n">posicao</span><span class="p">,</span><span class="s">'tamanho'</span><span class="p">:</span><span class="n">tam</span><span class="p">,</span><span class="s">'pid'</span><span class="p">:</span><span class="n">pid</span><span class="p">}</span>
+		<span class="n">memoria</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+		<span class="n">posicao</span><span class="o">+=</span><span class="n">tam</span>
+		<span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+
+	<span class="k">return</span> <span class="n">memoria</span>
+
+<span class="k">def</span> <span class="nf">deallocate_mem</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span><span class="n">memoria</span><span class="p">):</span> <span class="c1"># TODO
+</span>	<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">memoria</span><span class="p">:</span>
+		<span class="k">if</span> <span class="n">node</span><span class="p">[</span><span class="s">'pid'</span><span class="p">]</span><span class="o">==</span><span class="n">pid</span><span class="p">:</span>
+			<span class="n">index</span><span class="o">=</span><span class="n">memoria</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+			<span class="k">print</span><span class="p">(</span><span class="s">"node anterior:"</span><span class="p">,</span><span class="n">memoria</span><span class="p">[</span><span class="n">index</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+			<span class="k">print</span><span class="p">(</span><span class="s">"node atual:"</span><span class="p">,</span><span class="n">memoria</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+			<span class="k">print</span><span class="p">(</span><span class="s">"node posterior:"</span><span class="p">,</span><span class="n">memoria</span><span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+		<span class="c1"># completar o código
+</span>
+<span class="n">memoria</span> <span class="o">=</span> <span class="n">inicializaAleatorio</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
+<span class="n">deallocate_mem</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">memoria</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">memoria</span><span class="p">)</span>
+</code></pre></div></div>
+:ET
