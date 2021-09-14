@@ -1,10 +1,11 @@
-I"�<h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
+I"c<h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
 
 <ul>
   <li>[16/08/21] - Introdução - <a href="/soa/Aula1-Introducao.pdf" target="_blank">Slide</a></li>
   <li>[16/08/21] - Revisão: Processos e Threads - <a href="/soa/Aula2-Processo-Thread.pdf" target="_blank">Slide</a></li>
-  <li>[16/08/21] - Gerenciamento de Memória - parte 1 - <a href="/soa/Aula3-Gerenc-Memoria-pt1.pdf" target="_blank">Slide</a></li>
+  <li>[23/08/21] - Gerenciamento de Memória - parte 1 - <a href="/soa/Aula3-Gerenc-Memoria-pt1.pdf" target="_blank">Slide</a></li>
   <li>[30/08/21] - Gerenciamento de Memória - parte 2 - <a href="/soa/Aula4-Gerenc-Memoria-pt2.pdf" target="_blank">Slide</a></li>
+  <li>[13/09/21] - Memória Virtual - parte 1 - <a href="/soa/Aula5-Mem-Virtual-pt1.pdf" target="_blank">Slide</a></li>
 </ul>
 
 <!-- ### Conteúdo Complementar
@@ -34,6 +35,7 @@
 <h4 id="3-25pt-laboratório-1---para-nota">3) [2.5pt] Laboratório 1 - [Para nota]:</h4>
 <ul>
   <li>Swapping de memória - <a href="/soa/lab1">Lab</a></li>
+  <li>Data de entrega: <strong>21/09/2021</strong></li>
   <li>Renomear o arquivo para: <strong>XYZ123-lab1.zip</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
 </ul>
 

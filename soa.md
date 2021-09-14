@@ -9,6 +9,7 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
 - [16/08/21] - Revisão: Processos e Threads - <a href="/soa/Aula2-Processo-Thread.pdf" target="_blank">Slide</a>
 - [23/08/21] - Gerenciamento de Memória - parte 1 - <a href="/soa/Aula3-Gerenc-Memoria-pt1.pdf" target="_blank">Slide</a>
 - [30/08/21] - Gerenciamento de Memória - parte 2 - <a href="/soa/Aula4-Gerenc-Memoria-pt2.pdf" target="_blank">Slide</a>
+- [13/09/21] - Memória Virtual - parte 1 - <a href="/soa/Aula5-Mem-Virtual-pt1.pdf" target="_blank">Slide</a>
 
 <!-- ### Conteúdo Complementar
 
@@ -33,6 +34,7 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
 
 #### 3) [2.5pt] Laboratório 1 - [Para nota]:
  - Swapping de memória - <a href="/soa/lab1">Lab</a>
+ - Data de entrega: **21/09/2021**
  - Renomear o arquivo para: **XYZ123-lab1.zip**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
 

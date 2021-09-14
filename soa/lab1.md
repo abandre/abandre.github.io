@@ -65,16 +65,103 @@ def inicializaAleatorio(tamanho):
 
 	return memoria
 
-def deallocate_mem(pid,memoria): # TODO
+def deallocate_mem(pid): # TODO
+	global memoria
+
 	for node in memoria:
 		if node['pid']==pid:
 			index=memoria.index(node)
-			print("node anterior:",memoria[index-1])
-			print("node atual:",memoria[index])
-			print("node posterior:",memoria[index+1])
-		# completar o código
 
-memoria = inicializaAleatorio(128)
-deallocate_mem(5,memoria)
+			# verificacao de limite inferior da memoria
+			if index>0:
+				anterior = memoria[index-1]
+			else:
+				anterior = memoria[0]
+
+			# verificacao de limite superior da memoria
+			if index<len(memoria)-1:
+				posterior = memoria[index+1]
+			else:
+				posterior = memoria[len(memoria)-1]
+
+			print("node anterior:",anterior)
+			print("node atual:",node)
+			print("node posterior:",posterior)
+		
+			if anterior['tipo']=='P' and posterior['tipo']=='P':
+				# troco P p/ H e atualizo o pid
+				pass
+			elif anterior['tipo']=='P' and posterior['tipo']=='H':
+				# emendo com o buraco posterior
+				pass
+			elif anterior['tipo']=='H' and posterior['tipo']=='P':
+				# emendo com o buraco anterior
+				pass
+			elif anterior['tipo']=='H' and posterior['tipo']=='H':
+				# emendo com os buracos anterior e posterior
+				pass
+
+
+
+
+def allocate_mem_first_fit(pid,tamanho):
+	global memoria
+
+	for node in memoria:
+		if node['tipo']=='H':
+			if node['tamanho']==tamanho:
+				# trocar P por H
+				# atualizar pid
+				break
+			elif node['tamanho']>tamanho:
+				# # criar um no p/ o processo: 
+				# index=memoria.index(node)
+				# novo = {'tipo':'P','inicio':???,'tamanho':???,'pid':???}
+				# memoria.insert(index,novo)
+
+				# # atualizar o inicio e o tamanho do buraco
+				# node['inicio']=???
+				# node['tamanho']=???
+				break			
+
+
+def allocate_mem_best_fit(pid,tamanho):
+	pass
+
+def allocate_mem_worst_fit(pid,tamanho):
+	pass
+	
+
+memoria = inicializa(128)
 print(memoria)
+print()
+
+allocate_mem_firstfit(1,5)
+print(memoria)
+print()
+
+deallocate_mem(1)
+print(memoria)
+print()
+
+# exemplo para gerar aleatoriamente uma sequencia
+# pid=1
+# processos_alocados=[]
+# for i in range(10):
+# 	moeda = rnd.randint(0,1)
+# 	print(moeda)	
+
+# 	if moeda==1:
+# 		tam=rnd.randint(3,10)
+# 		print("alocar processo",pid,"com tamanho",tam)
+# 		#allocate_mem_first_fit(pid,tam)		
+# 		processos_alocados.append(pid)
+# 		pid+=1
+# 	else:
+# 		if len(processos_alocados)>0:
+# 			idx=rnd.randint(0,len(processos_alocados)-1)
+# 			#deallocate_mem(processos_alocados[idx])
+# 			print("desalocar processo",processos_alocados[idx])
+# 			processos_alocados.pop(idx)		
+
 ```
