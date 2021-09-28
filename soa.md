@@ -10,6 +10,8 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
 - [23/08/21] - Gerenciamento de Memória - parte 1 - <a href="/soa/Aula3-Gerenc-Memoria-pt1.pdf" target="_blank">Slide</a>
 - [30/08/21] - Gerenciamento de Memória - parte 2 - <a href="/soa/Aula4-Gerenc-Memoria-pt2.pdf" target="_blank">Slide</a>
 - [13/09/21] - Memória Virtual - parte 1 - <a href="/soa/Aula5-Mem-Virtual-pt1.pdf" target="_blank">Slide</a>
+- [20/09/21] - Memória Virtual - parte 2 - <a href="/soa/Aula6-Mem-Virtual-pt2.pdf" target="_blank">Slide</a>
+- [27/09/21] - Segmentação - <a href="/soa/Aula7-Segmentação.pdf" target="_blank">Slide</a>
 
 <!-- ### Conteúdo Complementar
 
@@ -37,6 +39,9 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
  - Data de entrega: **21/09/2021**
  - Renomear o arquivo para: **XYZ123-lab1.zip**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
+#### 2) [1.0pt] Aula Prática 3 - [Para nota]:
+ - Comando free e Process Explorer - <a href="/soa/pratica3.pdf" target="_blank">Slide</a>
+ - Renomear o arquivo para: **XYZ123-pratica3.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
 <!--
 #### 2) [2.0pt] Exercícios da Aula 2 - [Para nota]:

@@ -10,6 +10,8 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 - [27/08/21] - Aula 2 - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
 - [03/09/21] - Aula 3 - Reconhecedoras e Transdutoras - <a href="/atc/Aula3.pdf" target="_blank">Slide</a>
 - [10/09/21] - Aula 4 - Generalização - <a href="/atc/Aula4-Generalizacao.pdf" target="_blank">Slide</a>
+- [17/09/21] - Aula 5 - Restrição - <a href="/atc/Aula5-Restricao.pdf" target="_blank">Slide</a>
+- [24/09/21] - Aula 6 - Decidibilidade - <a href="/atc/Aula7-Decidibilidade.pdf" target="_blank">Slide</a>
 
 ## Entrega de Trabalhos
 
