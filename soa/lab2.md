@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Laboratório 03 - Sistemas Operacionais Abertos
+title: Laboratório 02 - Sistemas Operacionais Abertos
 ---
 
 ##  Autenticação de Usuário
@@ -27,6 +27,8 @@ Os registros brutos de todos os pressionamentos de tecla e os timestamps de data
 ## Arquivo de Dados
 
 Arquivo contendo as informações de digitação: <a href="/soa/KSPasswordData.csv" target="_blank">KSPasswordData.csv</a>
+
+Além do arquivo disponibilizado, há um outro arquivo de validação, com alguns exemplos de digitação dos mesmos usuários do conjunto anterior, que será usado para a validação dos resultados apresentados.
 
 ### Bibliotecas
 
@@ -59,13 +61,17 @@ print(score)
 dump(clf, 'exemplo.jlb') 
 ```
 
-### Página para validação de resultados
+<!-- ### Página para validação de resultados
 
-<a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a>
+<a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a> -->
 
 ### Relatório
 
-Entregar um relatório descrevendo o algoritmo de classificação usado, exceto o algoritmo de KNN ou K-Vizinhos. Descrever no relatório também quais parâmetros foram ajustados no treinamento do modelo. Apresentar os resultados para o conjunto de teste e para o conjunto de validação, calculados na página <a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a>.
+Entregar um relatório descrevendo o algoritmo de classificação usado, exceto o algoritmo de KNN ou K-Vizinhos. Descrever no relatório também quais parâmetros foram ajustados no treinamento do modelo. Apresentar os resultados para o conjunto de teste.
+
+Anexar o modelo treinado (".jlb") para que possa ser testado no conjunto de validação, para avaliação.
+
+<!-- , calculados na página <a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a>. -->
 
 ### Conteúdo original
 

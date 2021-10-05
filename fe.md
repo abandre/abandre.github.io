@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
+title: "7/8sem: FE - Formação Específica (2s2021)"
 ---
 
 ## Trabalhos

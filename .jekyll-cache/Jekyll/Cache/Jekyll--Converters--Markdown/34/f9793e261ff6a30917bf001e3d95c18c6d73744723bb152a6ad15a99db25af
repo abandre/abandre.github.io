@@ -1,4 +1,4 @@
-I"�<h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
+I"j<h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
 
 <ul>
   <li>[16/08/21] - Introdução - <a href="/soa/Aula1-Introducao.pdf" target="_blank">Slide</a></li>
@@ -8,6 +8,7 @@
   <li>[13/09/21] - Memória Virtual - parte 1 - <a href="/soa/Aula5-Mem-Virtual-pt1.pdf" target="_blank">Slide</a></li>
   <li>[20/09/21] - Memória Virtual - parte 2 - <a href="/soa/Aula6-Mem-Virtual-pt2.pdf" target="_blank">Slide</a></li>
   <li>[27/09/21] - Segmentação - <a href="/soa/Aula7-Segmentação.pdf" target="_blank">Slide</a></li>
+  <li>[04/10/21] - Segurança - <a href="/soa/Aula8-Segurança.pdf" target="_blank">Slide</a></li>
 </ul>
 
 <!-- ### Conteúdo Complementar
@@ -41,10 +42,17 @@
   <li>Renomear o arquivo para: <strong>XYZ123-lab1.zip</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
 </ul>
 
-<h4 id="2-10pt-aula-prática-3---para-nota">2) [1.0pt] Aula Prática 3 - [Para nota]:</h4>
+<h4 id="4-10pt-aula-prática-3---para-nota">4) [1.0pt] Aula Prática 3 - [Para nota]:</h4>
 <ul>
   <li>Comando free e Process Explorer - <a href="/soa/pratica3.pdf" target="_blank">Slide</a></li>
   <li>Renomear o arquivo para: <strong>XYZ123-pratica3.pdf</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
+</ul>
+
+<h4 id="5-25pt-laboratório-2---para-nota">5) [2.5pt] Laboratório 2 - [Para nota]:</h4>
+<ul>
+  <li>Autenticação de Usuário - <a href="/soa/lab2">Lab</a></li>
+  <li>Data de entrega: <strong>26/10/2021</strong></li>
+  <li>Renomear o arquivo para: <strong>XYZ123-lab2.zip</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
 </ul>
 
 <!--

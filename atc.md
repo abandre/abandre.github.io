@@ -12,6 +12,7 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 - [10/09/21] - Aula 4 - Generalização - <a href="/atc/Aula4-Generalizacao.pdf" target="_blank">Slide</a>
 - [17/09/21] - Aula 5 - Restrição - <a href="/atc/Aula5-Restricao.pdf" target="_blank">Slide</a>
 - [24/09/21] - Aula 6 - Decidibilidade - <a href="/atc/Aula7-Decidibilidade.pdf" target="_blank">Slide</a>
+- [01/10/21] - Aula 7 - Indecidibilidade - <a href="/atc/Aula8-Indecidibilidade.pdf" target="_blank">Slide</a>
 
 ## Entrega de Trabalhos
 
@@ -30,6 +31,8 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 #### 4) [1.0pt] Exercícios da Aula 4 - [Para nota]:
  - Renomear o arquivo para: **XYZ123-aula4.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
+#### 5) [1.0pt]  Apresentação sobre a linguagem LD [Para nota]:
+ - Renomear o arquivo para: **XYZ123-ld.pdf**, onde XYZ123 é o seu RA. 
 
 <!--
 #### 2) [1.0]  Lista 1 (<a href="/atc/ex-mt-enunciado.pdf" target="_blank">link</a>):
