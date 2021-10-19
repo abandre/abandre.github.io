@@ -13,6 +13,8 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
 - [20/09/21] - Memória Virtual - parte 2 - <a href="/soa/Aula6-Mem-Virtual-pt2.pdf" target="_blank">Slide</a>
 - [27/09/21] - Segmentação - <a href="/soa/Aula7-Segmentação.pdf" target="_blank">Slide</a>
 - [04/10/21] - Segurança - <a href="/soa/Aula8-Seguranca.pdf" target="_blank">Slide</a>
+- [18/10/21] - E/S - Hardware - <a href="/soa/Aula9-ESHardware.pdf" target="_blank">Slide</a>
+- [25/10/21] - E/S - Software - <a href="/soa/Aula10-ESSoftware.pdf" target="_blank">Slide</a>
 
 <!-- ### Conteúdo Complementar
 
@@ -35,7 +37,7 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
  - Comando ps e Process Explorer - <a href="/soa/pratica2.pdf" target="_blank">Slide</a>
  - Renomear o arquivo para: **XYZ123-pratica2.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
-#### 3) [2.5pt] Laboratório 1 - [Para nota]:
+#### 3) [3.0pt] Laboratório 1 - [Para nota]:
  - Swapping de memória - <a href="/soa/lab1">Lab</a>
  - Data de entrega: **21/09/2021**
  - Renomear o arquivo para: **XYZ123-lab1.zip**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
@@ -44,10 +46,14 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
  - Comando free e Process Explorer - <a href="/soa/pratica3.pdf" target="_blank">Slide</a>
  - Renomear o arquivo para: **XYZ123-pratica3.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
-#### 5) [2.5pt] Laboratório 2 - [Para nota]:
+#### 5) [3.0pt] Laboratório 2 - [Para nota]:
  - Autenticação de Usuário - <a href="/soa/lab2">Lab</a>
  - Data de entrega: **26/10/2021**
  - Renomear o arquivo para: **XYZ123-lab2.zip**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
+
+#### 6) [1.0pt] Aula Prática 4 - [Para nota]:
+ - Comando free e Process Explorer - <a href="/soa/pratica4.pdf" target="_blank">Slide</a>
+ - Renomear o arquivo para: **XYZ123-pratica4.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
 <!--
 #### 2) [2.0pt] Exercícios da Aula 2 - [Para nota]:

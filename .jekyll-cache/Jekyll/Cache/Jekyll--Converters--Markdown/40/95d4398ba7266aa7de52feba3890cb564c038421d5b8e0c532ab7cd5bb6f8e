@@ -1,64 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021) – Prof. Amaury André – Ciência da Computação - UNIP Limeira</title>
-
-        <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
-    
-    <meta name="description" content="Ciência da Computação - UNIP Limeira">
-    <meta property="og:description" content="Ciência da Computação - UNIP Limeira" />
-    
-    <meta name="author" content="Prof. Amaury André" />
-
-    
-    <meta property="og:title" content="5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)" />
-    <meta property="twitter:title" content="5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)" />
-    
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="Prof. Amaury André - Ciência da Computação - UNIP Limeira" href="/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="/images/perfilt2.png" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="/">Prof. Amaury André</a></h1>
-            <p class="site-description">Ciência da Computação - UNIP Limeira</p>
-          </div>
-
-          <nav>
-            <a href="/">Home</a>
-            <a href="/about">Sobre</a>
-            <!-- <a href="/pd"><i class="material-icons">computer</i></a>
-            <a href="/fb"><i class="material-icons">location_city</i></a>
-            <a href="/at"><i class="material-icons">build</i></a> -->
-<!--             <a href="/sp"><i class="material-icons">headset_mic</i></a> -->
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      <article class="page">
-
-  <h1>5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)</h1>
-
-  <div class="entry">
-    <h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
+I"�<h3 id="cronograma-de-aulas-teóricas">Cronograma de Aulas Teóricas</h3>
 
 <ul>
   <li>[16/08/21] - Introdução - <a href="/soa/Aula1-Introducao.pdf" target="_blank">Slide</a></li>
@@ -69,8 +9,7 @@
   <li>[20/09/21] - Memória Virtual - parte 2 - <a href="/soa/Aula6-Mem-Virtual-pt2.pdf" target="_blank">Slide</a></li>
   <li>[27/09/21] - Segmentação - <a href="/soa/Aula7-Segmentação.pdf" target="_blank">Slide</a></li>
   <li>[04/10/21] - Segurança - <a href="/soa/Aula8-Seguranca.pdf" target="_blank">Slide</a></li>
-  <li>[18/10/21] - E/S - Hardware - <a href="/soa/Aula9-ESHardware.pdf" target="_blank">Slide</a></li>
-  <li>[25/10/21] - E/S - Software - <a href="/soa/Aula10-ESSoftware.pdf" target="_blank">Slide</a></li>
+  <li>[04/10/21] - Segurança - <a href="/soa/Aula9-ESSoftware.pdf" target="_blank">Slide</a></li>
 </ul>
 
 <!-- ### Conteúdo Complementar
@@ -97,7 +36,7 @@
   <li>Renomear o arquivo para: <strong>XYZ123-pratica2.pdf</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
 </ul>
 
-<h4 id="3-30pt-laboratório-1---para-nota">3) [3.0pt] Laboratório 1 - [Para nota]:</h4>
+<h4 id="3-25pt-laboratório-1---para-nota">3) [2.5pt] Laboratório 1 - [Para nota]:</h4>
 <ul>
   <li>Swapping de memória - <a href="/soa/lab1">Lab</a></li>
   <li>Data de entrega: <strong>21/09/2021</strong></li>
@@ -110,17 +49,11 @@
   <li>Renomear o arquivo para: <strong>XYZ123-pratica3.pdf</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
 </ul>
 
-<h4 id="5-30pt-laboratório-2---para-nota">5) [3.0pt] Laboratório 2 - [Para nota]:</h4>
+<h4 id="5-25pt-laboratório-2---para-nota">5) [2.5pt] Laboratório 2 - [Para nota]:</h4>
 <ul>
   <li>Autenticação de Usuário - <a href="/soa/lab2">Lab</a></li>
   <li>Data de entrega: <strong>26/10/2021</strong></li>
   <li>Renomear o arquivo para: <strong>XYZ123-lab2.zip</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
-</ul>
-
-<h4 id="6-10pt-aula-prática-4---para-nota">6) [1.0pt] Aula Prática 4 - [Para nota]:</h4>
-<ul>
-  <li>Comando free e Process Explorer - <a href="/soa/pratica4.pdf" target="_blank">Slide</a></li>
-  <li>Renomear o arquivo para: <strong>XYZ123-pratica4.pdf</strong>, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.</li>
 </ul>
 
 <!--
@@ -150,48 +83,4 @@
 
 ### Prazo de entrega: 26/05 as 19h
 -->
-
-  </div>
-</article>
-
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          
-<a href="mailto:amaury.andre@gmail.com"><i class="svg-icon email"></i></a>
-
-
-
-
-<a href="https://www.linkedin.com/in/amaury-andré-38960424"><i class="svg-icon linkedin"></i></a>
-
-
-
-
-<a href="https://youtube.com/user/aandre1985"><i class="svg-icon youtube"></i></a>
-
-        </footer>
-      </div>
-    </div>
-
-    
-	<!-- Google Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-158977996-1', 'auto');
-		ga('send', 'pageview', {
-		  'page': '/soa/',
-		  'title': '5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)'
-		});
-	</script>
-	<!-- End Google Analytics -->
-
-
-  </body>
-</html>
+:ET
