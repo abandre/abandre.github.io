@@ -3,22 +3,19 @@ layout: page
 title: Calendário de Provas
 ---
 
-Datas e Horários das provas desse semestre: Ainda não definido
+Datas e Horários das provas desse semestre: 
 
 <!-- <a href="/horarios/provas2.pdf" target="_blank">Provas</a> -->
 
-<!--### CC1P43
 
-Provas da turma do <a href="/horarios/provas1sem.pdf" target="_blank">primeiro ano</a>
+### CC3P43, CC4P43
 
-### CC2P43, CC3P43 e CC3Q43
+Provas da turma do <a href="/horarios/provas3-4sem.pdf" target="_blank">segundo ano</a>
 
-Provas da turma do <a href="/horarios/provas2-3sem.pdf" target="_blank">segundo ano</a>
+### CC5P43 e CC6P43
 
-### CC4P43 e CC5P43
+Provas da turma do <a href="/horarios/provas5-6sem.pdf" target="_blank">terceiro ano</a>
 
-Provas da turma do <a href="/horarios/provas4-5sem.pdf" target="_blank">terceiro ano</a>
+### CC7P43 e CC8P43
 
-### CC6P43 e CC7P43
-
-Provas da turma do <a href="/horarios/provas6-7sem.pdf" target="_blank">quarto ano</a>-->
+Provas da turma do <a href="/horarios/provas7-8sem.pdf" target="_blank">quarto ano</a>
