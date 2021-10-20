@@ -48,11 +48,11 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
 
 #### 5) [3.0pt] Laboratório 2 - [Para nota]:
  - Autenticação de Usuário - <a href="/soa/lab2">Lab</a>
- - Data de entrega: **26/10/2021**
+ - Data de entrega: **09/11/2021**
  - Renomear o arquivo para: **XYZ123-lab2.zip**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
 #### 6) [1.0pt] Aula Prática 4 - [Para nota]:
- - Comando free e Process Explorer - <a href="/soa/pratica4.pdf" target="_blank">Slide</a>
+ - Comando df e NTFSInfo - <a href="/soa/pratica4.pdf" target="_blank">Slide</a>
  - Renomear o arquivo para: **XYZ123-pratica4.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
 <!--
