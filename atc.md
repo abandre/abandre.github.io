@@ -13,6 +13,7 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 - [17/09/21] - Aula 5 - Restrição - <a href="/atc/Aula5-Restricao.pdf" target="_blank">Slide</a>
 - [24/09/21] - Aula 6 - Decidibilidade - <a href="/atc/Aula7-Decidibilidade.pdf" target="_blank">Slide</a>
 - [01/10/21] - Aula 7 - Indecidibilidade - <a href="/atc/Aula8-Indecidibilidade.pdf" target="_blank">Slide</a>
+- [01/10/21] - Aula 8 - Complexidade Assintótica - <a href="/atc/Aula9-ComplAssintotica.pdf" target="_blank">Slide</a>
 
 ## Entrega de Trabalhos
 
@@ -33,6 +34,9 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 
 #### 5) [1.0pt]  Apresentação sobre a linguagem LD [Para nota]:
  - Renomear o arquivo para: **XYZ123-ld.pdf**, onde XYZ123 é o seu RA. 
+
+#### 4) [1.0pt] Exercícios da Aula 8 - [Para nota]:
+ - <a href="https://forms.office.com/r/9SzQRpQLJi" target="_blank">https://forms.office.com/r/9SzQRpQLJi</a>
 
 <!--
 #### 2) [1.0]  Lista 1 (<a href="/atc/ex-mt-enunciado.pdf" target="_blank">link</a>):
