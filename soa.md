@@ -55,6 +55,10 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
  - Comando df e NTFSInfo - <a href="/soa/pratica4.pdf" target="_blank">Slide</a>
  - Renomear o arquivo para: **XYZ123-pratica4.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
+#### 7) [+1.0pt] Trabalho Adicional:
+ - Discos RAID - <a href="/soa/pratica4.pdf" target="_blank">Slide</a>
+ - Renomear o arquivo para: **XYZ123-adicional.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
+
 <!--
 #### 2) [2.0pt] Exercícios da Aula 2 - [Para nota]:
  - Renomear o arquivo para: **XYZ123-aula2.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
