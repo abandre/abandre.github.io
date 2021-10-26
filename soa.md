@@ -56,7 +56,7 @@ title: "5/6sem: SOA - Sistemas Operacionais Abertos e Mobile (2s2021)"
  - Renomear o arquivo para: **XYZ123-pratica4.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
 #### 7) [+1.0pt] Trabalho Adicional:
- - Discos RAID - <a href="/soa/pratica4.pdf" target="_blank">Slide</a>
+ - Discos RAID
  - Renomear o arquivo para: **XYZ123-adicional.pdf**, onde XYZ123 é o seu RA. Formatos aceitos: pdf, doc, jpg, zip, rar.
 
 <!--
