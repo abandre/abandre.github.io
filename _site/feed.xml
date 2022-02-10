@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-10T11:24:45-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Prof. Amaury André</title><subtitle>Site dedicado à informações e disciplinadas lecionadas no curso de Ciência da Computação na UNIP/Limeira</subtitle><entry><title type="html">Site Atualizado!</title><link href="http://localhost:4000/jekyll/update/2022/02/10/site-novo.html" rel="alternate" type="text/html" title="Site Atualizado!" /><published>2022-02-10T10:00:00-03:00</published><updated>2022-02-10T10:00:00-03:00</updated><id>http://localhost:4000/jekyll/update/2022/02/10/site-novo</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/02/10/site-novo.html">&lt;p&gt;Site atualizado com as disciplinas do primeiro semestre de 2022.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sigam as informações postadas aqui nos avisos, assim como o calendário de aulas e provas.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A cada aula o conteúdo será postado no site da respectiva disciplina, assim como orientações de trabalhos e tarefas e serem entregues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Acesse todo o acervo de trabalhos apresentados de TCC nos últimos anos do curso de Ciência da Computação.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Veja informações e orientações da coordenação para entrega de trabalhos e DPs.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tudo isso será constantemente atualizado e mantido neste site!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Site atualizado com as disciplinas do primeiro semestre de 2022. Sigam as informações postadas aqui nos avisos, assim como o calendário de aulas e provas. A cada aula o conteúdo será postado no site da respectiva disciplina, assim como orientações de trabalhos e tarefas e serem entregues. Acesse todo o acervo de trabalhos apresentados de TCC nos últimos anos do curso de Ciência da Computação. Veja informações e orientações da coordenação para entrega de trabalhos e DPs. Tudo isso será constantemente atualizado e mantido neste site!</summary></entry></feed>

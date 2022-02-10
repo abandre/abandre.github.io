@@ -1,37 +1,16 @@
 ---
-title: Projetos
-password: pd@semeq
+layout: page
+title: Alguns Projetos Desenvolvidos
 ---
 
-# Projetos Principais
+- 2020 - 2021: <a href="dash">Dash Plotly Data Visualization</a>
 
-<hr style='height:1px;border-width:0;color:lightgray;background-color:lightgray'>
+- 2018 - 2020:  <a href="edge">Edge Computing - IoT</a>
 
-# Projetos HW
-## Sensor Cabeado Baixissíma Rotação
+- 2015 - 2018: <a href="pressure">Pressure Reconstruction</a>
 
-- **Código:** PSMQ13
-- **Tipo:** Produto
-- **Fase:** Desenvolvendo/Executando
-- **Classificação:** Principal
-- **Responsável:** Luiz Claro
-- **Descrição:** Sensor de vibração cabeado com muita memória e possibilidade de aquisição de ondas com longo períodos.
+- 2013 - 2015: <a href="video">Video Magnification</a>
 
-- **Tempo Estimado:** 82 dias úteis
-- **Custo Estimado:** R$29300.0
-- **Tempo Decorrido:** 3917 dias úteis
-- **Custo Corrente:** R$8752.0
-- **Esforço empregado:** 21 dias úteis
-- **VA (Valor Agregado):** 49.6%
-- **IDP (Índice de Desempenho de Prazo):** 0.01
-- **IDC (Índice de Desempenho de Custo):** 0.3
+- 2010 - 2013: <a href="triagem">Predictive Maintenance Binary Classification</a>
 
-
-<hr style='height:1px;border-width:0;color:lightgray;background-color:lightgray'>
-
-<center>
-
-<a href="javascript:history.back()"><i class="material-icons" style='font-size:48px;color:black'>arrow_back</i><br>Voltar</a>
-
-</center>
-
+- 2008 - 2010: <a href="workflow">Workflow Verification</a>

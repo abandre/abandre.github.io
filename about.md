@@ -12,4 +12,4 @@ Limeira.
 
 ### Contact me
 
-[amaury.andre@gmail.com](mailto:amaury.andre@gmail.com)
+[amaury.andre@docente.unip.br](mailto:amaury.andre@docente.unip.br)

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Atividades Complementares (2s2021)"
+title: "Atividades Complementares (1s2022)"
 ---
 
 ## Descrição das Atividades
 
-- Orientações Gerais - <a href="/ac/AC.doc" target="_blank">AC</a>
-- Ficha de Atividades - <a href="/ac/Ficha.xls" target="_blank">Ficha</a>
+- Orientações Gerais - <a href="/docs/AC.doc" target="_blank">AC</a>
+- Ficha de Atividades - <a href="/docs/Ficha.xls" target="_blank">Ficha</a>
 
 Lembrando que o total deve ser maior que 180 horas.
 
@@ -16,7 +16,7 @@ Lembrando que o total deve ser maior que 180 horas.
 
 Criar um zip com todos os documentos, nomeando da seguinte maneira: XYZ1234-ac.zip, onde XYZ1234 é o seu RA.
 
-- **Prazo de entrega:** A definir (novembro/2021)
+- **Prazo de entrega:** até junho/2022
 
 A entrega das atividades complementares é feita no segundo semestre.
 

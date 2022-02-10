@@ -1,15 +1,15 @@
 ---
 layout: page
-title: "Orientação de Estágio (2s2021)"
+title: "Orientação de Estágio (1s2022)"
 ---
 
 ## Modelos de Arquivos
 
 ### Declarações
 
- - Carta Aluno Dono de Empresa - <a href="/estagio/Carta_Aluno_dono_de_empresa.doc" target="_blank">Modelo</a> 
- - Carta Aluno Estagiаrio - <a href="/estagio/Carta_Aluno__Estagiаrio.doc" target="_blank">Modelo</a> 
- - Carta Aluno Funcionаrio - <a href="/estagio/Carta_Aluno_Funcionаrio.doc" target="_blank">Modelo</a> 
+ - Carta Aluno Dono de Empresa - <a href="/docs/Carta_Aluno_dono_de_empresa.doc" target="_blank">Modelo</a> 
+ - Carta Aluno Estagiаrio - <a href="/docs/Carta_Aluno__Estagiаrio.doc" target="_blank">Modelo</a> 
+ - Carta Aluno Funcionаrio - <a href="/docs/Carta_Aluno_Funcionаrio.doc" target="_blank">Modelo</a> 
 
 ### Relatório de Estágio
 
@@ -47,7 +47,7 @@ Deve ser entregue também um documento contendo os seguintes campos:
 
 ### Link para upload dos arquivos: <a href="https://bit.ly/3kd9Igx" target="_blank">https://bit.ly/3kd9Igx</a>
 
-- **Prazo de entrega:** A entrega do relatório de estágio é feita apenas no segundo semestre.
+- **Prazo de entrega:** A entrega do relatório de estágio é feita apenas no segundo semestre. Exceto se for DP. Aí enviar pelo link de [Entrega de Trabalhos de DP](../dps)
 
 <!--
  - Renomear o arquivo para: **XYZ123-estagio.pdf**, onde XYZ123 é o seu RA. 

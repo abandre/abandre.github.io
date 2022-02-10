@@ -1,1 +1,0 @@
-cmd_/home/amaury/site/abandre.github.io/soa/alomundo.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/amaury/site/abandre.github.io/soa/alomundo.ko /home/amaury/site/abandre.github.io/soa/alomundo.o /home/amaury/site/abandre.github.io/soa/alomundo.mod.o ;  true

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trabalhos de DP
+title: Trabalhos de DP (1s2022)
 ---
 
 ## Entrega de Trabalhos
@@ -25,4 +25,8 @@ A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. 
  - Escolher um artigo científico em computação e fazer um resenha do artigo.
  - Renomear o arquivo para: **XYZ123-tap.pdf**, onde XYZ123 é o seu RA. 
 
-### Prazo de entrega: Não definido ainda.
+#### 5) DP de Estágio:
+ - Entregar o relatório completo e a declaração da empresa assinada. 
+ - Renomear o arquivo para: **XYZ123-estagio.pdf**, onde XYZ123 é o seu RA. 
+
+### Prazo de entrega: junho/2022
