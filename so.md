@@ -27,7 +27,7 @@ title: "SO - Sistema Operacionais"
 
 
 <!-- #### 1) [1.0pt] Leitura complementar 1 - [Para nota]
- - https://bit.ly/37Av2rZ
+ - <a href="https://bit.ly/37Av2rZ">https://bit.ly/37Av2rZ</a>
 
 #### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
  - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA. 
@@ -56,4 +56,4 @@ title: "SO - Sistema Operacionais"
 #### 9) [3.0pt] Trabalho Final - <a href="/so/labs/trab" target="_blank">Problemas Clássicos</a> - [Para nota]
  - Trabalho em grupo de no máximo 6 alunos.
  - Entrega do exercício: renomear o arquivo para **classicos.zip**.
- - O arquivo zip deve conter as apresentações (.ppt), os códigos fonte (.py) e uma planilha com os RAs e nomes completos dos integrantes do grupo. -->
+ - O arquivo zip deve conter as apresentações (.ppt), os códigos fonte (.py) e uma planilha com os RAs e nomes completos dos integrantes do grupo.  -->

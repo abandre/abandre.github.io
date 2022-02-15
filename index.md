@@ -11,7 +11,7 @@ layout: home
 <a href="so"><b>[4/5 sem] Sistemas Operacionais (SO)</b></a><br>
 <a href="aa"><b>[6/7 sem] Análise de Algoritmos (AA)</b></a><br>
 <a href="tc1"><b>[6/7 sem] Trabalhos de Conclusão de Curso I (TC1)</b></a><br>
-<a href="daw"><b>[8 sem] Desenvolvimento em Ambiente Web (DAW)</b></a><br>
+<!-- <a href="daw"><b>[8 sem] Desenvolvimento em Ambiente Web (DAW)</b></a><br> -->
 
 <h2>Coordenação</h2>
 
