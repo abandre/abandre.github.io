@@ -14,3 +14,9 @@ title: Alguns Projetos Desenvolvidos
 - 2010 - 2013: <a href="projetos/triagem">Predictive Maintenance Binary Classification</a>
 
 - 2008 - 2010: <a href="projetos/workflow">Workflow Verification</a>
+
+
+
+<a href="projetos/cv.pdf">Currículo Vitae</a><br>
+<a href="http://lattes.cnpq.br/9839485542106095">Currículo Lattes</a>
+
