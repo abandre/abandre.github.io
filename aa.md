@@ -7,6 +7,9 @@ title: "AA - Análise de Algoritmos"
 
 ### Cronograma de Aulas
 
+- [21/02/22] - Introdução - <a href="/so/Aula1.pdf" target="_blank">Slide</a>
+- [07/03/22] - Divide and Conquer - <a href="/so/Aula2.pdf" target="_blank">Slide</a>
+
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
 - [23/02/21] - Kernel - <a href="/so/Aula2-Kernel.pdf" target="_blank">Slide</a>

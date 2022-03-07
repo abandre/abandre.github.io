@@ -22,6 +22,9 @@ Acesso aos trabalhos apresentados nos últimos anos no curso de Ciência da Comp
 
 ### Cronograma de Aulas/Entregas*
 
+- [18/02/22] - Introdução
+- [04/03/22] - Revisão Bibliográfica - <a href="/tccs/revisao_bibliografica.pdf" target="_blank">Slide</a>
+
 <!-- - [07/02/20] - Apresentação da Disciplina
 - [14/02/20] - Discussão de modelos e temas
 - [21/02/20] - Apresentação breve do Acervo de TCCs

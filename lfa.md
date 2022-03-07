@@ -7,7 +7,10 @@ title: "LFA - Linguagens Formais e Autômatos"
 
 ### Cronograma de Aulas/Avaliações*
 
-<!-- - [04/02/20] - Apresentação da Disciplina
+- [21/02/22] - Elementos de Matemática Discreta - <a href="/lfa/Aula1.pdf" target="_blank">Slide</a>
+- [07/03/22] - Linguagens Regulares - <a href="/lfa/Aula2.pdf" target="_blank">Slide</a>
+
+<!--
 - [11/02/20] - Elementos de Matemática Discreta - <a href="/lfa/Aula1.pdf" target="_blank">Slide</a>
 - [03/03/20] - Linguagens Regulares - <a href="/lfa/Aula2.pdf" target="_blank">Slide</a>
 - [10/03/20] - Autômatos Finitos 1 - <a href="/lfa/Aula4.pdf" target="_blank">Slide</a>

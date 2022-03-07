@@ -7,6 +7,9 @@ title: "SO - Sistema Operacionais"
 
 ### Cronograma de Aulas
 
+- [22/02/22] - Introdução - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
+- [08/03/22] - Kernel - <a href="/so/Aula2-Kernel.pdf" target="_blank">Slide</a>
+
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
 - [23/02/21] - Kernel - <a href="/so/Aula2-Kernel.pdf" target="_blank">Slide</a>
@@ -26,9 +29,10 @@ title: "SO - Sistema Operacionais"
 #### Link para upload dos arquivos: <a href="https://bit.ly/3aJuZfb" target="_blank">https://bit.ly/3aJuZfb</a>
 
 
-<!-- #### 1) [1.0pt] Leitura complementar 1 - [Para nota]
+#### 1) Leitura complementar
  - <a href="https://bit.ly/37Av2rZ">https://bit.ly/37Av2rZ</a>
 
+<!--
 #### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
  - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA. 
 
