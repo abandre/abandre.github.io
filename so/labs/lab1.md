@@ -32,7 +32,7 @@ Exercício:
 
 Calcular uma aproximação do valor de 𝜋 a partir da seguinte série:
 
-<img src="formula.png">
+<img src="lab1/formula.png">
 
 De acordo com a série anterior, a precisão do valor de 𝜋 aumenta quanto maior for o parâmetro `N` utilizado.
 
