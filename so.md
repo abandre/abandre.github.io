@@ -9,6 +9,7 @@ title: "SO - Sistema Operacionais"
 
 - [22/02/22] - Introdução - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
 - [08/03/22] - Kernel - <a href="/so/Aula2-Kernel.pdf" target="_blank">Slide</a>
+- [15/03/22] - Processos - <a href="/so/Aula3-Processos.pdf" target="_blank">Slide</a>
 
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
@@ -31,6 +32,13 @@ title: "SO - Sistema Operacionais"
 
 #### 1) Leitura complementar
  - <a href="https://bit.ly/37Av2rZ">https://bit.ly/37Av2rZ</a>
+
+#### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
+ - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA. 
+
+#### 3) [1.0pt] Lab 1 - <a href="/so/labs/lab1" target="_blank">Processos</a> - [Para nota]
+ - Entrega do exercício: renomear o arquivo para **XYZ123-processos.zip**, onde XYZ123 é o seu RA.
+ - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf) 
 
 <!--
 #### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
