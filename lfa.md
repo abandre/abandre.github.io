@@ -10,6 +10,7 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [21/02/22] - Elementos de Matemática Discreta - <a href="/lfa/Aula1.pdf" target="_blank">Slide</a>
 - [07/03/22] - Linguagens Regulares - <a href="/lfa/Aula2.pdf" target="_blank">Slide</a>
 - [14/03/22] - Autômatos Finitos 1 - <a href="/lfa/Aula4.pdf" target="_blank">Slide</a>
+- [14/03/22] - Autômatos Finitos não Determinísticos - <a href="/lfa/Aula5.pdf" target="_blank">Slide</a>
 
 <!--
 - [11/02/20] - Elementos de Matemática Discreta - <a href="/lfa/Aula1.pdf" target="_blank">Slide</a>
@@ -40,6 +41,10 @@ title: "LFA - Linguagens Formais e Autômatos"
 
 #### Link para upload dos arquivos: <a href="https://bit.ly/2yv6kLc" target="_blank">https://bit.ly/2yv6kLc</a>
 
+
+#### 1) [1.0] Exercícios Complementar 1:
+ - Final do <a href="/lfa/Aula5.pdf" target="_blank">slide</a>
+ - Renomear o arquivo para: **XYZ123-ec1.ext**, onde XYZ123 é o seu RA e ext é uma entre (zip, pdf, jpg, png).
 
 <!-- #### 1) [1.0] Exercícios dos módulos 1 e 2:
  - Renomear o arquivo para: **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA. 

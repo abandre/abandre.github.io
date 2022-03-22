@@ -24,6 +24,7 @@ Acesso aos trabalhos apresentados nos últimos anos no curso de Ciência da Comp
 
 - [18/02/22] - Introdução
 - [04/03/22] - Revisão Bibliográfica - <a href="/tccs/revisao_bibliografica.pdf" target="_blank">Slide</a>
+- [25/03/22] - Apresentação dos Temas
 
 <!-- - [07/02/20] - Apresentação da Disciplina
 - [14/02/20] - Discussão de modelos e temas
@@ -35,6 +36,11 @@ Acesso aos trabalhos apresentados nos últimos anos no curso de Ciência da Comp
 
 #### Link para upload dos arquivos: <a href="https://bit.ly/3guazrz" target="_blank">https://bit.ly/3guazrz</a>
 
+
+#### 1) Proposta de Tema para o TCC
+ - Renomear o arquivo para: **XYZ123-tema.pdf**, onde XYZ123 é o seu RA.
+ - Enviar até 01/04
+ - Arquivo deve conter: Nome, RA, Título provisório, subárea de atuação em computação, breve descrição, objetivo.
 
 <!-- #### 1) Relatório das apresentações:
  - Renomear o arquivo para: **XYZ123-relatorio.pdf**, onde XYZ123 é o seu RA. 

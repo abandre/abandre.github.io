@@ -10,6 +10,7 @@ title: "AA - Análise de Algoritmos"
 - [21/02/22] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a>
 - [07/03/22] - Divide and Conquer - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
 - [14/03/22] - Programação Dinâmica - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
+- [21/03/22] - Programação Gulosa - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
 
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
@@ -27,9 +28,12 @@ title: "AA - Análise de Algoritmos"
 
 ### Atividades e Entregas
 
-#### Link para upload dos arquivos: 
+#### Link para upload dos arquivos: <a href='https://bit.ly/3iu7Oc2' target="_blank">https://bit.ly/3iu7Oc2</a>
 
-<!-- <a href="https://bit.ly/3aJuZfb" target="_blank">https://bit.ly/3aJuZfb</a> -->
+
+#### 1) [1.0pt] Exercício Complementar 1 - [Para nota]
+ - Final do <a href="/aa/Aula4.pdf" target="_blank">slide</a>
+ - Entrega do exercício: renomear o arquivo para **XYZ123-ec1.ext**, onde XYZ123 é o seu RA e ext é uma entre (zip, pdf, jpg, png).
 
 
 <!-- #### 1) [1.0pt] Leitura complementar 1 - [Para nota]

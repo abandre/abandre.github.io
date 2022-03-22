@@ -18,6 +18,7 @@ layout: home
 <a href="ac"><b>Atividades Complementares</b></a><br>
 <a href="estagio"><b>Relatório de Estágio</b></a><br>
 <a href="dps"><b>Entrega de Trabalhos de DP</b></a><br>
+<a href="docs/criterios.pdf" target="_blank"><b>Critérios de Avaliação - 2022</b></a><br>
 
 <h2>Links Úteis</h2>
 

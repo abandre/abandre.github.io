@@ -14,4 +14,4 @@ Horário de aulas da turma do <a href="/docs/4_5_sem_2022_1.pdf" target="_blank"
 
 ### CC6P43 e CC7P43
 
-Horário de aulas da turma do <a href="/docs/6_7_sem_20220_1.pdf" target="_blank">quarto ano</a>
+Horário de aulas da turma do <a href="/docs/6_7_sem_2022_1.pdf" target="_blank">quarto ano</a>
