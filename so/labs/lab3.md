@@ -67,7 +67,7 @@ Note no código anterior, algumas funções bastante úteis em multiprogramaçã
 
 ### Exercício:
 
-Acesse o seguinte <a href="https://forms.office.com/r/1TnSZihJRu" target="_blank">link</a>, siga as instruções e responda às perguntas lá. O formulário estará disponível durante o horário de aula somente.
+Acesse o seguinte <a href="https://forms.office.com/r/1TnSZihJRu" target="_blank">link</a>, siga as instruções e responda às perguntas lá. 
 
 ### Leitura complementar
 
