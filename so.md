@@ -45,6 +45,9 @@ title: "SO - Sistema Operacionais"
  - Entrega do exercício: renomear o arquivo para **XYZ123-threads.zip**, onde XYZ123 é o seu RA.
  - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf) 
 
+#### 5) Lab3 - <a href="/so/labs/lab3" target="_blank">Multiprocessing vs Multithreading</a>
+ - Entrega do exercício: responder as questões do forms - <a href="https://forms.office.com/r/1TnSZihJRu" target="_blank">link</a>
+
 <!--
 =======
 >>>>>>> 153316c3bb967a1f0e0edc2e697692c901eb7672

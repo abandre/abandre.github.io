@@ -43,7 +43,7 @@ Exercício:
 
 Calcular uma aproximação do valor da função exponencial a partir da seguinte série:
 
-<img src="formula.png">
+<img src="lab2/formula.png">
 
 De acordo com a série anterior, a precisão do valor da exponencial aumenta quanto maior for o parâmetro `N` utilizado.
 
