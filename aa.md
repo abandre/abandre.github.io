@@ -7,7 +7,7 @@ title: "AA - Análise de Algoritmos"
 
 ### Cronograma de Aulas
 
-- [21/02/22] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a> - [<a href="https://www.chegg.com/homework-help/algorithms-1st-edition-chapter-0-solutions-9780073523408" target="_blank">Resposta</a>]
+- [21/02/22] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a> - [<a href="https://www.chegg.com/homework-help/algorithms-1st-edition-chapter-0-solutions-9780073523408" target="_blank">Respostas</a>]
 - [07/03/22] - Divide and Conquer - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
 - [14/03/22] - Programação Dinâmica - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
 - [21/03/22] - Programação Gulosa - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
