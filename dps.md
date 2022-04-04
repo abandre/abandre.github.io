@@ -7,7 +7,7 @@ title: Trabalhos de DP (1s2022)
 
 A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. As demais disciplinas devem seguir o mesmo critério utilizado no primeiro semestre de 2020.
 
-### Link para upload dos arquivos: <a href="https://bit.ly/3d1f4I3" target="_blank">https://bit.ly/3d1f4I3</a>
+### Link para upload dos arquivos: <a href="https://bit.ly/3uPWvR7" target="_blank">https://bit.ly/3uPWvR7</a>
 
 #### 1) DP de APS:
  - Entregar o trabalho escrito e a ficha de horas preenchida. 

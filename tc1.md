@@ -34,7 +34,7 @@ Acesso aos trabalhos apresentados nos últimos anos no curso de Ciência da Comp
 
 ### Entrega de Trabalhos
 
-#### Link para upload dos arquivos: <a href="https://bit.ly/3guazrz" target="_blank">https://bit.ly/3guazrz</a>
+#### Link para upload dos arquivos: <a href="https://bit.ly/36MqVvS" target="_blank">https://bit.ly/36MqVvS</a>
 
 
 #### 1) Proposta de Tema para o TCC

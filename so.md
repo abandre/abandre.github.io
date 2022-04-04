@@ -28,7 +28,7 @@ title: "SO - Sistema Operacionais"
 
 ### Atividades e Entregas
 
-#### Link para upload dos arquivos: <a href="https://bit.ly/3aJuZfb" target="_blank">https://bit.ly/3aJuZfb</a>
+#### Link para upload dos arquivos: <a href="https://bit.ly/3NWUVWy" target="_blank">https://bit.ly/3NWUVWy</a>
 
 
 #### 1) Leitura complementar

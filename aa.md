@@ -28,7 +28,7 @@ title: "AA - Análise de Algoritmos"
 
 ### Atividades e Entregas
 
-#### Link para upload dos arquivos: <a href='https://bit.ly/3iu7Oc2' target="_blank">https://bit.ly/3iu7Oc2</a>
+#### Link para upload dos arquivos: <a href='https://bit.ly/3qWTnlm' target="_blank">https://bit.ly/3qWTnlm</a>
 
 
 #### 1) [1.0pt] Exercício Complementar 1 - [Para nota]

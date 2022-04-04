@@ -39,7 +39,7 @@ title: "LFA - Linguagens Formais e Autômatos"
  -->
 ### Entrega de Trabalhos
 
-#### Link para upload dos arquivos: <a href="https://bit.ly/2yv6kLc" target="_blank">https://bit.ly/2yv6kLc</a>
+#### Link para upload dos arquivos: <a href="https://bit.ly/38sEtwX" target="_blank">https://bit.ly/38sEtwX</a>
 
 
 #### 1) [1.0] Exercícios Complementar 1:
