@@ -11,6 +11,7 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [07/03/22] - Linguagens Regulares - <a href="/lfa/Aula2.pdf" target="_blank">Slide</a>
 - [14/03/22] - Autômatos Finitos 1 - <a href="/lfa/Aula4.pdf" target="_blank">Slide</a>
 - [14/03/22] - Autômatos Finitos não Determinísticos - <a href="/lfa/Aula5.pdf" target="_blank">Slide</a>
+- [11/04/22] - Conversão AFND - AFD - <a href="/lfa/Aula6.pdf" target="_blank">Slide</a>
 
 <!--
 - [11/02/20] - Elementos de Matemática Discreta - <a href="/lfa/Aula1.pdf" target="_blank">Slide</a>
