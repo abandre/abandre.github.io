@@ -11,7 +11,7 @@ Os semáforos são basicamente contadores que diminuem quando um recurso está s
 
 Para exercitar o uso de semáforos, vamos ver o exemplo de uma aplicação cliente-servidor, simulando uma aplicação multithreading de um web-server, como o visto em aula e apresentado na imagem a seguir.
 
-<img src="exemplo.png">
+<img src="lab5/exemplo.png">
 
 Note que a aplicação funciona como um dispatcher, ou seja, um lançador de threads para cada nova conexão recebida. A thread lançada então executa um trecho de código comum entre elas. No exemplo, o nosso servidor web simplificado, pode ser implementado a partir do código a seguir:
 

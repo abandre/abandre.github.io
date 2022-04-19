@@ -12,6 +12,7 @@ title: "SO - Sistema Operacionais"
 - [15/03/22] - Processos - <a href="/so/Aula3-Processos.pdf" target="_blank">Slide</a>
 - [22/03/22] - Threads - <a href="/so/Aula4-Threads.pdf" target="_blank">Slide</a>
 - [12/04/22] - Sincronismo - <a href="/so/Aula5-Sincronismo1.pdf" target="_blank">Slide</a>
+- [19/04/22] - Sincronismo2 - <a href="/so/Aula6-Sincronismo2.pdf" target="_blank">Slide</a>
 
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
@@ -53,12 +54,13 @@ title: "SO - Sistema Operacionais"
 #### 6) [0.5pt] Lab4 - <a href="/so/labs/lab4" target="_blank">Sincronização - Locks</a>  - [Para nota]
  - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/Pr09s3zJdh" target="_blank">link</a>
 
+
+#### 7) [0.5pt] Lab5 - <a href="/so/labs/lab5" target="_blank">Semáforos</a>  - [Para nota]
+ - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>
+
 <!--
-=======
 
 
-#### 6) [1.0pt] Lab4 - <a href="/so/labs/lab4" target="_blank">Sincronização - Locks</a>  - [Para nota]
- - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/Pr09s3zJdh" target="_blank">link</a>
  
 #### 7) [1.0pt] Lab5 - <a href="/so/labs/lab5" target="_blank">Semáforos</a>  - [Para nota]
  - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>

@@ -9,7 +9,7 @@ Nessa atividade iremos exercitar os conceitos de concorrência e os problemas de
 
 Primeiramente, vamos codificar e entender na prática o problema de Heisenbug, ilustrado na figura a seguir (apresentada em aula).
 
-<img src="heisenbug.png">
+<img src="lab4/heisenbug.png">
 
 Iremos implementar esse exemplo através da seguinte função em python.
 

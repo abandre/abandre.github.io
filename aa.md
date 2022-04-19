@@ -12,6 +12,7 @@ title: "AA - Análise de Algoritmos"
 - [14/03/22] - Programação Dinâmica - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
 - [21/03/22] - Programação Gulosa - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
 - [11/04/22] - Heaps - <a href="/aa/Aula5.pdf" target="_blank">Slide</a>
+- [18/04/22] - Heaps2 - <a href="/aa/Aula6.pdf" target="_blank">Slide</a>
 
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
