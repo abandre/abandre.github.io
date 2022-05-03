@@ -13,6 +13,8 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [14/03/22] - Autômatos Finitos não Determinísticos - <a href="/lfa/Aula5.pdf" target="_blank">Slide</a>
 - [11/04/22] - Conversão AFND - AFD - <a href="/lfa/Aula6.pdf" target="_blank">Slide</a>
 - [18/04/22] - Minimização de Estados - <a href="/lfa/Aula7.pdf" target="_blank">Slide</a>
+- [02/05/22] - Linguagens e Contexto - <a href="/lfa/Aula8.pdf" target="_blank">Slide</a>
+- [10/05/22] - Autômatos de Pilha - <a href="/lfa/Aula9.pdf" target="_blank">Slide</a>
 
 <!--
 - [11/02/20] - Elementos de Matemática Discreta - <a href="/lfa/Aula1.pdf" target="_blank">Slide</a>
@@ -48,13 +50,16 @@ title: "LFA - Linguagens Formais e Autômatos"
  - Final do <a href="/lfa/Aula5.pdf" target="_blank">slide</a>
  - Renomear o arquivo para: **XYZ123-ec1.ext**, onde XYZ123 é o seu RA e ext é uma entre (zip, pdf, jpg, png).
 
+#### 2) [1.0]  Lista 2 (<a href="/lfa/Listap2.pdf" target="_blank">link</a>):
+  - Renomear o arquivo para: **XYZ123-lista2.pdf**, onde XYZ123 é o seu RA.
+
 <!-- #### 1) [1.0] Exercícios dos módulos 1 e 2:
- - Renomear o arquivo para: **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA. 
+ - Renomear o arquivo para: **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA.
 
 #### 2) [1.5]  Lista 1 (<a href="/lfa/Lista1.pdf" target="_blank">link</a>):
- - Renomear o arquivo para: **XYZ123-lista1.pdf**, onde XYZ123 é o seu RA. 
+ - Renomear o arquivo para: **XYZ123-lista1.pdf**, onde XYZ123 é o seu RA.
 
 #### 3) [1.5]  Lista 2 (<a href="/lfa/Listap2.pdf" target="_blank">link</a>):
- - Renomear o arquivo para: **XYZ123-lista2.pdf**, onde XYZ123 é o seu RA. 
+ - Renomear o arquivo para: **XYZ123-lista2.pdf**, onde XYZ123 é o seu RA.
 
 ### Prazo de entrega: 26/05 as 19h -->

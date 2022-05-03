@@ -12,7 +12,12 @@ title: "SO - Sistema Operacionais"
 - [15/03/22] - Processos - <a href="/so/Aula3-Processos.pdf" target="_blank">Slide</a>
 - [22/03/22] - Threads - <a href="/so/Aula4-Threads.pdf" target="_blank">Slide</a>
 - [12/04/22] - Sincronismo - <a href="/so/Aula5-Sincronismo1.pdf" target="_blank">Slide</a>
-- [19/04/22] - Sincronismo2 - <a href="/so/Aula6-Sincronismo2.pdf" target="_blank">Slide</a>
+- [19/04/22] - Sincronismo 2 - <a href="/so/Aula6-Sincronismo2.pdf" target="_blank">Slide</a>
+- [26/04/22] - Atividade - <a href="/so/Aula8-Deadlock.pdf" target="_blank">Slide</a>
+- [03/05/22] - Deadlock - <a href="/so/Aula8-Deadlock.pdf" target="_blank">Slide</a>
+- [03/05/22] - Escalonamento - <a href="/so/Aula9-Escalonamento.pdf" target="_blank">Slide</a>
+- [10/05/22] - Sistemas de Arquivos 1 - <a href="/so/Aula10-SistemaArquivos.pdf" target="_blank">Slide</a>
+- [10/05/22] - Sistemas de Arquivos 2 - <a href="/so/Aula11-SistemaArquivos2.pdf" target="_blank">Slide</a>
 
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
@@ -37,15 +42,15 @@ title: "SO - Sistema Operacionais"
  - <a href="https://bit.ly/37Av2rZ">https://bit.ly/37Av2rZ</a>
 
 #### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
- - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA. 
+ - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA.
 
 #### 3) [1.0pt] Lab 1 - <a href="/so/labs/lab1" target="_blank">Processos</a> - [Para nota]
  - Entrega do exercício: renomear o arquivo para **XYZ123-processos.zip**, onde XYZ123 é o seu RA.
- - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf) 
+ - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf)
 
 #### 4) [1.0pt] Lab 2 - <a href="/so/labs/lab2" target="_blank">Threads</a> - [Para nota]
  - Entrega do exercício: renomear o arquivo para **XYZ123-threads.zip**, onde XYZ123 é o seu RA.
- - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf) 
+ - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf)
 
 #### 5) Lab3 - <a href="/so/labs/lab3" target="_blank">Multiprocessing vs Multithreading</a>
  - Entrega do exercício: responder as questões do forms - <a href="https://forms.office.com/r/1TnSZihJRu" target="_blank">link</a>
@@ -61,13 +66,13 @@ title: "SO - Sistema Operacionais"
 <!--
 
 
- 
+
 #### 7) [1.0pt] Lab5 - <a href="/so/labs/lab5" target="_blank">Semáforos</a>  - [Para nota]
  - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>
- 
+
 #### 8) [1.0pt] Lab6 - <a href="/so/labs/lab6" target="_blank">Eventos e Condiões</a> - [Para nota]
  - Entrega do exercício: renomear o arquivo para **XYZ123-sincronizacao.zip**, onde XYZ123 é o seu RA.
- - O arquivo zip deve conter os códigos fonte (.py) 
+ - O arquivo zip deve conter os códigos fonte (.py)
 
 #### 9) [3.0pt] Trabalho Final - <a href="/so/labs/trab" target="_blank">Problemas Clássicos</a> - [Para nota]
  - Trabalho em grupo de no máximo 6 alunos.

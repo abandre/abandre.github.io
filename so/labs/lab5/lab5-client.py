@@ -10,5 +10,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	s.connect((HOST, PORT))
 	while True:
 		s.sendall(b'Hello, world')
-		time.sleep(1)
+		time.sleep(5)
     	

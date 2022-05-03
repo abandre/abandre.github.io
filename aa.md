@@ -11,8 +11,10 @@ title: "AA - Análise de Algoritmos"
 - [07/03/22] - Divide and Conquer - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
 - [14/03/22] - Programação Dinâmica - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
 - [21/03/22] - Programação Gulosa - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
-- [11/04/22] - Heaps - <a href="/aa/Aula5.pdf" target="_blank">Slide</a>
-- [18/04/22] - Heaps2 - <a href="/aa/Aula6.pdf" target="_blank">Slide</a>
+- [11/04/22] - Heaps 1- <a href="/aa/Aula5.pdf" target="_blank">Slide</a>
+- [18/04/22] - Heaps 2 - <a href="/aa/Aula6.pdf" target="_blank">Slide</a>
+- [02/04/22] - Algoritmos Aproximados 1 - <a href="/aa/Aula7.pdf" target="_blank">Slide</a>
+
 
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
@@ -42,28 +44,28 @@ title: "AA - Análise de Algoritmos"
  - https://bit.ly/37Av2rZ
 
 #### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
- - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA. 
+ - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA.
 
 #### 3) [1.0pt] Lab 1 - <a href="/so/labs/lab1" target="_blank">Processos</a> - [Para nota]
  - Entrega do exercício: renomear o arquivo para **XYZ123-processos.zip**, onde XYZ123 é o seu RA.
- - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf) 
+ - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf)
 
 #### 4) [1.0pt] Lab 2 - <a href="/so/labs/lab2" target="_blank">Threads</a> - [Para nota]
  - Entrega do exercício: renomear o arquivo para **XYZ123-threads.zip**, onde XYZ123 é o seu RA.
- - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf) 
+ - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf)
 
 #### 5) [1.0pt] Lab3 - <a href="/so/labs/lab3" target="_blank">Multiprocessing vs Multithreading</a>  - [Para nota]
  - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/1TnSZihJRu" target="_blank">link</a>
 
 #### 6) [1.0pt] Lab4 - <a href="/so/labs/lab4" target="_blank">Sincronização - Locks</a>  - [Para nota]
  - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/Pr09s3zJdh" target="_blank">link</a>
- 
+
 #### 7) [1.0pt] Lab5 - <a href="/so/labs/lab5" target="_blank">Semáforos</a>  - [Para nota]
  - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>
- 
+
 #### 8) [1.0pt] Lab6 - <a href="/so/labs/lab6" target="_blank">Eventos e Condiões</a> - [Para nota]
  - Entrega do exercício: renomear o arquivo para **XYZ123-sincronizacao.zip**, onde XYZ123 é o seu RA.
- - O arquivo zip deve conter os códigos fonte (.py) 
+ - O arquivo zip deve conter os códigos fonte (.py)
 
 #### 9) [3.0pt] Trabalho Final - <a href="/so/labs/trab" target="_blank">Problemas Clássicos</a> - [Para nota]
  - Trabalho em grupo de no máximo 6 alunos.
