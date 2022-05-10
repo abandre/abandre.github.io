@@ -13,8 +13,9 @@ title: "AA - Análise de Algoritmos"
 - [21/03/22] - Programação Gulosa - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
 - [11/04/22] - Heaps 1- <a href="/aa/Aula5.pdf" target="_blank">Slide</a>
 - [18/04/22] - Heaps 2 - <a href="/aa/Aula6.pdf" target="_blank">Slide</a>
-- [02/04/22] - Algoritmos Aproximados 1 - <a href="/aa/Aula7.pdf" target="_blank">Slide</a>
-
+- [25/04/22] - Huffman - <a href="/aa/Aula7.pdf" target="_blank">Slide</a>
+- [02/04/22] - Algoritmos Aproximados 1 - <a href="/aa/Aula8.pdf" target="_blank">Slide</a>
+- [09/04/22] - Algoritmos Aproximados 2 - <a href="/aa/Aula9.pdf" target="_blank">Slide</a>
 
 <!--
 - [15/02/22] - Apresentação da disciplina - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
