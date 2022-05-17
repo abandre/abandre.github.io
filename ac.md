@@ -12,7 +12,7 @@ Lembrando que o total deve ser maior que 180 horas.
 
 ## Upload dos arquivos
 
-### Entrega da ficha preenchida, certificados e/ou resumos: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>
+### Entrega da ficha preenchida, certificados e/ou resumos: <a href="https://bit.ly/39uM5zB" target="_blank">https://bit.ly/39uM5zB</a>
 
 Criar um zip com todos os documentos, nomeando da seguinte maneira: XYZ1234-ac.zip, onde XYZ1234 é o seu RA.
 
@@ -23,6 +23,6 @@ A entrega das atividades complementares é feita no segundo semestre.
 
 <!--: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>
 
- - Renomear o arquivo para: **XYZ123-ac.pdf**, onde XYZ123 é o seu RA. 
+ - Renomear o arquivo para: **XYZ123-ac.pdf**, onde XYZ123 é o seu RA.
  - **Prazo de entrega:** 23/11/2020.
 -->
