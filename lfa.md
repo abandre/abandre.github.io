@@ -13,6 +13,7 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [14/03/22] - Autômatos Finitos não Determinísticos - <a href="/lfa/Aula5.pdf" target="_blank">Slide</a>
 - [11/04/22] - Conversão AFND - AFD - <a href="/lfa/Aula6.pdf" target="_blank">Slide</a>
 - [18/04/22] - Minimização de Estados - <a href="/lfa/Aula7.pdf" target="_blank">Slide</a>
+- [25/04/22] - Máquinas de Mealy e Moore - <a href="/lfa/Aula-Moore-Mealy.pdf" target="_blank">Slide</a>
 - [02/05/22] - Linguagens e Contexto - <a href="/lfa/Aula8.pdf" target="_blank">Slide</a>
 - [10/05/22] - Autômatos de Pilha - <a href="/lfa/Aula9.pdf" target="_blank">Slide</a>
 
