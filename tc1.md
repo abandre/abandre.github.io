@@ -42,6 +42,11 @@ Acesso aos trabalhos apresentados nos últimos anos no curso de Ciência da Comp
  - Enviar até 01/04
  - Arquivo deve conter: Nome, RA, Título provisório, subárea de atuação em computação, breve descrição, objetivo.
 
+#### 2) Artigo do TCC
+ - Renomear o arquivo para: **XYZ123-artigo.pdf**, onde XYZ123 é o seu RA.
+ - Enviar até 10/06
+ - <a href="/tccs/artigo.pdf" target="_blank">Slide</a>
+
 <!-- #### 1) Relatório das apresentações:
  - Renomear o arquivo para: **XYZ123-relatorio.pdf**, onde XYZ123 é o seu RA. 
 
