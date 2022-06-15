@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Alguns Projetos Desenvolvidos | Prof. Amaury André</title>
+<title>Autenticação de Usuário | Prof. Amaury André</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Alguns Projetos Desenvolvidos" />
+<meta property="og:title" content="Autenticação de Usuário" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Site dedicado à informações e disciplinadas lecionadas no curso de Ciência da Computação na UNIP/Limeira" />
 <meta property="og:description" content="Site dedicado à informações e disciplinadas lecionadas no curso de Ciência da Computação na UNIP/Limeira" />
-<link rel="canonical" href="http://localhost:4000/projetos.html" />
-<meta property="og:url" content="http://localhost:4000/projetos.html" />
+<link rel="canonical" href="http://localhost:4000/docs/classifexercise.html" />
+<meta property="og:url" content="http://localhost:4000/docs/classifexercise.html" />
 <meta property="og:site_name" content="Prof. Amaury André" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Alguns Projetos Desenvolvidos" />
+<meta property="twitter:title" content="Autenticação de Usuário" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Site dedicado à informações e disciplinadas lecionadas no curso de Ciência da Computação na UNIP/Limeira","headline":"Alguns Projetos Desenvolvidos","url":"http://localhost:4000/projetos.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Site dedicado à informações e disciplinadas lecionadas no curso de Ciência da Computação na UNIP/Limeira","headline":"Autenticação de Usuário","url":"http://localhost:4000/docs/classifexercise.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Prof. Amaury André" /></head>
 <body><header class="site-header" role="banner">
@@ -53,34 +53,60 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Alguns Projetos Desenvolvidos</h1>
+    <h1 class="post-title">Autenticação de Usuário</h1>
   </header>
 
   <div class="post-content">
-    <ul>
-  <li>
-    <p>2020 - 2021: <a href="projetos/dash">Dash Plotly Data Visualization</a></p>
-  </li>
-  <li>
-    <p>2018 - 2020:  <a href="projetos/edge">Edge Computing - IoT</a></p>
-  </li>
-  <li>
-    <p>2015 - 2018: <a href="projetos/pressure">Pressure Reconstruction</a></p>
-  </li>
-  <li>
-    <p>2013 - 2015: <a href="projetos/video">Video Magnification</a></p>
-  </li>
-  <li>
-    <p>2010 - 2013: <a href="projetos/triagem">Predictive Maintenance Binary Classification</a></p>
-  </li>
-  <li>
-    <p>2008 - 2010: <a href="projetos/workflow">Workflow Verification</a></p>
-  </li>
+    <h2 id="autenticação-de-usuário">Autenticação de Usuário</h2>
+
+<p><strong>Objetivo:</strong> Desenvolver um programa de Machine Learning para autenticação de usuário através da biometria por dinâmica de digitação.</p>
+
+<h2 id="introdução">Introdução</h2>
+
+<p>A dinâmica de digitação de senhas é um estudo para identificar se as pessoas podem ser distinguidas por seus ritmos de digitação, da mesma forma que a caligrafia é usada para identificar o autor de um texto escrito. As aplicações possíveis incluem atuar como uma impressão digital eletrônica ou em um mecanismo de controle de acesso. Uma impressão digital conectaria uma pessoa a um crime baseado em computador da mesma maneira que uma impressão digital física conecta uma pessoa à cena de um crime físico. O controle de acesso pode incorporar a dinâmica de pressionamento de tecla, exigindo que um usuário legítimo digite uma senha com o ritmo correto e autenticando continuamente esse usuário enquanto ele digita no teclado.</p>
+
+<h2 id="como-os-dados-foram-coletados">Como os dados foram coletados</h2>
+
+<p>Foi construído um aparelho de coleta de dados de pressionamento de tecla que consiste em: (1) um laptop executando o Windows XP; (2) um aplicativo de software para apresentar estímulos aos sujeitos e para registrar suas teclas; e (3) um temporizador de referência externa para registrar a hora dessas teclas. O software apresenta ao usuário a senha a ser digitada. Conforme o usuário digita a senha, ela é verificada quanto à exatidão. Se o usuário cometer um erro tipográfico, o aplicativo solicitará que o usuário redigite a senha. Dessa forma, são gravados os timestamps de data/hora para 50 senhas digitadas corretamente em cada sessão.</p>
+
+<p>Sempre que o usuário pressiona ou libera uma tecla, o aplicativo de software registra o evento (ou seja, keydown ou keyup), o nome da tecla envolvida e o timestamp de data/hora para o momento em que o evento de pressionamento de tecla ocorreu. Um relógio de referência externa foi usado para gerar os timestamps de data/hora altamente precisos. O relógio de referência demonstrou ser preciso em ± 200 microssegundos (usando um gerador de função para simular pressionamentos de tecla em intervalos fixos).</p>
+
+<p>Foram recrutados 51 sujeitos (digitadores) de dentro de uma comunidade universitária; todos os sujeitos completaram totalmente o estudo - não descartamos nenhum sujeito. Todos os sujeitos digitaram a mesma senha e cada sujeito digitou a senha 400 vezes em 8 sessões (50 repetições por sessão). Eles esperaram pelo menos um dia entre as sessões, para capturar algumas das variações do dia a dia da digitação de cada sujeito. A senha <strong>(.tie5Roanl)</strong> foi escolhida para representar uma senha forte de 10 caracteres.</p>
+
+<p>Os registros brutos de todos os pressionamentos de tecla e os timestamps de data/hora dos sujeitos foram analisados ​​para criar uma tabela de tempo de senha. A tabela de tempo de senha codifica os recursos de tempo para cada uma das 400 senhas que cada assunto digitou.</p>
+
+<h2 id="arquivo-de-dados">Arquivo de Dados</h2>
+
+<p>Arquivo contendo as informações de digitação: <a href="KSPasswordData.csv" target="_blank">KSPasswordData.csv</a></p>
+
+<h3 id="bibliotecas">Bibliotecas</h3>
+
+<p>Para a implementação do exercício você muito provavelmente irá precisar instalar as seguintes bibliotecas em python:</p>
+
+<ul>
+  <li>joblib</li>
+  <li>numpy</li>
+  <li>sklearn</li>
+  <li>pandas</li>
 </ul>
 
-<p><a href="projetos/cv.pdf">Currículo Vitae</a><br />
-<a href="http://lattes.cnpq.br/9839485542106095">Currículo Lattes</a></p>
+<h3 id="exercício">Exercício</h3>
 
+<p>Selecionar um algoritmo qualquer de classificação e escrever um código simples em python que realize as seguintes operações:</p>
+
+<ul>
+  <li>Carregue os dados da planilha csv</li>
+  <li>Divida os dados em conjuntos de treino/teste, na proporção de 20%</li>
+  <li>Treine um modelo de um classificador a sua escolha</li>
+  <li>Calcule a taxa de acerto resultante do modelo treinado</li>
+  <li>Salve o modelo para uso posterior</li>
+</ul>
+
+<!-- , calculados na página <a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a>. -->
+
+<h3 id="conteúdo-original">Conteúdo original</h3>
+
+<p><a href="http://www.cs.cmu.edu/~keystroke/" target="_blank">http://www.cs.cmu.edu/~keystroke/</a></p>
 
   </div>
 
