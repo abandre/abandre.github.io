@@ -1,4 +1,4 @@
-##  Autenticação de Usuário
+##  Exercício: Autenticação de Usuário
 
 
 **Objetivo:** Desenvolver um programa de Machine Learning para autenticação de usuário através da biometria por dinâmica de digitação.

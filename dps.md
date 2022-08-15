@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trabalhos de DP (1s2022)
+title: Trabalhos de DP (2s2022)
 ---
 
 ## Entrega de Trabalhos
