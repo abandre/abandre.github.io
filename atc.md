@@ -24,7 +24,7 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 
 ## Entrega de Trabalhos
 
-### Link para upload dos arquivos: <a href="https://bit.ly/3dJszPP" target="_blank">https://bit.ly/3dJszPP</a>
+### Link para upload dos arquivos: <a href="https://bit.ly/3qNXTlL" target="_blank">https://bit.ly/3qNXTlL</a>
 
 <!-- 
 #### 1) [1.0pt] Exercícios da Aula 1 - [Para nota]:
