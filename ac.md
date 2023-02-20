@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Atividades Complementares (2s2022)"
+title: "Atividades Complementares (2s2023)"
 ---
 
 ## Descrição das Atividades
@@ -12,13 +12,13 @@ Lembrando que o total deve ser maior que 200 horas.
 
 ## Upload dos arquivos
 
-### Entrega da ficha preenchida, certificados e/ou resumos: <a href="https://bit.ly/39uM5zB" target="_blank">https://bit.ly/39uM5zB</a>
+<!-- ### Entrega da ficha preenchida, certificados e/ou resumos: <a href="https://bit.ly/39uM5zB" target="_blank">https://bit.ly/39uM5zB</a>
 
 Criar um zip com todos os documentos, nomeando da seguinte maneira: XYZ1234-ac.zip, onde XYZ1234 é o seu RA.
 
-- **Prazo de entrega:** até novembro/2022
+- **Prazo de entrega:** até novembro/2023 -->
 
-<!--A entrega das atividades complementares é feita no segundo semestre.-->
+- **Prazo de entrega:** A entrega das atividades complementares é feita apenas no segundo semestre. Exceto se for DP. Aí enviar pelo link de [Entrega de Trabalhos de DP](../dps)
 
 
 <!--: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>

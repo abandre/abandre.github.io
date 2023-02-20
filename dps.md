@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Trabalhos de DP (2s2022)
+title: Trabalhos de DP (1s2023)
 ---
 
 ## Entrega de Trabalhos
 
-A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. As demais disciplinas devem seguir o mesmo critério utilizado no primeiro semestre de 2020.
+A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. As demais disciplinas devem seguir critério descrito no arquivo de [Critérios de Avaliação](../docs/criterios.pdf).
 
 ### Link para upload dos arquivos: <a href="https://bit.ly/3uPWvR7" target="_blank">https://bit.ly/3uPWvR7</a>
 
@@ -29,4 +29,4 @@ A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. 
  - Entregar o relatório completo e a declaração da empresa assinada. 
  - Renomear o arquivo para: **XYZ123-estagio.pdf**, onde XYZ123 é o seu RA. 
 
-### Prazo de entrega: junho/2022
+### Prazo de entrega: junho/2023
