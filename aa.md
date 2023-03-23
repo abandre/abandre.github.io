@@ -10,6 +10,10 @@ title: "AA - Análise de Algoritmos"
 - [09/02/23] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a>
 - [16/02/23] - Complexidade - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
 - [23/02/23] - Exercícios - <a href="/aa/Exercícios.pdf" target="_blank">Slide</a>
+- [02/03/23] - Heaps - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
+- [09/03/23] - Heaps - parte 2 - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
+- [16/03/23] - Huffman - <a href="/aa/Aula5.pdf" target="_blank">Slide</a>
+- [23/03/23] - Revisão - <a href="/aa/revisao.pdf" target="_blank">Slide</a>
 
 <!--- [21/02/22] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a> - [<a href="https://www.chegg.com/homework-help/algorithms-1st-edition-chapter-0-solutions-9780073523408" target="_blank">Respostas</a>]
 - [07/03/22] - Divide and Conquer - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
