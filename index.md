@@ -36,5 +36,5 @@ layout: home
 	</td></tr>
 </table>
 
-<h2>Portfolio</h2>
-<a href="projetos"><b>Projetos desenvolvidos</b></a>
+<!-- <h2>Portfolio</h2>
+<a href="projetos"><b>Projetos desenvolvidos</b></a> -->
