@@ -14,6 +14,11 @@ title: "AA - Análise de Algoritmos"
 - [09/03/23] - Heaps - parte 2 - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
 - [16/03/23] - Huffman - <a href="/aa/Aula5.pdf" target="_blank">Slide</a>
 - [23/03/23] - Revisão - <a href="/aa/revisao.pdf" target="_blank">Slide</a>
+- [13/04/23] - Divide and Conquer - <a href="/aa/Aula6.pdf" target="_blank">Slide</a>
+- [20/04/23] - Programação Dinâmica - <a href="/aa/Aula7.pdf" target="_blank">Slide</a>
+- [27/04/23] - Programação Gulosa - <a href="/aa/Aula8.pdf" target="_blank">Slide</a>
+- [04/05/23] - Algoritmos Aproximados - <a href="/aa/Aula9e10.pdf" target="_blank">Slide</a>
+
 
 <!--- [21/02/22] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a> - [<a href="https://www.chegg.com/homework-help/algorithms-1st-edition-chapter-0-solutions-9780073523408" target="_blank">Respostas</a>]
 - [07/03/22] - Divide and Conquer - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
