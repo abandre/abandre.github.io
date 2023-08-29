@@ -38,6 +38,7 @@ A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. 
 
 #### 5) DP de Estágio:
  - Entregar o relatório completo e a declaração da empresa assinada. 
+ - Mais orientações sobre os itens verificar o link de [Relatório de Estágio](../estagio)
  - Renomear o arquivo para: **XYZ123-estagio.pdf**, onde XYZ123 é o seu RA. 
 
 ### Prazo de entrega: junho/2023

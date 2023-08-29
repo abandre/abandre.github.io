@@ -4,14 +4,14 @@ title: Horário de Aulas
 ---
 
 
-### CC1P43
+### CC1P43 e CC2P43
 
-Horário de aulas da turma do <a href="/docs/1_sem_2023_1.pdf" target="_blank">primeiro ano</a>
+Horário de aulas da turma do <a href="/docs/1_2_sem_2023_2.pdf" target="_blank">primeiro ano</a>
 
-### CC2P43 e CC3P43
+### CC3P43 e CC4P43
 
-Horário de aulas da turma do <a href="/docs/2_3_sem_2023_1.pdf" target="_blank">segundo ano</a>
+Horário de aulas da turma do <a href="/docs/3_4_sem_2023_2.pdf" target="_blank">segundo ano</a>
 
-### CC6P43 e CC7P43
+### CC7P43 e CC8P43
 
-Horário de aulas da turma do <a href="/docs/6_7_sem_2023_1.pdf" target="_blank">quarto ano</a>
+Horário de aulas da turma do <a href="/docs/7_8_sem_2023_2.pdf" target="_blank">quarto ano</a>

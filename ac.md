@@ -18,7 +18,7 @@ Criar um zip com todos os documentos, nomeando da seguinte maneira: XYZ1234-ac.z
 
 - **Prazo de entrega:** até novembro/2023 -->
 
-- **Prazo de entrega:** A entrega das atividades complementares é feita apenas no segundo semestre. Exceto se for DP. Aí enviar pelo link de [Entrega de Trabalhos de DP](../dps)
+- **Prazo de entrega:** A entrega das atividades complementares deve ser feita dentro de cada semestre, no sistema do aluno. Exceto se for DP. Aí enviar pelo link de [Entrega de Trabalhos de DP](../dps).
 
 
 <!--: <a href="https://bit.ly/3dItD4r" target="_blank">https://bit.ly/3dItD4r</a>
