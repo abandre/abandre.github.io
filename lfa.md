@@ -10,6 +10,7 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [21/02/24] - Introdução
 - [28/02/24] - Linguagens - <a href="/lfa/Aula 2 - Linguagens.pdf" target="_blank">Slide</a>
 - [13/03/24] - Autômatos Finitos - <a href="/lfa/Aula 3 - Automatos Finitos.pdf" target="_blank">Slide</a>
+- [20/03/24] - Autômatos Finitos Não Determinísticos- <a href="/lfa/Aula 4 - AFND.pdf" target="_blank">Slide</a>
 
 
 ### Entrega de Trabalhos
