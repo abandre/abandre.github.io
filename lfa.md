@@ -12,6 +12,7 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [13/03/24] - Autômatos Finitos - <a href="/lfa/Aula 3 - Automatos Finitos.pdf" target="_blank">Slide</a>
 - [20/03/24] - Autômatos Finitos Não Determinísticos - <a href="/lfa/Aula 4 - AFND.pdf" target="_blank">Slide</a>
 - [27/03/24] - AFND - Equivalencia - <a href="/lfa/Aula 5 - AFND - Equivalencia.pdf" target="_blank">Slide</a>
+- [10/04/24] - AFND - Minimização - <a href="/lfa/Aula 6 - Minimizacao.pdf" target="_blank">Slide</a>
 
 
 ### Entrega de Trabalhos
