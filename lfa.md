@@ -13,6 +13,8 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [20/03/24] - Autômatos Finitos Não Determinísticos - <a href="/lfa/Aula 4 - AFND.pdf" target="_blank">Slide</a>
 - [27/03/24] - AFND - Equivalencia - <a href="/lfa/Aula 5 - AFND - Equivalencia.pdf" target="_blank">Slide</a>
 - [10/04/24] - AFND - Minimização - <a href="/lfa/Aula 6 - Minimizacao.pdf" target="_blank">Slide</a>
+- [08/05/24] - Máquinas de Moore e Mealy - <a href="/lfa/Aula 7 - Moore e Mealy.pdf" target="_blank">Slide</a>
+- [15/05/24] - Autômato de Pilha - <a href="/lfa/Aula 8 - Automato de Pilha.pdf" target="_blank">Slide</a>
 
 
 ### Entrega de Trabalhos
