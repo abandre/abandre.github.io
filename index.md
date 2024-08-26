@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<h2>Disciplinas - 1s2024</h2>
+<h2>Disciplinas - 2s2024</h2>
 
 <!--<a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="so"><b>[4/5 sem] Sistemas Operacionais (SO)</b></a><br>
@@ -13,8 +13,7 @@ layout: home
 <!-- <a href="daw"><b>[8 sem] Desenvolvimento em Ambiente Web (DAW)</b></a><br> 
 <a href="atc"><b>[5/6 sem] Aspectos Teóricos da Computação (ATC)</b></a><br>
 <a href="aa"><b>[6/7 sem] Análise de Algoritmos (AA)</b></a><br>-->
-<a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos(LFA)</b></a><br>
-<a href="cg"><b>[4/5 sem] Computação Gráfica (CG)</b></a><br>
+<a href="alpoo"><b>[3/4 sem] Aplicações de Linguagens de Programação Orientada a Objetos (ALPOO)</b></a><br>
 <a href="fe"><b>Formação Específica (FE)</b></a><br>
 
 <!-- 

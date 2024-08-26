@@ -1,17 +1,11 @@
 ---
 layout: page
-title: "3/4sem: ALPOO - Aplic Ling Progr Orien Objetos (2s2023)"
+title: "3/4sem: ALPOO - Aplic Ling Progr Orien Objetos (2s2024)"
 ---
 
-### Cronograma de Aulas
+### Cronograma de Aulas Complementares
 
-- [09/08/23] - Aula 1 - Resumo OO parte 1 - <a href="/alpoo/JV-Resumo.pdf" target="_blank">Slide</a>
-- [23/08/23] - Aula 2 - Resumo OO parte 2 - <a href="/alpoo/JV-Resumo.pdf" target="_blank">Slide</a>
-- [23/08/23] - Aula 3 - Swing - <a href="/alpoo/Aula2-SWING.pdf" target="_blank">Slide</a>
-- [04/10/23] - Aula 4 - Componentes - <a href="/alpoo/Aula3-Componentes.pdf" target="_blank">Slide</a>
-- [18/10/23] - Aula 5 - Arquivos - <a href="/alpoo/Aula4-Arquivos.pdf" target="_blank">Slide</a>
-- [01/11/23] - Aula 6 - JDBC - <a href="/alpoo/Aula5-JDBC.pdf" target="_blank">Slide</a>
-- [Extra] - Aula - MVC - <a href="/alpoo/Aula-MVC.pdf" target="_blank">Slide</a>
+- [26/08/24] - Aula C1 - App Aeroporto - <a href="/alpoo/aeroporto.mp4" target="_blank">Vídeo</a>
 
 ## Entrega de Trabalhos
 
