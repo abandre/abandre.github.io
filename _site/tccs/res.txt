@@ -1,0 +1,40 @@
+<p>
+  Universidade Paulista - UNIP    Talmo Cretelli Silva       OTIMIZAÇÃO DE IMAGENS PULMONARES PARA PACIENTE AFETADOS PELA COVID-19             Limeira 2023 
+<br><a href="/tccs/2023/Talmo_Final-1.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+        Universidade Paulista - UNIP     Lucas Ramos de Oliveira     PROCESSAMENTO DE IMAGEM E ANÁLISE DE DADOS APLICADOS À ASTRONOMIA             Limeira 2023 
+<br><a href="/tccs/2023/Lucas_Oliveira-TCC-Final-1.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+        Universidade Paulista - UNIP     Lucas Ramos de Oliveira     PROCESSAMENTO DE IMAGEM E ANÁLISE DE DADOS APLICADOS À ASTRONOMIA             Limeira 2023 
+<br><a href="/tccs/2023/Otavio_TCC_Computacao_Quantica_e_seus_efeitos_na_criptografia(arquivo_final).pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+  UNIVERSIDADE PAULISTA - UNIP    Cauê Fernando Viel           MONGO VS. CASSANDRA:  comparando o desempenho de sistemas gerenciadores de banco de dados NoSQL em operações CRUD               Limeira 2023 
+<br><a href="/tccs/2023/Caue_Fernando_Viel.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+  Universidade Paulista - UNIP    Henrique Franchini Zani       CIÊNCIA DE DADOS COMO ALIADA DO EMPREENDEDORISMO              Limeira 2023 
+<br><a href="/tccs/2023/Henrique_Franchini_Zani-F273AA9.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+  Universidade Paulista - UNIP    Carlos Daniel Da Silva      Ti na Gestão de Negócios ou Pessoas              Limeira 2023  
+<br><a href="/tccs/2023/CarlosDaniel.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+   UNIP - UNIVERSIDADE PAULISTA CIÊNCIAS DA COMPUTAÇÃO   SARINA ELLEN RODRIGUES        DESENVOLVIMENTO DE TECLADO VIRTUAL PARA AUXÍLIO NA COMUNICAÇÃO DE PESSOAS COM TETRAPLEGIA DO TIPO COMPLETA.             LIMEIRA-SP 2023  
+<br><a href="/tccs/2023/Sarina_Ellen_Rodrigues.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+Universidade Paulista - UNIPGabriel Faria Rodrigues dos SantosO USO DA REALIDADE AUMENTADA EM AMBIENTES EDUCACIONAISLimeira2023
+<br><a href="/tccs/2023/Gabriel_Faria_Rodrigues_dos_Santos-N604476-1.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+  Universidade Paulista - UNIP    Débora Ramos de Oliveira       FERRAMENTA DE RECONHECIMENTO DE GESTOS PARA TRADUÇÃO DE LIBRAS            Limeira 2023 
+<br><a href="/tccs/2023/Debora_Ramos-F2137G9.pdf" target="_blank">Ler mais</a>
+</p>
+<p>
+  Universidade Paulista - UNIP    Victor Hereman dos Reis       PROTÓTIPO DE SISTEMA MÓVEL PARA GESTÃO INTEGRADA DE PROJETOS ARQUITETÔNICOS: Uma abordagem em Aplicações Mobile e API REST             Limeira 2023   
+<br><a href="/tccs/2023/VictorHeremanReis_D6978H8.pdf" target="_blank">Ler mais</a>
+</p>

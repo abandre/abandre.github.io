@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>SMQTwin</title>
+  </head>
+  <body>
+    <script type="module">
+
+      let smq;
+      fetch("30485/30485.smq")
+        .then((res) => res.text())
+        .then((text) => {
+           smq = text;
+         })
+        .catch((e) => console.error(e));
+
+      let tmp;
+      fetch("30485/30485.tmp")
+        .then((res) => res.text())
+        .then((text) => {
+           tmp = text;
+         })
+        .catch((e) => console.error(e));
+
+      let glb;
+      fetch("30485/30485.glb")
+        .then((res) => res.text())
+        .then((text) => {
+           glb = text;
+         })
+        .catch((e) => console.error(e));
+
+      localStorage.setItem("model.glb", glb);
+
+      import init, { greet } from "./pkg/smqtwin.js";
+      init().then(() => {
+        greet(smq,tmp,"10441");
+      });
+    </script>
+
+  </body>
+</html>

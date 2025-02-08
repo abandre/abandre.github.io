@@ -1,0 +1,13 @@
+{
+  "name": "smqtwin",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "smqtwin_bg.wasm",
+    "smqtwin.js"
+  ],
+  "main": "smqtwin.js",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

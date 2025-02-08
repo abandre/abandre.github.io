@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASM-Rust Blur Image</title>
+    <!-- <style>  your-style-code  </style> -->
+</head>    
+<body>
+    <div>
+        <input type="file" id="image-upload" accept="image/png, image/jpeg">
+        <div class="range-container">
+            <label class="range-label">Sigma:</label>
+            <input type="range" id="blur-range" min="0.1" max="10" step="0.1" value="0.1">
+            <span id="blur-value">0.1</span>
+        </div>
+    </div>
+    <canvas id="image-canvas" width="800" height="800"></canvas>
+
+    <script type="module">
+    import init, { blur_image_and_draw_from_wasm } from './pkg/predsens.js';
+
+    async function run() {
+        await init(); // initialize wasm module
+
+        const imageUpload = document.getElementById('image-upload');
+        const blurRange = document.getElementById('blur-range');
+        const blurValue = document.getElementById('blur-value');
+        const canvas = document.getElementById('image-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let originalImageData = null; // store original image data
+
+        // to fit/center image on canvas
+        let offsetX = 0;
+        let offsetY = 0;
+        let scaledWidth = canvas.width;
+        let scaledHeight = canvas.height;
+
+        imageUpload.addEventListener('change', async (event) => {
+            const file = event.target.files[0];
+            if (!file) return; // if no file selected, return
+
+            const image = new Image();
+            image.src = URL.createObjectURL(file);
+
+            image.onload = () => {
+                // if new image is uploaded, reset blur range
+                blurRange.value = 0.1;
+                blurValue.textContent = 0.1;
+                // fit image to canvas
+                const scaleFactor = Math.min(canvas.width / image.width, canvas.height / image.height);
+                scaledWidth = image.width * scaleFactor;
+                scaledHeight = image.height * scaleFactor;
+                offsetX = (canvas.width - scaledWidth) / 2;
+                offsetY = (canvas.height - scaledHeight) / 2;
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
+                ctx.drawImage(image, offsetX, offsetY, scaledWidth, scaledHeight); // draw original image to canvas
+                originalImageData = ctx.getImageData(offsetX, offsetY, canvas.width - offsetX, canvas.height - offsetY); // store original image data
+            }
+        });
+
+        blurRange.addEventListener('input', () => { // blur image when range value changes
+            if (!originalImageData) return;
+
+            const inputImageData = new Uint8Array(originalImageData.data.buffer);
+            const sigma = parseFloat(blurRange.value); // blur strength
+
+            blur_image_and_draw_from_wasm(inputImageData, scaledWidth, scaledHeight, sigma);
+            
+            blurValue.textContent = sigma.toFixed(1); // update blur value
+        });
+    }
+
+    run();
+    </script>
+</body>
+</html>
