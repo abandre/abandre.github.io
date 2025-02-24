@@ -1,21 +1,23 @@
 ---
 layout: page
-title: "SO - Sistema Operacionais"
+title: "Fundamentos de Sistemas Operacionais"
 ---
 
-#### **1s2022**
+#### **1s2025**
 
 ### Cronograma de Aulas
 
-- [22/02/22] - Introdução - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
-- [08/03/22] - Kernel - <a href="/so/Aula2-Kernel.pdf" target="_blank">Slide</a>
-- [15/03/22] - Processos - <a href="/so/Aula3-Processos.pdf" target="_blank">Slide</a>
+- [10/02/25] - Introdução - <a href="/so/Aula1-Introducao.pdf" target="_blank">Slide</a>
+- [24/02/25] - Kernel - <a href="/so/Aula2-Kernel.pdf" target="_blank">Slide</a>
+
+
+<!-- [15/03/22] - Processos - <a href="/so/Aula3-Processos.pdf" target="_blank">Slide</a>
 - [22/03/22] - Threads - <a href="/so/Aula4-Threads.pdf" target="_blank">Slide</a>
 - [12/04/22] - Sincronismo - <a href="/so/Aula5-Sincronismo1.pdf" target="_blank">Slide</a>
 - [19/04/22] - Sincronismo 2 - <a href="/so/Aula6-Sincronismo2.pdf" target="_blank">Slide</a>
 - [26/04/22] - Atividade - <a href="/so/Aula8-Deadlock.pdf" target="_blank">Slide</a>
 - [03/05/22] - Deadlock - <a href="/so/Aula8-Deadlock.pdf" target="_blank">Slide</a>
-- [03/05/22] - Escalonamento - <a href="/so/Aula9-Escalonamento.pdf" target="_blank">Slide</a>
+- [03/05/22] - Escalonamento - <a href="/so/Aula9-Escalonamento.pdf" target="_blank">Slide</a>-->
 
 <!--
 - [10/05/22] - Sistemas de Arquivos 1 - <a href="/so/Aula10-SistemaArquivos.pdf" target="_blank">Slide</a>
@@ -43,7 +45,7 @@ title: "SO - Sistema Operacionais"
 #### 1) Leitura complementar
  - <a href="https://bit.ly/37Av2rZ">https://bit.ly/37Av2rZ</a>
 
-#### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
+<!--#### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
  - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA.
 
 #### 3) [1.0pt] Lab 1 - <a href="/so/labs/lab1" target="_blank">Processos</a> - [Para nota]
@@ -64,6 +66,7 @@ title: "SO - Sistema Operacionais"
 
 #### 7) [0.5pt] Lab5 - <a href="/so/labs/lab5" target="_blank">Semáforos</a>  - [Para nota]
  - Entrega do exercício: responder as questões do forms durante a aula - <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>
+-->
 
 <!--
 
