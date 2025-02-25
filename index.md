@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<h2>Disciplinas - 2s2024</h2>
+<h2>Disciplinas - 1s2025</h2>
 
 <!--<a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="so"><b>[4/5 sem] Sistemas Operacionais (SO)</b></a><br>
