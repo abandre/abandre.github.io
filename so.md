@@ -50,11 +50,11 @@ title: "Fundamentos de Sistemas Operacionais"
 <!--#### 2) Prática 1 - <a href="/so/pratica1" target="_blank">Módulos do kernel</a>
  - Entrega do exercício extra: renomear o arquivo para **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA.-->
 
-#### 2) Lab 1 - <a href="/so/labs/lab1" target="_blank">Processos</a> - [Para nota]
+#### 2) Lab 1 - <a href="/so/labs/lab1" target="_blank">Processos</a>
  - Entrega do exercício: renomear o arquivo para **XYZ123-processos.zip**, onde XYZ123 é o seu RA.
  - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf)
 
-#### 3) Lab 2 - <a href="/so/labs/lab2" target="_blank">Threads</a> - [Para nota]
+#### 3) Lab 2 - <a href="/so/labs/lab2" target="_blank">Threads</a>
  - Entrega do exercício: renomear o arquivo para **XYZ123-threads.zip**, onde XYZ123 é o seu RA.
  - O arquivo zip deve conter o código fonte (.py) e o relatório pedido (.doc ou .pdf)
 

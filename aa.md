@@ -10,6 +10,7 @@ title: "AA - Análise de Algoritmos"
 - [06/02/25] - Apresentação
 - [13/02/25] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a>
 - [20/02/25] - Complexidade - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
+- [27/02/25] - Heaps - parte 1 - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
 
 <!-- [23/02/23] - Exercícios - <a href="/aa/Exercícios.pdf" target="_blank">Slide</a>
 - [02/03/23] - Heaps - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
