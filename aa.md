@@ -11,10 +11,11 @@ title: "AA - Análise de Algoritmos"
 - [13/02/25] - Introdução - <a href="/aa/Aula1.pdf" target="_blank">Slide</a>
 - [20/02/25] - Complexidade - <a href="/aa/Aula2.pdf" target="_blank">Slide</a>
 - [27/02/25] - Heaps - parte 1 - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
+- [06/03/25] - Heaps - parte 2 - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
 
 <!-- [23/02/23] - Exercícios - <a href="/aa/Exercícios.pdf" target="_blank">Slide</a>
 - [02/03/23] - Heaps - <a href="/aa/Aula3.pdf" target="_blank">Slide</a>
-- [09/03/23] - Heaps - parte 2 - <a href="/aa/Aula4.pdf" target="_blank">Slide</a>
+
 - [16/03/23] - Huffman - <a href="/aa/Aula5.pdf" target="_blank">Slide</a>
 - [23/03/23] - Revisão - <a href="/aa/revisao.pdf" target="_blank">Slide</a>
 - [13/04/23] - Divide and Conquer - <a href="/aa/Aula6.pdf" target="_blank">Slide</a>
@@ -38,7 +39,8 @@ title: "AA - Análise de Algoritmos"
 
 #### Link para upload dos arquivos: <a href='https://bit.ly/3XFSET3' target="_blank">https://bit.ly/3XFSET3</a>
 
-<!--
-#### 1) [1.0pt] Exercício Complementar 1 - [Para nota]
- - Enunciado dos <a href="/aa/Exercícios.pdf" target="_blank">exercícios</a>
- - Entrega do exercício: renomear o arquivo para **XYZ123-ec1.ext**, onde XYZ123 é o seu RA e ext é uma entre (zip, pdf, jpg, png).-->
+
+#### 1) [1.0] Exercício Complementar 1 - [Para nota]
+ - Enunciado dos <a href="/aa/exercicio.pdf" target="_blank">exercícios</a>
+ - Entrega do exercício: renomear o arquivo para **XYZ123-ec1.ext**, onde XYZ123 é o seu RA e ext é uma entre (zip, pdf, jpg, png).
+

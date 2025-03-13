@@ -11,6 +11,7 @@ title: "LFA - Linguagens Formais e Autômatos"
 - [13/02/25] - Linguagens - <a href="/lfa/Aula 2 - Linguagens.pdf" target="_blank">Slide</a>
 - [20/02/25] - Autômatos Finitos - <a href="/lfa/Aula 3 - Automatos Finitos.pdf" target="_blank">Slide</a>
 - [27/02/25] - Autômatos Finitos Não Determinísticos - <a href="/lfa/Aula 4 - AFND.pdf" target="_blank">Slide</a>
+- [06/03/25] - AFND - Equivalência - <a href="/lfa/Aula 5 - AFND - Equivalencia.pdf" target="_blank">Slide</a>
 
 <!-- [20/03/24] - Autômatos Finitos Não Determinísticos - <a href="/lfa/Aula 4 - AFND.pdf" target="_blank">Slide</a>
 - [27/03/24] - AFND - Equivalencia - <a href="/lfa/Aula 5 - AFND - Equivalencia.pdf" target="_blank">Slide</a>
@@ -23,6 +24,9 @@ title: "LFA - Linguagens Formais e Autômatos"
 
 #### Link para upload dos arquivos: <a href="https://bit.ly/38sEtwX" target="_blank">https://bit.ly/38sEtwX</a>
 
+#### 1) [1.0] Exercício Complementar 1 - [Para nota]
+ - Enunciado dos <a href="/lfa/Lista2-25.pdf" target="_blank">exercícios</a>
+ - Entrega do exercício: renomear o arquivo para **XYZ123-ec1.ext**, onde XYZ123 é o seu RA e ext é uma entre (zip, pdf, jpg, png).
 
 <!-- #### 1) [1.0] Exercícios dos módulos 1 e 2:
  - Renomear o arquivo para: **XYZ123-modulos.pdf**, onde XYZ123 é o seu RA.
