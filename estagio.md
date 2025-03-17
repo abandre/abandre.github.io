@@ -1,11 +1,13 @@
 ---
 layout: page
-title: "Orientação de Estágio (2s2023)"
+title: "Orientação de Estágio (1s2025)"
 ---
 
 ## Modelos de Arquivos
 
-### Declarações
+Os arquivos que devem ser entregues no último semestre do curso para compensação das horas de estágio curricular são os seguintes:
+
+### Declaração do contratante
 
  - Carta Aluno Dono de Empresa - <a href="/docs/Carta_Aluno_dono_de_empresa.doc" target="_blank">Modelo</a>
  - Carta Aluno Estagiаrio - <a href="/docs/Carta_Aluno__Estagiаrio.doc" target="_blank">Modelo</a>
@@ -47,7 +49,7 @@ Deve ser entregue também um documento contendo os seguintes campos:
 
 ### Link para upload dos arquivos: <a href="https://bit.ly/3sD0r7p" target="_blank">https://bit.ly/3sD0r7p</a>
 
-- **Prazo de entrega:** A entrega do relatório de estágio é feita apenas no segundo semestre. Exceto se for DP. Aí enviar pelo link de [Entrega de Trabalhos de DP](../dps)
+- **Prazo de entrega:** A entrega do relatório de estágio é feita apenas no último semestre do curso na disciplina Orientação de Estágio. Exceto se for DP. Aí enviar pelo link de [Entrega de Trabalhos de DP](../dps)
 
 <!--
  - Renomear o arquivo para: **XYZ123-estagio.pdf**, onde XYZ123 é o seu RA.

@@ -27,11 +27,10 @@ layout: home
 <h2>Coordenação</h2>
 
 <a href="ac"><b>Atividades Complementares</b></a><br>
+<a href="ext"><b>Atividades de Extensão</b></a><br>
 <a href="estagio"><b>Relatório de Estágio</b></a><br>
 <a href="dps"><b>Entrega de Trabalhos de DP</b></a><br>
-<a href="docs/criterios2s23.pdf" target="_blank"><b>Critérios de Avaliação</b></a><br>
-<a href="docs/avaorientacoes.pdf" target="_blank"><b>Orientações AVA</b></a><br>
-<a href="docs/optorientacoes.pdf" target="_blank"><b>Orientações Disc. Optativas</b></a><br>
+<a href="docs/criterios1s25.pdf" target="_blank"><b>Critérios de Avaliação</b></a><br>
 <a href="docs/UNIPCalendTrad2025 V4final.pdf" target="_blank"><b>Manual do Aluno</b></a><br>
 
 
@@ -50,4 +49,8 @@ layout: home
 </table>
 
 <!-- <h2>Portfolio</h2>
+
+<a href="docs/avaorientacoes.pdf" target="_blank"><b>Orientações AVA</b></a><br>
+<a href="docs/optorientacoes.pdf" target="_blank"><b>Orientações Disc. Optativas</b></a><br>
+
 <a href="projetos"><b>Projetos desenvolvidos</b></a> -->
