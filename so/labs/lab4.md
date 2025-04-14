@@ -3,7 +3,7 @@ layout: page
 title: Laboratório 04 - Versionamento (Git)
 ---
 
-## Autenticação de Usuário
+## Versionamento
 
 
 **Objetivo:** Criar um repositório, adicionar, alterar e ignorar arquivos, além de criar braches, pull requests e merges.
@@ -50,6 +50,7 @@ Escrever um relatório com os seguintes tópicos:
 
 - Introdução: fazer um breve resumo sobre sistemas de arquivos em sistemas operacionais;
 - Resultados: apresentar o print do repositório no github como o exemplo a seguir (exibindo o endereço, os arquivos e mensagens de commit)
+- Conclusão
 
 <img src="lab4/git.png">
 

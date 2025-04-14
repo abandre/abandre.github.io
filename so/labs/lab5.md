@@ -1,105 +1,76 @@
 ---
 layout: page
-title: Laboratório 05 - Sistemas Operacionais
+title: Laboratório 05 - Entrada e Saída (CG)
 ---
 
-## Sincronização - Semáforos
-
-Conforme visto no laboratório anterior, os Locks são bastante simples de entender e implementar. Também é bastante fácil decidir quando você deve precisar deles. No entanto, se a situação for mais complexa, você pode precisar de uma primitiva de sincronização mais poderosa. Para aplicativos com recursos finitos, usar semáforos pode ser uma aposta melhor.
-
-Os semáforos são basicamente contadores que diminuem quando um recurso está sendo consumido (e aumentam novamente quando o recurso é liberado). Você pode pensar em semáforos que representam seus recursos como disponíveis ou indisponíveis. Python simplifica toda a nomenclatura e usa os mesmos nomes de função/método como nos Locks: acquire e release. Os semáforos são mais flexíveis do que os Locks porque você pode ter várias threads, cada uma usando uma das instâncias do recurso finito.
-
-Para exercitar o uso de semáforos, vamos ver o exemplo de uma aplicação cliente-servidor, simulando uma aplicação multithreading de um web-server, como o visto em aula e apresentado na imagem a seguir.
-
-<img src="lab5/exemplo.png">
-
-Note que a aplicação funciona como um dispatcher, ou seja, um lançador de threads para cada nova conexão recebida. A thread lançada então executa um trecho de código comum entre elas. No exemplo, o nosso servidor web simplificado, pode ser implementado a partir do código a seguir:
+## Cores
 
 
-```python
-#lab5-server.py
-import socket
-import threading
-import time
+**Objetivo:** Desenvolver um programa em python que manipula e processa imagens.
 
-def trataCliente(conn, addr):  
-    while True:
-        data = conn.recv(100)
-        print(time.ctime(),addr,'enviou',data)
-        if not data:
-            conn.close()
-            break 
+## Introdução
 
-if __name__=="__main__": 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    try:
-        s.bind(('', 9999))
-    except:
-       print('ERRO no bind')
-       sys.exit()
+Uma imagem é formada através da distribuição da energia luminosa, em que parte dessa energia é absorvida, parte dela é transmitida, dependendo da opacidade do objeto, e parte é refletida. Essa energia luminosa refletida que é captada pelo nosso olho ou pelas câmeras.
 
-    s.listen()
-    print('Aguardando conexoes na porta ', 9999)
 
-    while True:
-        conn, addr = s.accept()
-        print('Recebi uma conexao do cliente ', addr)
+### Bibliotecas
 
-        t = threading.Thread( target=trataCliente, args=(conn,addr,))
-        t.start()
-```
+Para a implementação desse lab você muito provavelmente irá precisar instalar as seguintes bibliotecas em python:
 
-Você deve rodar esse código em um terminal e simular as conexões dos usuários através do código a seguir, executando cada cliente em um outro terminal.
+ - numpy
+ - PIL ou pillow
+
+### Exemplo
 
 ```python
-#lab5-client.py
-import socket
-import time
+from PIL import Image
+import numpy as np
 
-HOST = '127.0.0.1' 
-PORT = 9999  
-
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((HOST, PORT))
-    while True:
-        s.sendall(b'Hello, world')
-        time.sleep(1)
-
+img = Image.open('unip.jpg') 
+img.show()
+img.save('unip2.jpg')
 ```
 
-Note que para cada nova conexão, o servidor irá instanciar uma thread que irá imprimir as mensagens enviadas pelos clientes, que por sua vez, enviam uma mensagem de "Hello, world" a cada segundo.
+Para executar o exemplo anterior, você deve baixar a seguinte imagem no mesmo diretório do código anterior.
 
-### Exercício:
+<img src="lab5/unip.jpg">
 
-O Semáforo, como visto anteriormente, é um objeto criado para controlar o número de threads para um recurso, de forma que somente um número limitado de threads possa acessar um recurso simultaneamente.
+### Roteiro
 
-Python implementa semáforos através da importação e declaração a seguir (declaração que deve ser feita no programa principal, antes da chamada das threads).
+Siga as instruções dos slides de aula a seguir: <a href="Aula 6 - Cores.pdf" target="_blank">Cores</a>.
 
-```python
-from threading import BoundedSemaphore
+- Use o comando `resize` para reamostrar a imagem original (como na página 7);
+- Faça o split dos canais (como na página 16)
+	- Reamostre o canal vermelho, faça o merge e salve a imagem resultante
+	- Reamostre o canal verde, faça o merge e salve a imagem resultante
+	- Reamostre o canal azul, faça o merge e salve a imagem resultante
 
-semaphore = threading.BoundedSemaphore(2)
-```
+### Entrega
 
-Quando uma thread for usar uma variável compartilhada, ou acessar um região crítica, deve-se incrementar o contador interno do semáforo:
+Escrever um relatório com os seguintes tópicos:
 
-```python
-# incrementa o contador se bem sucedido
-semaphore.acquire(False)
-```
-
-Após usar a variável compartilhada ou deixar a região crítica deve-se decrementar o contador interno do semáforo:
-
-```python
-# decrementa o contador
-semaphore.release()
-```
-
-Posto isso, o objetivo do exercício é fazer com que o servidor aceite no máximo **duas conexões simultâneas** usando Semáforo. 
-
-Na versão do servidor limitado a no máximo duas conexões simultâneas, caso uma terceira tentativa de conexão seja realizada, o servidor deve imprimir a mensagem: **"Conexões excedidas, tente depois..."**.
-
-Acesse o seguinte <a href="https://forms.office.com/r/qSwREdVYrj" target="_blank">link</a>, siga as instruções e responda às perguntas lá. O formulário estará disponível durante o horário de aula somente.
+- Introdução: fazer um breve resumo sobre entrada e saída em sistemas operacionais;
+- Resultados: apresentar as imagens resultantes geradas;
+- Conclusão
 
 
-<!-- https://www.ppgia.pucpr.br/~jamhour/Pessoal/Graduacao/Ciencia/Python/SincProcessos.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

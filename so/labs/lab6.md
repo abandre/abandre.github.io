@@ -68,7 +68,7 @@ Escrever um relatório com os seguintes tópicos:
 - Introdução: fazer um breve resumo sobre segurança em sistemas operacionais;
 - Metodologia: citar qual algoritmo usou e descrever brevemente como esse algoritmo funciona;
 - Resultados: apresentar o score atingido com o algoritmo selecionado;
-
+- Conclusão
 
 
 
