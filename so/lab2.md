@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Laboratório 06 - Segurança (IA)
+title: Laboratório 02 - Sistemas Operacionais Abertos
 ---
 
 ## Autenticação de Usuário
@@ -32,7 +32,7 @@ Além do arquivo disponibilizado, há um outro arquivo de validação, com algun
 
 ### Bibliotecas
 
-Para a implementação desse lab você muito provavelmente irá precisar instalar as seguintes bibliotecas em python:
+Para a implementação do laboratório você muito provavelmente irá precisar instala as seguintes bibliotecas em python:
 
  - joblib
  - numpy
@@ -61,14 +61,21 @@ print(score)
 dump(clf, 'exemplo.jlb') 
 ```
 
-### Entrega
+<!-- ### Página para validação de resultados
 
-Escrever um relatório com os seguintes tópicos:
+<a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a> -->
 
-- Introdução: fazer um breve resumo sobre segurança em sistemas operacionais;
-- Metodologia: citar qual algoritmo usou e descrever brevemente como esse algoritmo funciona;
-- Resultados: apresentar o score atingido com o algoritmo selecionado;
+### Relatório
 
+Entregar um relatório descrevendo o algoritmo de classificação usado, exceto o algoritmo de KNN ou K-Vizinhos. Descrever no relatório também quais parâmetros foram ajustados no treinamento do modelo. Apresentar os resultados para o conjunto de teste.
+
+Anexar o modelo treinado (".jlb") para que possa ser testado no conjunto de validação, para avaliação.
+
+<!-- , calculados na página <a href="https://keystroke-dash.herokuapp.com/" target="_blank">https://keystroke-dash.herokuapp.com/</a>. -->
+
+### Conteúdo original
+
+<a href="http://www.cs.cmu.edu/~keystroke/" target="_blank">http://www.cs.cmu.edu/~keystroke/</a>
 
 
 
