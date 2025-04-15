@@ -113,6 +113,27 @@
 <span class="n">dump</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="s">'exemplo.jlb'</span><span class="p">)</span> 
 </code></pre></div></div>
 
+<h3 id="dica">Dica</h3>
+
+<p>Selecione um dos classificadores do exemplo desse <a href="https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html#sphx-glr-auto-examples-classification-plot-classifier-comparison-py" target="_blank">link</a>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classifiers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>
+    <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">"linear"</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mf">0.025</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">GaussianProcessClassifier</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">RBF</span><span class="p">(</span><span class="mf">1.0</span><span class="p">),</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">RandomForestClassifier</span><span class="p">(</span>
+        <span class="n">max_depth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+    <span class="p">),</span>
+    <span class="n">MLPClassifier</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">AdaBoostClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">GaussianNB</span><span class="p">(),</span>
+    <span class="n">QuadraticDiscriminantAnalysis</span><span class="p">(),</span>
+<span class="p">]</span>
+
+</code></pre></div></div>
+
 <h3 id="entrega">Entrega</h3>
 
 <p>Escrever um relatório com os seguintes tópicos:</p>

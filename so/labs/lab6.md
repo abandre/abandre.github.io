@@ -61,6 +61,28 @@ print(score)
 dump(clf, 'exemplo.jlb') 
 ```
 
+### Dica
+
+Selecione um dos classificadores do exemplo desse <a href="https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html#sphx-glr-auto-examples-classification-plot-classifier-comparison-py" target="_blank">link</a>.
+
+```python
+classifiers = [
+    KNeighborsClassifier(3),
+    SVC(kernel="linear", C=0.025, random_state=42),
+    SVC(gamma=2, C=1, random_state=42),
+    GaussianProcessClassifier(1.0 * RBF(1.0), random_state=42),
+    DecisionTreeClassifier(max_depth=5, random_state=42),
+    RandomForestClassifier(
+        max_depth=5, n_estimators=10, max_features=1, random_state=42
+    ),
+    MLPClassifier(alpha=1, max_iter=1000, random_state=42),
+    AdaBoostClassifier(random_state=42),
+    GaussianNB(),
+    QuadraticDiscriminantAnalysis(),
+]
+
+```
+
 ### Entrega
 
 Escrever um relatório com os seguintes tópicos:
