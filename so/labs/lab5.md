@@ -37,7 +37,7 @@ Para executar o exemplo anterior, você deve baixar a seguinte imagem no mesmo d
 
 ### Roteiro
 
-Siga as instruções dos slides de aula a seguir: <a href="Aula 6 - Cores.pdf" target="_blank">Cores</a>.
+Siga as instruções dos slides de aula a seguir: <a href="lab5/Aula 6 - Cores.pdf" target="_blank">Cores</a>.
 
 - Use o comando `resize` para reamostrar a imagem original (como na página 7);
 - Faça o split dos canais (como na página 16)
