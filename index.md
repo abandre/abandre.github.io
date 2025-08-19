@@ -5,20 +5,22 @@
 layout: home
 ---
 
-<h2>Disciplinas - 1s2025</h2>
+<h2>Disciplinas - 2s2025</h2>
 
 <!--<a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="so"><b>[4/5 sem] Sistemas Operacionais (SO)</b></a><br>
 <a href="tc1"><b>[6/7 sem] Trabalhos de Conclusão de Curso I (TC1)</b></a><br>-->
 <!-- <a href="daw"><b>[8 sem] Desenvolvimento em Ambiente Web (DAW)</b></a><br> 
-<a href="atc"><b>[5/6 sem] Aspectos Teóricos da Computação (ATC)</b></a><br>
+
 <a href="aa"><b>[6/7 sem] Análise de Algoritmos (AA)</b></a><br>
 <a href="fe"><b>Formação Específica (FE)</b></a><br>
-<a href="alpoo"><b>[3/4 sem] Aplicações de Linguagens de Programação Orientada a Objetos (ALPOO)</b></a><br>-->
+<a href="alpoo"><b>[3/4 sem] Aplicações de Linguagens de Programação Orientada a Objetos (ALPOO)</b></a><br>
 
 <a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="aa"><b>[6/7 sem] Análise de Algoritmos (AA)</b></a><br>
-<a href="so"><b>[ADS] Fundamentos de Sistemas Operacionais</b></a><br>
+<a href="so"><b>[ADS] Fundamentos de Sistemas Operacionais</b></a><br>-->
+
+<a href="atc"><b>[5/6 sem] Aspectos Teóricos da Computação (ATC)</b></a><br>
 
 <!-- 
 <h2>Projetos de Extensão</h2>
@@ -30,7 +32,7 @@ layout: home
 <a href="ext"><b>Atividades de Extensão</b></a><br>
 <a href="estagio"><b>Relatório de Estágio</b></a><br>
 <a href="dps"><b>Entrega de Trabalhos de DP</b></a><br>
-<a href="docs/criterios1s25.pdf" target="_blank"><b>Critérios de Avaliação</b></a><br>
+<a href="docs/criterios2s25.pdf" target="_blank"><b>Critérios de Avaliação</b></a><br>
 <a href="docs/UNIPCalendTrad2025 V4final.pdf" target="_blank"><b>Manual do Aluno</b></a><br>
 
 

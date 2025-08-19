@@ -1,26 +1,24 @@
 ---
 layout: page
-title: Calendário de Provas
+title: Calendário de Provas (2s2025)
 ---
 
 Datas e Horários das provas desse semestre: 
 
 <!--<a href="/docs/provas.pdf" target="_blank">Provas</a>-->
 
-### CC1P43
+### CC1P43 e CC2P43
 
-Provas da turma do <a href="/docs/provas_1sem.pdf" target="_blank">primeiro ano</a>
+Provas da turma do <a href="/docs/provas_1_2_sem_2025_2.pdf" target="_blank">primeiro ano</a>
 
-Lembrando que as avaliações NP1 dessa turma são os projetos multidisciplinares. Verificar a data de entrega com os professores das disciplinas.
+### CC3P43 e CC4P43
 
-### CC2P43 e CC3P43
+Provas da turma do <a href="/docs/provas_3_4_sem_2025_2.pdf" target="_blank">segundo ano</a>
 
-Provas da turma do <a href="/docs/provas_2e3sem.pdf" target="_blank">segundo ano</a>
+### CC5P43 e CC6P43
 
-### CC4P43 e CC5P43
+Provas da turma do <a href="/docs/provas_5_6_sem_2025_2.pdf" target="_blank">terceiro ano</a>
 
-Provas da turma do <a href="/docs/provas_4e5sem.pdf" target="_blank">terceiro ano</a>
+### CC7P43 e CC8P43
 
-### CC6P43 e CC7P43
-
-Provas da turma do <a href="/docs/provas_6e7sem.pdf" target="_blank">quarto ano</a>
+Provas da turma do <a href="/docs/provas_7_8_sem_2025_2.pdf" target="_blank">quarto ano</a>

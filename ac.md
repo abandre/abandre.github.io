@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Atividades Complementares (1s2025)"
+title: "Atividades Complementares (2s2025)"
 ---
 
 ## Descrição das Atividades

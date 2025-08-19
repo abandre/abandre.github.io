@@ -5,13 +5,9 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 
 ### Cronograma de Aulas
 
-- [08/08/22] - Apresentação da disciplina - <a href="https://www.youtube.com/watch?v=x2AXca1kPQk&feature=youtu.be" target="_blank">Documentário: Turing</a>
-- [08/08/22] - Aula 1 - Autômatos Finitos - <a href="/atc/Aula1.pdf" target="_blank">Slide</a>
-- [15/08/22] - Aula 2 - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
-- [03/09/21] - Aula 3 - Reconhecedoras e Transdutoras - <a href="/atc/Aula3.pdf" target="_blank">Slide</a>
-- [10/09/21] - Aula 4 - Generalização - <a href="/atc/Aula4-Generalizacao.pdf" target="_blank">Slide</a>
-- [17/09/21] - Aula 5 - Restrição - <a href="/atc/Aula5-Restricao.pdf" target="_blank">Slide</a>
-- [17/09/21] - Aula 6 - MT Não Determinística - <a href="/atc/Aula6-MTNaoDeterministica.pdf" target="_blank">Slide</a>
+- [07/08/25] - Aula 1 - Introdução - <a href="/atc/Aula1.pdf" target="_blank">Slide</a>
+- [14/08/25] - Aula 2 - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
+- [21/08/25] - Aula 2 - Reconhecedoras e Transdutoras - <a href="/atc/Aula3.pdf" target="_blank">Slide</a>
 
 <!--- [20/08/21] - Aula 1 - Autômatos Finitos - <a href="/atc/Aula1.pdf" target="_blank">Slide</a>
 - [27/08/21] - Aula 2 - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>

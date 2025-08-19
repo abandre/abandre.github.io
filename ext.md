@@ -1,17 +1,19 @@
 ---
 layout: page
-title: "Atividades de Extensão (1s2025)"
+title: "Atividades de Extensão (2s2025)"
 ---
 
 ## Descrição das Atividades
 
-- Sobre - <a href="/docs/EXTENSÃO COMUNITÁRIA.pdf" target="_blank">Extensão</a>
+- Sobre - <a href="/docs/Manual de Extensao.pdf" target="_blank">Extensão</a>
 - Orientações para o envio das atividades - <a href="/docs/Envio-atividades-de-extensão-aluno-2.pdf" target="_blank">Envio</a>
-- Descrição dos projetos - <a href="/docs/projetos_extensao_cc_limeira_1s_25.pdf" target="_blank">Projetos</a>
+
 
 ## Upload dos arquivos
 
 <!-- ### Entrega da ficha preenchida, certificados e/ou resumos: <a href="https://bit.ly/39uM5zB" target="_blank">https://bit.ly/39uM5zB</a>
+
+- Descrição dos projetos - <a href="/docs/projetos_extensao_cc_limeira_1s_25.pdf" target="_blank">Projetos</a>
 
 Criar um zip com todos os documentos, nomeando da seguinte maneira: XYZ1234-ac.zip, onde XYZ1234 é o seu RA.
 

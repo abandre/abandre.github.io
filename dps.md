@@ -5,7 +5,7 @@ title: Trabalhos de DP (1s2023)
 
 ## Entrega de Trabalhos
 
-A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. As demais disciplinas devem seguir critério descrito no arquivo de [Critérios de Avaliação](../docs/criterios.pdf).
+A entrega de trabalhos compreende somente as disciplinas de DP listadas abaixo. As demais disciplinas devem seguir critério descrito no arquivo de [Critérios de Avaliação](../docs/criterios2s25.pdf).
 
 ### Link para upload dos arquivos: <a href="https://bit.ly/3uPWvR7" target="_blank">https://bit.ly/3uPWvR7</a>
 
