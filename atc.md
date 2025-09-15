@@ -9,6 +9,9 @@ title: "5/6sem: ATC - Aspectos Teóricos da Computação (2s2021)"
 - [14/08/25] - Aula 2 - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
 - [21/08/25] - Aula 3 - Reconhecedoras e Transdutoras - <a href="/atc/Aula3.pdf" target="_blank">Slide</a>
 - [28/08/25] - Aula 4 - Generalização - <a href="/atc/Aula4-Generalizacao.pdf" target="_blank">Slide</a>
+- [04/09/25] - Aula 5 - Restrição - <a href="/atc/Aula5-Restricao.pdf" target="_blank">Slide</a>
+- [11/09/25] - Aula 6 - MT Não Determinística - <a href="/atc/Aula6-MTNaoDeterministica.pdf" target="_blank">Slide</a>
+- [18/09/25] - Exercícios de Revisão - <a href="/atc/ex-mt-enunciado.pdf" target="_blank">Lista</a>
 
 <!--- [20/08/21] - Aula 1 - Autômatos Finitos - <a href="/atc/Aula1.pdf" target="_blank">Slide</a>
 - [27/08/21] - Aula 2 - Máquinas de Turing - <a href="/atc/Aula2.pdf" target="_blank">Slide</a>
