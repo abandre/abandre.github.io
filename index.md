@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<h2>Disciplinas - 2s2025</h2>
+<h2>Disciplinas - 1s2026</h2>
 
 <!--<a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="so"><b>[4/5 sem] Sistemas Operacionais (SO)</b></a><br>
@@ -18,9 +18,13 @@ layout: home
 
 <a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="aa"><b>[6/7 sem] Análise de Algoritmos (AA)</b></a><br>
+<a href="atc"><b>[5/6 sem] Aspectos Teóricos da Computação (ATC)</b></a><br>
 <a href="so"><b>[ADS] Fundamentos de Sistemas Operacionais</b></a><br>-->
 
-<a href="atc"><b>[5/6 sem] Aspectos Teóricos da Computação (ATC)</b></a><br>
+<a href="https://classroom.google.com/c/NzkzNDkzMTA4MzA3" target="_blank"><b>[2/3 sem] Banco de Dados (BD)</b></a><br>
+<a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
+<a href="fe"><b>[6/7 sem] Formação Específica (FE)</b></a><br>
+<a href="tcc"><b>[6/7 sem] Trabalho de Conclusão de Curso (TC1)</b></a><br>
 
 <!-- 
 <h2>Projetos de Extensão</h2>
