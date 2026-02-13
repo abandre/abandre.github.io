@@ -18,4 +18,8 @@ title: "FE - Formação Específica (1s2026)"
 
 ## Entrega de Trabalhos
 
+- <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jOaT0T_lEEambVb_MA_sennQf3nYBNJKmLUzfDRcrLJUMTkzUEM5MlVDSkwzVDNYV0VZRlc0RkIwUi4u" target="_blank">Atividade manuscrita 1</a> - entregar até 16/02 as 22h.
+
+<!--
 ### Link para upload dos arquivos: <a href="http://bit.ly/4cRwztG" target="_blank">http://bit.ly/4cRwztG</a>
+-->
