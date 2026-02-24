@@ -34,8 +34,8 @@ title: "TC1 - Trabalho de Conclusão 1 (1s2026)"
 
 ## Entrega Final
 
-- Sugestões de temas: <a href="/docs/TemasTCC.docs" target="_blank">Temas</a> 
-- Template do TCC: <a href="/docs/Template_TCC.docs" target="_blank">Modelo</a>
+- Sugestões de temas: <a href="/docs/TemasTCC.docx" target="_blank">Temas</a> 
+- Template do TCC: <a href="/docs/Template_TCC.docx" target="_blank">Modelo</a>
 
 Prazo para a entrega: 15/06/2026 as 23h45.
 
