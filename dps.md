@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trabalhos de DP (1s2023)
+title: Trabalhos de DP
 ---
 
 ## Entrega de Trabalhos

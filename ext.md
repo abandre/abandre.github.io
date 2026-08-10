@@ -1,12 +1,15 @@
 ---
 layout: page
-title: "Atividades de Extensão (2s2025)"
+title: "Atividades de Extensão (2s2026)"
 ---
 
 ## Descrição das Atividades
 
 - Sobre - <a href="/docs/Manual de Extensao.pdf" target="_blank">Extensão</a>
 - Orientações para o envio das atividades - <a href="/docs/Envio-atividades-de-extensão-aluno-2.pdf" target="_blank">Envio</a>
+- Formulário de comprovação de Atividade - <a href="/docs/02_Formulário de Comprovação de atividade de Extensão.pdf" target="_blank">Arquivo</a>
+- Guia Calouros - <a href="/docs/Guia_Extensão_CC_2026-2_presencial_calouros.pdf" target="_blank">Arquivo</a>
+- Guia Veteranos - <a href="/docs/Guia_Extensão_CC_2026-2_presencial_veteranos.pdf" target="_blank">Arquivo</a>
 
 
 ## Upload dos arquivos

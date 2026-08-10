@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<h2>Disciplinas - 1s2026</h2>
+<h2>Disciplinas - 2s2026</h2>
 
 <!--<a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="so"><b>[4/5 sem] Sistemas Operacionais (SO)</b></a><br>
@@ -19,12 +19,15 @@ layout: home
 <a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="aa"><b>[6/7 sem] Análise de Algoritmos (AA)</b></a><br>
 <a href="atc"><b>[5/6 sem] Aspectos Teóricos da Computação (ATC)</b></a><br>
-<a href="so"><b>[ADS] Fundamentos de Sistemas Operacionais</b></a><br>-->
+<a href="so"><b>[ADS] Fundamentos de Sistemas Operacionais</b></a><br>
 
 <a href="https://classroom.google.com/c/NzkzNDkzMTA4MzA3" target="_blank"><b>[2/3 sem] Banco de Dados (BD)</b></a><br>
 <a href="lfa"><b>[4/5 sem] Linguagens Formais e Autômatos (LFA)</b></a><br>
 <a href="fe"><b>[6/7 sem] Formação Específica (FE)</b></a><br>
-<a href="tcc"><b>[6/7 sem] Trabalho de Conclusão de Curso (TC1)</b></a><br>
+<a href="tcc"><b>[6/7 sem] Trabalho de Conclusão de Curso (TC1)</b></a><br>-->
+
+<a href="fg"><b>[7/8 sem] Formação Geral (FG)</b></a><br>
+<a href="tc2"><b>[7/8 sem] Trabalho de Conclusão de Curso (TC2)</b></a><br>
 
 <!-- 
 <h2>Projetos de Extensão</h2>
@@ -37,7 +40,7 @@ layout: home
 <a href="estagio"><b>Relatório de Estágio</b></a><br>
 <a href="dps"><b>Entrega de Trabalhos de DP</b></a><br>
 <a href="docs/criterios2s25.pdf" target="_blank"><b>Critérios de Avaliação</b></a><br>
-<a href="docs/UNIPCalendTrad2025 V4final.pdf" target="_blank"><b>Manual do Aluno</b></a><br>
+<a href="docs/UNIPCalendTrad2026 v1.pdf" target="_blank"><b>Manual do Aluno</b></a><br>
 
 
 <h2>Links Úteis</h2>
