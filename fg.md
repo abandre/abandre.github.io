@@ -16,3 +16,10 @@ title: "FG - Formação Geral (2s2026)"
 - [05/10/26] - <a href="/fg/aula7.pdf" target="_blank">Aula 7</a>
 - [19/10/26] - <a href="/fg/aula8.pdf" target="_blank">Aula 8</a>
 - [26/10/26] - <a href="/fg/aula9.pdf" target="_blank">Aula 9</a>
+
+## Sugestão de leitura:
+
+Você estudou, mas sente que ainda precisa transformar o que sabe em mais acertos?
+
+<a href="https://www.amazon.com.br/dp/B0HFP59V4M">Do Enunciado ao Gabarito: Estratégias para Maximizar Acertos</a><br>
+Manual de estratégia para o ENADE
